@@ -1,0 +1,127 @@
+/* Homepage styles */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  background: var(--ifm-hero-background-color);
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--ifm-color-emphasis-700);
+  max-width: 800px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.prerequisites {
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.prerequisites p {
+  margin-bottom: 0.5rem;
+}
+
+.prerequisites ul {
+  margin-bottom: 0;
+  padding-left: 1.5rem;
+}
+
+.codeBlock {
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  overflow-x: auto;
+}
+
+.codeBlock pre {
+  margin: 0;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.codeBlock code {
+  color: #d4d4d4;
+  background: transparent;
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.helpText {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+.featureList {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.5rem;
+}
+
+.featureList li {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.featureList li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--ifm-color-primary);
+  font-weight: bold;
+}
+
+.featureList strong {
+  color: var(--ifm-heading-color);
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+  
+  .hero__title {
+    font-size: 2rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .codeBlock {
+  background: #1e1e1e;
+}
+
+[data-theme='dark'] .prerequisites {
+  background: var(--ifm-color-emphasis-100);
+}

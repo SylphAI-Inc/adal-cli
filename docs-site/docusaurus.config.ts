@@ -1,0 +1,121 @@
+import {themes as prismThemes} from 'prism-react-renderer';
+import type {Config} from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
+
+const config: Config = {
+  title: 'AdaL CLI',
+  tagline: 'Your Agentic Coding Tool in Terminal',
+  favicon: 'logo.png',
+
+  // Set the production url of your site here
+  url: 'https://adal-cli-docs.onrender.com',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For Render deployment, use root
+  baseUrl: '/',
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'SylphAI-Inc', // Usually your GitHub org/user name.
+  projectName: 'adal-cli', // Usually your repo name.
+
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
+
+  presets: [
+    [
+      'classic',
+      {
+        docs: {
+          sidebarPath: './sidebars.ts',
+          editUrl:
+            'https://github.com/SylphAI-Inc/adal-cli/tree/main/adal-cli-public/docs-site/',
+        },
+        blog: false,
+        theme: {
+          customCss: './src/css/custom.css',
+        },
+      } satisfies Preset.Options,
+    ],
+  ],
+
+  themeConfig: {
+    // Replace with your project's social card
+    // image: 'img/docusaurus-social-card.jpg',
+    navbar: {
+      title: 'AdaL CLI',
+      logo: {
+        alt: 'AdaL Logo',
+        src: 'logo.png',
+        // style: { height: '32px' },
+      },
+      items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'docsSidebar',
+          position: 'left',
+          label: 'Documentation',
+        },
+        {
+          href: 'https://github.com/SylphAI-Inc/adal-cli',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Quickstart',
+              to: '/docs/getting-started/your-first-session',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Discord',
+              href: 'https://discord.gg/sylphai',
+            },
+            {
+              label: 'GitHub Discussions',
+              href: 'https://github.com/SylphAI-Inc/adal/discussions',
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {
+              label: 'GitHub',
+              href: 'https://github.com/SylphAI-Inc/adal-cli',
+            },
+            {
+              label: 'SylphAI Website',
+              href: 'https://sylph.ai',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} SylphAI.`,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  } satisfies Preset.ThemeConfig,
+};
+
+export default config;
