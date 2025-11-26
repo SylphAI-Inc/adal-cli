@@ -92,6 +92,7 @@ Restart CLI—env vars are loaded at startup.
 
 ## Getting Help
 
-- 📖 [GitHub](https://github.com/SylphAI-Inc)
+- 📖 [GitHub](https://github.com/SylphAI-Inc/adal-cli/issues)
 - 💬 [Discord](https://discord.com/invite/ezzszrRZvT)
-- 📧 support@sylphai.com
+- 💼 [LinkedIn](https://www.linkedin.com/company/sylphai)
+- 📧 contact@sylph.ai
