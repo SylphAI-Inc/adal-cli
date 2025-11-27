@@ -169,28 +169,6 @@ adal --question "Create a user schema" > schema.prisma
 
 ---
 
-## Custom Commands
-
-Create `.adal/commands.json`:
-```json
-{
-  "commands": {
-    "review-pr": {
-      "description": "Review current PR",
-      "action": "Review all changes for security, performance, and code quality"
-    },
-    "gen-test": {
-      "description": "Generate tests for a file",
-      "action": "Generate unit tests for $ARGUMENT using Jest",
-      "requiresArgument": true
-    }
-  }
-}
-```
-
-Usage: `/review-pr` or `/gen-test src/services/userService.ts`
-
----
 
 ## Best Practices
 
@@ -198,18 +176,10 @@ Usage: `/review-pr` or `/gen-test src/services/userService.ts`
 - ✅ "Create a React component for user profiles with avatar, name, email, and bio fields"
 - ❌ "Make a user component"
 
-**Project Setup:**
-- Configuration: `.adal/config.json`
-- Conventions: `.adal/README.md`
-
 **Security:**
 - No API keys in prompts
 - Use environment variables
 - Review generated code
-
-**Team:**
-- Commit `.adal/` to version control
-- Mark AI-assisted changes in commits
 
 ---
 
