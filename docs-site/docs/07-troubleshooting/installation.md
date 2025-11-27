@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: Installation Troubleshooting
+title: Installation
 ---
 
 # Installation
@@ -435,8 +435,8 @@ sudo setenforce 0
 
 If you encounter issues during installation:
 
-1. **[Troubleshooting →](../07-troubleshooting/common-issues.md)** - Installation and setup solutions
-2. **[FAQ →](../07-troubleshooting/faq.md)** - Common questions
+1. **[Getting Started →](../01-getting-started/your-first-session.md)** - Start using AdaL CLI
+2. **[Features →](../03-features/slash-commands.md)** - Complete feature reference
 3. **[Discord Community](https://discord.com/invite/ezzszrRZvT)** - Get help from the community
 4. **Email Support:** contact@sylph.ai
 
