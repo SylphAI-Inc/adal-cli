@@ -97,7 +97,7 @@ export POSTGRES_URL="postgresql://user:pass@localhost:5432/dbname"
 | **playwright**   | Browser Testing | None                        | Automate web browsers                 |
 | **brave-search** | Web Search      | API key (`BRAVE_API_KEY`)   | Search the web                        |
 | **slack**        | Communication   | API key (`SLACK_BOT_TOKEN`) | Send messages, read channels          |
-| **google-drive** | Cloud Storage   | OAuth (CLI setup)           | Access Google Drive files             |
+
 
 ---
 
@@ -145,19 +145,6 @@ echo 'export GITHUB_TOKEN="your_token_here"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
-### Google Drive (CLI OAuth)
-
-```bash
-# 1. Run authentication command first
-npx -y @modelcontextprotocol/server-gdrive auth
-# Follow the prompts in terminal
-
-# 2. Add to AdaL
-/mcp add google-drive
-
-# ✓ Ready to use
-```
-
 ---
 
 ## Custom Servers
@@ -193,15 +180,13 @@ npx -y @modelcontextprotocol/server-gdrive auth
 
 ### Custom Server Flags
 
-| Flag            | Usage              | Example                                   |
-| --------------- | ------------------ | ----------------------------------------- |
-| `--url`         | Server URL         | `--url https://api.com/sse`               |
-| `--header`      | Auth header        | `--header "Authorization:Bearer token"`   |
-| `--env`         | Environment vars   | `--env "KEY=value,KEY2=value2"`           |
-| `--resource`    | Resource URL       | `--resource https://tenant.atlassian.net` |
-| `--timeout`     | Connection timeout | `--timeout 60000`                         |
-| `--description` | Human description  | `--description "My API"`                  |
-| `--trust`       | Auto-approve tools | `--trust true`                            |
+| Flag         | Usage              | Example                                   |
+| ------------ | ------------------ | ----------------------------------------- |
+| `--url`      | Server URL         | `--url https://api.com/sse`               |
+| `--header`   | Auth header        | `--header "Authorization:Bearer token"`   |
+| `--env`      | Environment vars   | `--env "KEY=value,KEY2=value2"`           |
+| `--resource` | Resource URL       | `--resource https://tenant.atlassian.net` |
+| `--timeout`  | Connection timeout | `--timeout 60000`                         |
 
 ---
 
