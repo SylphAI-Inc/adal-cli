@@ -35,8 +35,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl:
-            'https://github.com/SylphAI-Inc/adal-cli/tree/main/adal-cli-public/docs-site/',
+          // editUrl disabled - no 'Edit this page' button
+          // editUrl: 'https://github.com/SylphAI-Inc/adal-cli/tree/main/adal-cli-public/docs-site/',
         },
         blog: false,
         theme: {

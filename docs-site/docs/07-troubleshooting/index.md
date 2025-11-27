@@ -43,7 +43,7 @@ If you can't find a solution:
 1. **Check system health:** `/health`
 2. **Report a bug:** `/bug` (auto-generates GitHub issue)
 3. **Discord Community:** [discord.com/invite/ezzszrRZvT](https://discord.com/invite/ezzszrRZvT)
-4. **Email Support:** support@sylphai.com
+4. **Email Support:** contact@sylph.ai
 5. **GitHub:** [github.com/SylphAI-Inc](https://github.com/SylphAI-Inc)
 
 ---

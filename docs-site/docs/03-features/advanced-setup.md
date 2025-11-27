@@ -115,4 +115,4 @@ For troubleshooting setup issues:
 - **[Troubleshooting →](../07-troubleshooting/common-issues.md)** - Solutions for setup problems
 - **[FAQ →](../07-troubleshooting/faq.md)** - Common questions
 - 💬 **[Discord Community](https://discord.com/invite/ezzszrRZvT)** - Get help from the community
-- 📧 **Email** - support@sylphai.com
+- 📧 **Email** - contact@sylph.ai

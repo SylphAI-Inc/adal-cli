@@ -67,4 +67,4 @@ Wait a few minutes before trying again, or upgrade your plan for higher limits.
 If you're still having issues:
 1. Check [GitHub](https://github.com/SylphAI-Inc)
 2. Join our [Discord community](https://discord.com/invite/ezzszrRZvT)
-3. Contact support at support@sylphai.com
+3. Contact support at contact@sylph.ai

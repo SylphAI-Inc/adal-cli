@@ -197,4 +197,4 @@ Show available commands.
 - Run `/init` at project start
 - Check `/health` if having connection issues
 
-**Related:** [MCP Support](../06-integrations/mcp-support.md) · [Troubleshooting](../07-troubleshooting/common-issues.md)
+**Related:** [MCP Support](./mcp-support.md) · [Troubleshooting](../07-troubleshooting/common-issues.md)

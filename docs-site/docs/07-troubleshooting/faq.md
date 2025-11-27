@@ -45,7 +45,7 @@ Code generation, refactoring, debugging, documentation, testing, API integration
 Language-agnostic: JavaScript, Python, Go, Rust, Java, C++, and more.
 
 **Can I use in CI/CD?**
-Yes. See [Integrations](../06-integrations/overview.md).
+Yes. See [MCP Integrations](../03-features/mcp-support.md) for details.
 
 ---
 

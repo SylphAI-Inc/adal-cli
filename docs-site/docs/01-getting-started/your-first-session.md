@@ -67,6 +67,6 @@ First run opens browser for authentication, then you're ready.
 
 ## What's Next?
 
-- **[Project Walkthrough →](./project-walkthrough.md)** - Complete feature lifecycle
-- **[Slash Commands →](../08-reference/slash-commands.md)** - All commands
-- **[Keyboard Shortcuts →](../08-reference/keyboard-shortcuts.md)** - Full reference
+- **[Workflows & Examples →](./workflows-and-examples.md)** - Practical development patterns
+- **[Slash Commands →](../03-features/slash-commands.md)** - All commands
+- **[Keyboard Shortcuts →](../03-features/keyboard-shortcuts.md)** - Full reference

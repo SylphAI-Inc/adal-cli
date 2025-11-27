@@ -1,9 +1,9 @@
 ---
-sidebar_position: 6
-title: Reference
+sidebar_position: 3
+title: Features
 ---
 
-# Reference
+# Features
 
 Advanced features, configuration options, and technical references for power users. This section covers sophisticated use cases and customization options.
 
