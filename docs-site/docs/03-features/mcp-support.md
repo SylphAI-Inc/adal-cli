@@ -24,37 +24,42 @@ MCP (Model Context Protocol) connects AdaL to external services like Linear, Git
 # 1. Start AdaL CLI
 AdaL
 
-# 2. Add a server
-# from pre-configured list
-> /mcp add linear 
+# 2. Add a server (choose method based on your needs)
 
+# Managed server (use shortcut name)
+> /mcp add linear
 
-#add any server 
-> /mcp add sever --transport sse url 
+# Package-based server (use --command and --args)
+> /mcp add chrome-devtools --command npx --args "-y,chrome-devtools-mcp@latest"
+
+# Remote server (use --transport and --url)
+> /mcp add custom-api --transport sse --url https://api.example.com/sse
 
 # 3. Authenticate (if needed)
 > /mcp
-# Navigate to "linear" → Enter → Authenticate
-
-
+# Navigate to server → Enter → Authenticate
 ```
 
-Done! Now AdaL can use Linear tools.
+Done! Now AdaL can use the server's tools.
 
 ---
 
 ## Adding Servers
 
-### Popular Services (Pre-configured)
+AdaL supports three ways to add MCP servers:
 
-**OAuth Services** (browser authentication):
+### Method 1: Managed Servers (Shortcut Names)
+
+**What are managed servers?** Pre-configured popular services that you can add using just their name - AdaL handles the transport setup automatically.
+
+**OAuth-based** (browser authentication):
 ```bash
 /mcp add linear      # Project management
 /mcp add notion      # Note-taking and wikis
 /mcp add sentry      # Error tracking
 ```
 
-**API Key Services** (set environment variable first):
+**API Key-based** (set environment variable first):
 ```bash
 # Set your token
 export GITHUB_TOKEN="ghp_xxxxxxxxxxxx"
@@ -65,15 +70,15 @@ export GITHUB_TOKEN="ghp_xxxxxxxxxxxx"
 /mcp add slack       # Slack workspace
 ```
 
-**No Authentication**:
+**No authentication required**:
 ```bash
 /mcp add filesystem  # Local file access
 /mcp add playwright  # Browser automation
 ```
 
-**Database**:
+**Database** (connection string or environment variable):
 ```bash
-# Option 1: Provide connection string
+# Option 1: Provide connection string directly
 /mcp add postgres postgresql://user:pass@localhost:5432/dbname
 
 # Option 2: Use environment variable
@@ -81,6 +86,110 @@ export POSTGRES_URL="postgresql://user:pass@localhost:5432/dbname"
 /mcp add postgres
 ```
 
+**Available managed servers**: linear, notion, sentry, github, gitlab, slack, filesystem, playwright, postgres, brave-search
+
+---
+
+### Method 2: Standard Adds
+
+For custom servers or packages not included in managed shortcuts, use standard add commands with explicit transport configuration.
+
+#### Package-Based Servers (stdio transport)
+
+Run MCP servers from package managers using `--command` and `--args`:
+
+**NPM packages via npx**:
+```bash
+# Chrome DevTools MCP server
+/mcp add chrome-devtools --command npx --args "-y,chrome-devtools-mcp@latest"
+
+# Airtable MCP server (with API key)
+/mcp add airtable --command npx --args "-y,airtable-mcp-server" --env "AIRTABLE_API_KEY=your_key"
+
+# Custom organization package
+/mcp add my-tool --command npx --args "-y,@myorg/mcp-server@1.2.3"
+
+# With additional flags
+/mcp add advanced-tool --command npx --args "-y,tool-package,--verbose,--config=/path/to/config"
+```
+
+**Python packages**:
+```bash
+# Using uvx (recommended for Python MCP servers)
+/mcp add python-tool --command uvx --args "python-mcp-server"
+
+# Using python directly
+/mcp add custom-python --command python --args "-m,mcp_server"
+
+# With environment variables
+/mcp add python-api --command uvx --args "api-server" --env "API_KEY=secret"
+```
+
+**Node.js scripts**:
+```bash
+# Direct Node.js execution
+/mcp add node-server --command node --args "/path/to/server.js"
+
+# With Node.js flags
+/mcp add node-app --command node --args "--experimental-modules,/path/to/server.mjs"
+```
+
+**Arguments format**: Comma-separated values in `--args` (e.g., `"-y,package@version,--flag,value"`)
+
+#### Remote Servers (sse/http transports)
+
+Connect to remotely hosted MCP servers:
+
+**SSE (Server-Sent Events)**:
+```bash
+# Basic SSE server
+/mcp add asana --transport sse --url https://mcp.asana.com/sse
+
+# With API key authentication
+/mcp add private-api --transport sse --url https://api.company.com/sse \
+  --header "X-API-Key:your-key-here"
+
+# With multiple headers
+/mcp add secure-sse --transport sse --url https://api.example.com/sse \
+  --header "Authorization:Bearer token" \
+  --header "X-Custom-Header:value"
+```
+
+**HTTP (REST endpoints)**:
+```bash
+# Basic HTTP server
+/mcp add http-api --transport http --url https://api.example.com/mcp
+
+# With Bearer token authentication
+/mcp add secure-api --transport http --url https://api.example.com/mcp \
+  --header "Authorization:Bearer your-token"
+
+# With environment variables
+/mcp add env-api --transport http --url https://api.example.com/mcp \
+  --header "X-API-Key:${API_KEY}" \
+  --env "API_KEY=your_secret"
+```
+
+#### Multi-Instance Servers
+
+Add the same server multiple times for different environments or tenants:
+
+```bash
+# Production environment
+/mcp add company-prod --transport sse --url https://mcp.company.com/sse \
+  --resource https://prod.company.com
+
+# Staging environment
+/mcp add company-staging --transport sse --url https://mcp.company.com/sse \
+  --resource https://staging.company.com
+
+# Different teams/tenants
+/mcp add linear-team-a --transport sse --url https://mcp.linear.app/sse \
+  --resource https://linear.app/team-a
+
+/mcp add linear-team-b --transport sse --url https://mcp.linear.app/sse \
+  --resource https://linear.app/team-b
+```
 ---
 
 ## Server List Reference
@@ -147,46 +256,28 @@ source ~/.zshrc
 
 ---
 
-## Custom Servers
+---
 
-### Basic Custom Server
+## Command Reference
 
-```bash
-/mcp add my-server --url https://api.example.com/sse
-```
+### Available Flags
 
-### With Authentication Header
+| Flag           | Usage                          | Example                                           |
+| -------------- | ------------------------------ | ------------------------------------------------- |
+| `--command`    | Executable to run (stdio)      | `--command npx`                                   |
+| `--args`       | Command arguments (stdio)      | `--args "-y,chrome-devtools-mcp@latest"`          |
+| `--transport`  | Transport type                 | `--transport sse` or `--transport http`           |
+| `--url`        | Server URL (sse/http)          | `--url https://api.example.com/sse`               |
+| `--header`     | Authentication header          | `--header "Authorization:Bearer token"`           |
+| `--env`        | Environment variables          | `--env "KEY=value,KEY2=value2"`                   |
+| `--resource`   | Resource URL (multi-instance)  | `--resource https://tenant.atlassian.net`         |
+| `--timeout`    | Connection timeout             | `--timeout 60000`                                 |
 
-```bash
-/mcp add my-server \
-  --url https://api.example.com/sse \
-  --header "Authorization:Bearer ${API_KEY}" \
-  --env "API_KEY=your_secret_key"
-```
+### Transport Types
 
-### Multiple Instances (Different Environments)
-
-```bash
-# Production
-/mcp add company-prod \
-  --url https://mcp.company.com/sse \
-  --resource https://prod.company.com
-
-# Staging
-/mcp add company-staging \
-  --url https://mcp.company.com/sse \
-  --resource https://staging.company.com
-```
-
-### Custom Server Flags
-
-| Flag         | Usage              | Example                                   |
-| ------------ | ------------------ | ----------------------------------------- |
-| `--url`      | Server URL         | `--url https://api.com/sse`               |
-| `--header`   | Auth header        | `--header "Authorization:Bearer token"`   |
-| `--env`      | Environment vars   | `--env "KEY=value,KEY2=value2"`           |
-| `--resource` | Resource URL       | `--resource https://tenant.atlassian.net` |
-| `--timeout`  | Connection timeout | `--timeout 60000`                         |
+- **stdio**: Local process communication (package-based servers)
+- **sse**: Server-Sent Events (remote HTTP streaming)
+- **http**: HTTP requests (remote REST endpoints)
 
 ---
 
