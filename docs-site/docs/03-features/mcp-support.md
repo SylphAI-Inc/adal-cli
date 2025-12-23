@@ -10,11 +10,66 @@ A quick guide to adding and using MCP servers in AdaL CLI to extend AdaL's capab
 
 ---
 
-## What is MCP?
+## Getting Started with MCP
+
+### What is MCP?
+
+MCP (Model Context Protocol) is a standard that lets AI agents connect to external services and data sources. Think of it as a universal adapter that lets AdaL talk to Linear, GitHub, Notion, databases, and any other service that speaks MCP.
+
+**What is an MCP server?** An MCP server is a program that exposes a service's capabilities (like creating Linear issues or querying GitHub) through the MCP protocol. Each server runs as a separate process on your machine and handles communication between AdaL and the actual service (e.g., Linear's API, your local database).
+
+**Why use MCP?**
+- **Extend AdaL's capabilities**: Access real-world services without writing custom integrations
+- **Unified interface**: One protocol works across all services (no learning different APIs)
+- **Secure**: Servers run on your machine, credentials stay local
+
+### What You'll Be Able to Do
+
+Once you connect MCP servers:
+- Create Linear issues, search Notion pages, query databases - all from conversations
+- AdaL automatically picks the right tools based on your requests
+- Work across multiple services in a single conversation
+
+### MCP Primitives
+
+MCP servers expose three types of capabilities:
+
+1. **Tools** - Actions the agent can perform
+   - Example: `linear_create_issue`, `github_search_code`, `postgres_query`
+   - AdaL calls these automatically based on your requests
+   - Most common primitive you'll interact with
+
+2. **Resources** - Data the agent can read
+   - Example: Project settings, database schemas, documentation pages
+   - Accessed via URI paths (e.g., `linear://team/ENG/projects`)
+   - Used by some enterprise servers for multi-tenant setups
+
+3. **Prompts** - Pre-written instructions for specific tasks
+   - Example: Bug report template, PR review checklist
+   - Rarely used (most interactions are tool-based)
+
+**In practice**: You'll mostly see **Tools** working automatically. Resources are relevant when using the `--resource` flag for enterprise servers (see Custom Servers section).
+
+---
+
+## What is MCP? (Quick Version)
 
 MCP (Model Context Protocol) connects AdaL to external services like Linear, GitHub, Notion, and more. Once connected, AdaL can use these services' tools directly in your conversations.
 
 **Example**: After adding Linear, you can say *"Create a Linear issue for this bug"* and AdaL will create it for you.
+
+## How It Works
+
+When you add an MCP server:
+
+1. **Configuration is saved** to `~/.adal/settings.json` (per-project: one config per working directory)
+2. **Nothing downloads yet** - servers use `npx` (Node.js) to run on-demand
+3. **Connection happens** when AdaL starts up (or when you authenticate OAuth servers)
+4. **Servers stay connected** throughout your AdaL session - no reconnecting per-query
+
+**Important**: MCP servers are **long-lived processes**. They connect once when AdaL starts, then stay alive until you close AdaL or disable the server.
+
+**Per-project configuration**: Each working directory gets its own MCP server settings. Servers configured in `/home/user/project-a` won't appear when you run AdaL from `/home/user/project-b`.
 
 ---
 
@@ -22,22 +77,21 @@ MCP (Model Context Protocol) connects AdaL to external services like Linear, Git
 
 ```bash
 # 1. Start AdaL CLI
-AdaL
+adal
 
-# 2. Add a server
-# from pre-configured list
+# 2. Add a server (from pre-configured list)
 > /mcp add linear 
-
-
-#add any server 
-> /mcp add sever --transport sse url 
 
 # 3. Authenticate (if needed)
 > /mcp
-# Navigate to "linear" → Enter → Authenticate
+# Use ↑↓ arrow keys to navigate, Enter to select "linear"
+# Use ↑↓ arrow keys to select "Authenticate", press Enter
+# Browser opens → Log in → Approve
 
-
+# ✓ Success: You'll see "X tools available" (number varies by server, e.g., 15 for Linear)
 ```
+
+**How to verify**: After authentication, AdaL displays the tool count (e.g., "15 tools available"). This confirms the server is connected and working.
 
 Done! Now AdaL can use Linear tools.
 
@@ -73,7 +127,7 @@ export GITHUB_TOKEN="ghp_xxxxxxxxxxxx"
 
 **Database**:
 ```bash
-# Option 1: Provide connection string
+# Option 1: Provide connection string directly
 /mcp add postgres postgresql://user:pass@localhost:5432/dbname
 
 # Option 2: Use environment variable
@@ -81,9 +135,18 @@ export POSTGRES_URL="postgresql://user:pass@localhost:5432/dbname"
 /mcp add postgres
 ```
 
+**Connection string format**: `postgresql://[user[:password]@][host][:port][/dbname][?param1=value1&...]`
+
+Examples:
+- Local database: `postgresql://localhost:5432/mydb`
+- With authentication: `postgresql://admin:secret@db.example.com:5432/production`
+- SSL connection: `postgresql://user:pass@host:5432/db?sslmode=require`
+
+**How to verify**: After adding, use the "Test Connection" action in `/mcp` dialog to confirm database connectivity.
+
 ---
 
-## Server List Reference
+## MCP Pre Set Server List Reference
 
 | Server           | Category        | Authentication              | What it does                          |
 | ---------------- | --------------- | --------------------------- | ------------------------------------- |
@@ -105,6 +168,14 @@ export POSTGRES_URL="postgresql://user:pass@localhost:5432/dbname"
 
 ### OAuth Services (Linear, Notion, Sentry)
 
+**How it works**:
+1. Add server → AdaL saves config but doesn't connect yet
+2. Authenticate → Browser opens, you approve, **tokens cached locally**
+3. AdaL immediately connects the server (no restart needed)
+
+**Token storage**: OAuth tokens are cached in `~/.adal/mcp-auth/`. If you delete this folder, you'll need to re-authenticate.
+
+**Setup steps**:
 ```bash
 # 1. Add server
 /mcp add linear
@@ -121,29 +192,47 @@ export POSTGRES_URL="postgresql://user:pass@localhost:5432/dbname"
 # ✓ You'll see "15 tools available"
 ```
 
+**Important**: OAuth servers connect **immediately after authentication**. No restart needed.
+
 ### API Key Services (GitHub, GitLab, Slack)
 
+**How it works**:
+1. AdaL reads environment variables (`GITHUB_TOKEN`, etc.) **when it starts**
+2. If you add a token **after** AdaL is already running, it won't see it
+3. **Restart AdaL** to pick up new environment variables
+
+**Setup steps**:
 ```bash
 # 1. Get your API key
 # GitHub: https://github.com/settings/tokens
 # GitLab: https://gitlab.com/-/profile/personal_access_tokens
 # Slack: https://api.slack.com/apps
 
-# 2. Set environment variable
+# 2. Set your token (AdaL must be closed)
 export GITHUB_TOKEN="your_token_here"
 
-# 3. Add server
-/mcp add github
+# 3. Verify the token is set (should display your token)
+echo $GITHUB_TOKEN
 
-# 4. Restart AdaL if it was already running
-# ✓ Tools available immediately
+# 4. Add server
+/mcp add github
+# ✓ Success: Server will test connection and show "X tools available"
+
+# 5. Restart AdaL (if it was already running)
+# Exit current session (Ctrl+C)
+adal
 ```
 
-**Make it permanent** (add to `~/.zshrc` or `~/.bashrc`):
+**How to verify**: After adding the server, AdaL will display "X tools available" (e.g., "26 tools available" for GitHub). This confirms your token is valid and the server is working.
+
+**Make it permanent** (survives terminal restarts):
 ```bash
+# Add to shell config (run once)
 echo 'export GITHUB_TOKEN="your_token_here"' >> ~/.zshrc
 source ~/.zshrc
 ```
+
+**Token storage**: API keys are stored in your **environment**, not by AdaL. AdaL reads them from env vars each time it starts.
 
 ---
 
@@ -154,6 +243,8 @@ source ~/.zshrc
 ```bash
 /mcp add my-server --url https://api.example.com/sse
 ```
+
+**Why `/sse` suffix?**: MCP servers use Server-Sent Events (SSE) for communication. The `/sse` endpoint is the standard MCP protocol path. If you're unsure, check the server's documentation for the correct URL.
 
 ### With Authentication Header
 
@@ -166,27 +257,40 @@ source ~/.zshrc
 
 ### Multiple Instances (Different Environments)
 
-```bash
-# Production
-/mcp add company-prod \
-  --url https://mcp.company.com/sse \
-  --resource https://prod.company.com
+You can add the same server type multiple times with different names:
 
-# Staging
-/mcp add company-staging \
-  --url https://mcp.company.com/sse \
-  --resource https://staging.company.com
+```bash
+# Different URLs (staging vs production)
+/mcp add linear-prod --url https://mcp.linear.app/sse
+/mcp add linear-staging --url https://mcp-staging.linear.app/sse
 ```
 
-### Custom Server Flags
+**Enterprise multi-tenant example** (using `--resource`):
+```bash
+# Same MCP server, different tenant/workspace
+/mcp add jira-team-a \
+  --url https://mcp.atlassian.com/sse \
+  --resource https://team-a.atlassian.net
+
+/mcp add jira-team-b \
+  --url https://mcp.atlassian.com/sse \
+  --resource https://team-b.atlassian.net
+```
+
+Each instance maintains its own authentication and connection.
+
+### Advanced: Custom Server Flags
 
 | Flag         | Usage              | Example                                   |
 | ------------ | ------------------ | ----------------------------------------- |
 | `--url`      | Server URL         | `--url https://api.com/sse`               |
 | `--header`   | Auth header        | `--header "Authorization:Bearer token"`   |
 | `--env`      | Environment vars   | `--env "KEY=value,KEY2=value2"`           |
-| `--resource` | Resource URL       | `--resource https://tenant.atlassian.net` |
-| `--timeout`  | Connection timeout | `--timeout 60000`                         |
+| `--timeout`  | Connection timeout | `--timeout 60000` (milliseconds)          |
+
+**Advanced flags** (for specific use cases):
+- `--resource`: Specify the resource/tenant URL for enterprise MCP servers (e.g., `--resource https://yourcompany.atlassian.net` for Jira MCP servers)
+- `--timeout`: Override default connection timeout (default: 60000ms)
 
 ---
 
@@ -198,10 +302,13 @@ source ~/.zshrc
 /mcp
 ```
 
-Shows:
-- Server names
-- Status (authenticated, tools count)
-- Type (OAuth, API key, etc.)
+**Server Status meanings**:
+- **Enabled + Authenticated**: Server is connected, tools available ✓
+- **Enabled + Not Authenticated**: Server will connect when you authenticate (OAuth servers)
+- **Disabled**: Server config saved but not connected (enable to reconnect)
+- **Needs Setup**: Missing API key or other configuration
+
+**Why disable instead of remove?**: Keep the configuration but temporarily turn it off (useful for servers with quota limits or during debugging).
 
 ### Server Actions
 
@@ -213,23 +320,63 @@ Navigate to a server → press Enter:
 - **Remove Server** - Delete server configuration
 - **Remove Authentication** - Clear OAuth tokens
 
+
+
+## Understanding Server Lifecycle
+
+### Adding a Server
+
+**What happens**:
+```bash
+/mcp add linear
+```
+1. AdaL **saves configuration** to `~/.adal/settings.json` (project-specific)
+2. AdaL **tests the connection** (for non-OAuth servers) - takes 2-5 seconds
+3. **Server is not connected yet** - actual connection happens on AdaL startup (or immediately after OAuth authentication)
+
+**For OAuth servers**: Connection test is **skipped** (OAuth needs browser flow first). You'll see a message to authenticate via `/mcp` dialog.
+
+**First-time server**: The first time you add any MCP server, `npx` downloads the package (~10-30 seconds). Subsequent additions are faster.
+
+### Authenticating (OAuth only)
+
+**What happens**:
+1. AdaL spawns the MCP server process
+2. Server opens your browser with OAuth URL
+3. You approve → tokens cached locally → **server connects immediately**
+4. AdaL discovers available tools (shows "15 tools available")
+
+**No restart needed** - OAuth servers connect right after authentication.
+
+### When Servers Connect
+
+**AdaL startup**: All enabled servers with valid credentials connect automatically when you start AdaL.
+
+**During session**: Servers stay connected (persistent). No reconnecting per-query.
+
+**After authentication**: OAuth servers connect immediately after successful authentication.
+
+### Enable/Disable
+
+**Disable**: Server is **disconnected immediately** and won't appear in tool list. Configuration remains saved in settings.json.
+
+**Enable**: Server **connects immediately if AdaL is already running and credentials are valid**
+
 ### Test Connection
 
-```bash
-/mcp → Navigate to server → Enter → Test Connection
+**What it tests**:
+- Can AdaL reach the server? (network connectivity)
+- Are credentials valid? (API keys, OAuth tokens)
+- How many tools are available? (confirms server is working)
 
-# Shows:
-# ✓ Healthy! Response time: 523ms, 15 tools available
-```
+**Use it when**: Debugging connection issues or verifying a server is still working after changes.
 
 ### Remove Server
 
-```bash
-/mcp → Navigate to server → Enter → Remove Server
-# Confirm: y
-
-# ✓ Server removed successfully
-```
+**What happens**:
+1. Server is **disconnected immediately**
+2. Configuration is **deleted** from `~/.adal/settings.json`
+3. **OAuth tokens remain** in `~/.adal/mcp-auth/` (use "Remove Authentication" to clear them)
 
 ---
 
