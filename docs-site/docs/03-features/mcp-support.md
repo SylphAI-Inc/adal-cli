@@ -52,18 +52,12 @@ MCP servers expose three types of capabilities:
 
 ---
 
-## What is MCP? (Quick Version)
-
-MCP (Model Context Protocol) connects AdaL to external services like Linear, GitHub, Notion, and more. Once connected, AdaL can use these services' tools directly in your conversations.
-
-**Example**: After adding Linear, you can say *"Create a Linear issue for this bug"* and AdaL will create it for you.
-
 ## How It Works
 
 When you add an MCP server:
 
 1. **Configuration is saved** to `~/.adal/settings.json` (per-project: one config per working directory)
-2. **Nothing downloads yet** - servers use `npx` (Node.js) to run on-demand
+2. **Nothing downloads yet** - servers use `npx` to run on-demand
 3. **Connection happens** when AdaL starts up (or when you authenticate OAuth servers)
 4. **Servers stay connected** throughout your AdaL session - no reconnecting per-query
 
