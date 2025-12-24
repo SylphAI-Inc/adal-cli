@@ -86,11 +86,15 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Company',
           items: [
             {
-              label: 'Quickstart',
-              to: '/',
+              label: 'SylphAI',
+              href: 'https://sylph.ai',
+            },
+            {
+              label: 'Careers',
+              href: 'https://sylph.ai/careers',
             },
           ],
         },
@@ -111,12 +115,12 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'GitHub',
+              label: 'Doc GitHub',
               href: 'https://github.com/SylphAI-Inc/adal-cli',
             },
             {
-              label: 'SylphAI Website',
-              href: 'https://sylph.ai',
+              label: 'AdalFlow GitHub',
+              href: 'https://github.com/SylphAI-Inc/AdalFlow',
             },
           ],
         },
