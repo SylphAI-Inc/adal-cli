@@ -73,21 +73,24 @@ When you add an MCP server:
 # 1. Start AdaL CLI
 adal
 
-# 2. Add a server (from pre-configured list)
-> /mcp add linear 
+# 2. Add a server (choose method based on your needs)
+# Managed server (use shortcut name)
+> /mcp add linear
+
+# Package-based server (use --command and --args)
+> /mcp add chrome-devtools --command npx --args "-y,chrome-devtools-mcp@latest"
+
+# Remote server (use --transport and --url)
+> /mcp add custom-api --transport sse --url https://api.example.com/sse
 
 # 3. Authenticate (if needed)
 > /mcp
-# Use ↑↓ arrow keys to navigate, Enter to select "linear"
-# Use ↑↓ arrow keys to select "Authenticate", press Enter
-# Browser opens → Log in → Approve
-
-# ✓ Success: You'll see "X tools available" (number varies by server, e.g., 15 for Linear)
+# Navigate to server → Enter → Authenticate
 ```
 
 **How to verify**: After authentication, AdaL displays the tool count (e.g., "15 tools available"). This confirms the server is connected and working.
 
-Done! Now AdaL can use Linear tools.
+Done! Now AdaL can use the server's tools.
 
 ---
 
@@ -232,41 +235,98 @@ source ~/.zshrc
 
 ## Custom Servers
 
-### Basic Custom Server
+### Package-Based Servers (stdio transport)
 
+Run MCP servers from package managers using `--command` and `--args`:
+
+**NPM packages via npx**:
 ```bash
-/mcp add my-server --url https://api.example.com/sse
+# Chrome DevTools MCP server
+/mcp add chrome-devtools --command npx --args "-y,chrome-devtools-mcp@latest"
+
+# Airtable MCP server (with API key)
+/mcp add airtable --command npx --args "-y,airtable-mcp-server" --env "AIRTABLE_API_KEY=your_key"
+
+# Custom organization package
+/mcp add my-tool --command npx --args "-y,@myorg/mcp-server@1.2.3"
+```
+
+**Python packages**:
+```bash
+# Using uvx (recommended for Python MCP servers)
+/mcp add python-tool --command uvx --args "python-mcp-server"
+
+# Using python directly
+/mcp add custom-python --command python --args "-m,mcp_server"
+
+# With environment variables
+/mcp add python-api --command uvx --args "api-server" --env "API_KEY=secret"
+```
+
+**Node.js scripts**:
+```bash
+# Direct Node.js execution
+/mcp add node-server --command node --args "/path/to/server.js"
+
+# With Node.js flags
+/mcp add node-app --command node --args "--experimental-modules,/path/to/server.mjs"
+```
+
+**Arguments format**: Comma-separated values in `--args` (e.g., `"-y,package@version,--flag,value"`)
+
+### Remote Servers (sse/http transports)
+
+Connect to remotely hosted MCP servers:
+
+**SSE (Server-Sent Events)**:
+```bash
+# Basic SSE server
+/mcp add my-server --transport sse --url https://api.example.com/sse
+
+# With API key authentication
+/mcp add private-api --transport sse --url https://api.company.com/sse \
+  --header "X-API-Key:your-key-here"
+
+# With multiple headers
+/mcp add secure-sse --transport sse --url https://api.example.com/sse \
+  --header "Authorization:Bearer token" \
+  --header "X-Custom-Header:value"
 ```
 
 **Why `/sse` suffix?**: MCP servers use Server-Sent Events (SSE) for communication. The `/sse` endpoint is the standard MCP protocol path. If you're unsure, check the server's documentation for the correct URL.
 
-### With Authentication Header
-
+**HTTP (REST endpoints)**:
 ```bash
-/mcp add my-server \
-  --url https://api.example.com/sse \
-  --header "Authorization:Bearer ${API_KEY}" \
-  --env "API_KEY=your_secret_key"
+# Basic HTTP server
+/mcp add http-api --transport http --url https://api.example.com/mcp
+
+# With Bearer token authentication
+/mcp add secure-api --transport http --url https://api.example.com/mcp \
+  --header "Authorization:Bearer your-token"
+
+# With environment variables
+/mcp add env-api --transport http --url https://api.example.com/mcp \
+  --header "X-API-Key:${API_KEY}" \
+  --env "API_KEY=your_secret"
 ```
 
 ### Multiple Instances (Different Environments)
 
-You can add the same server type multiple times with different names:
+You can add the same server type multiple times for different environments or tenants:
 
 ```bash
 # Different URLs (staging vs production)
-/mcp add linear-prod --url https://mcp.linear.app/sse
-/mcp add linear-staging --url https://mcp-staging.linear.app/sse
-```
+/mcp add linear-prod --transport sse --url https://mcp.linear.app/sse
+/mcp add linear-staging --transport sse --url https://mcp-staging.linear.app/sse
 
-**Enterprise multi-tenant example** (using `--resource`):
-```bash
-# Same MCP server, different tenant/workspace
+# Same MCP server, different tenant/workspace (using --resource)
 /mcp add jira-team-a \
+  --transport sse \
   --url https://mcp.atlassian.com/sse \
   --resource https://team-a.atlassian.net
 
 /mcp add jira-team-b \
+  --transport sse \
   --url https://mcp.atlassian.com/sse \
   --resource https://team-b.atlassian.net
 ```
@@ -275,16 +335,21 @@ Each instance maintains its own authentication and connection.
 
 ### Advanced: Custom Server Flags
 
-| Flag         | Usage              | Example                                   |
-| ------------ | ------------------ | ----------------------------------------- |
-| `--url`      | Server URL         | `--url https://api.com/sse`               |
-| `--header`   | Auth header        | `--header "Authorization:Bearer token"`   |
-| `--env`      | Environment vars   | `--env "KEY=value,KEY2=value2"`           |
-| `--timeout`  | Connection timeout | `--timeout 60000` (milliseconds)          |
+| Flag           | Usage                          | Example                                           |
+| -------------- | ------------------------------ | ------------------------------------------------- |
+| `--command`    | Executable to run (stdio)      | `--command npx`                                   |
+| `--args`       | Command arguments (stdio)      | `--args "-y,chrome-devtools-mcp@latest"`          |
+| `--transport`  | Transport type                 | `--transport sse` or `--transport http`           |
+| `--url`        | Server URL (sse/http)          | `--url https://api.example.com/sse`               |
+| `--header`     | Authentication header          | `--header "Authorization:Bearer token"`           |
+| `--env`        | Environment variables          | `--env "KEY=value,KEY2=value2"`                   |
+| `--resource`   | Resource URL (multi-instance)  | `--resource https://tenant.atlassian.net`         |
+| `--timeout`    | Connection timeout             | `--timeout 60000` (milliseconds)                  |
 
-**Advanced flags** (for specific use cases):
-- `--resource`: Specify the resource/tenant URL for enterprise MCP servers (e.g., `--resource https://yourcompany.atlassian.net` for Jira MCP servers)
-- `--timeout`: Override default connection timeout (default: 60000ms)
+**Transport Types**:
+- **stdio**: Local process communication (package-based servers)
+- **sse**: Server-Sent Events (remote HTTP streaming)
+- **http**: HTTP requests (remote REST endpoints)
 
 ---
 
