@@ -21,9 +21,9 @@ Type `@` followed by a path to include images, files, or directories. Works on *
 
 | Type | Example | Display |
 |------|---------|---------|
-| **Image** | `@screenshot.png` | `@screenshot.png` ⎿ Read screenshot.png |
-| **File** | `@config.json` | `@config.json` ⎿ Read config.json (42 lines) |
-| **Directory** | `@docs` | `@docs` ⎿ Listed directory docs/ (4 items) |
+| **Image** | `@screenshot.png` | `@screenshot.png`<br/>⎿ Read screenshot.png |
+| **File** | `@config.json` | `@config.json`<br/>⎿ Read config.json (42 lines) |
+| **Directory** | `@docs` | `@docs`<br/>⎿ Listed directory docs/ (4 items) |
 
 :::tip Best for Working Directory
 @ references work best for files within your current working directory. For files outside, use paste or drag & drop.
