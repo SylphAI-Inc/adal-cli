@@ -1,7 +1,12 @@
 ---
-sidebar_position: 3
-title: MCP Support
+unlisted: true
+title: MCP Support (Archive)
 ---
+
+:::warning Not Used
+This file is archived and hidden from the sidebar. Saved for reference only.
+The current MCP documentation is in `mcp-support-proposed.md` → "MCP".
+:::
 
 
 # MCP Quick Reference Guide

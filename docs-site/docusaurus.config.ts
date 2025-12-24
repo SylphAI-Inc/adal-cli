@@ -35,6 +35,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          sidebarCollapsible: false, // Keep all categories expanded
+          routeBasePath: '/', // Docs as homepage
           // editUrl disabled - no 'Edit this page' button
           // editUrl: 'https://github.com/SylphAI-Inc/adal-cli/tree/main/adal-cli-public/docs-site/',
         },
@@ -46,6 +48,17 @@ const config: Config = {
     ],
   ],
 
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['en'],
+        highlightSearchTermsOnTargetPage: true,
+      },
+    ],
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     // image: 'img/docusaurus-social-card.jpg',
@@ -54,14 +67,23 @@ const config: Config = {
       logo: {
         alt: 'AdaL Logo',
         src: 'logo.png',
-        // style: { height: '32px' },
+        srcDark: 'logo_dark.png',
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'docsSidebar',
+          to: '/',
+          label: 'Getting Started',
           position: 'left',
-          label: 'Documentation',
+        },
+        {
+          to: '/features/slash-commands',
+          label: 'Features',
+          position: 'left',
+        },
+        {
+          to: '/troubleshooting/installation',
+          label: 'Troubleshooting',
+          position: 'left',
         },
         {
           href: 'https://github.com/SylphAI-Inc/adal-cli',
@@ -78,7 +100,7 @@ const config: Config = {
           items: [
             {
               label: 'Quickstart',
-              to: '/docs/getting-started/your-first-session',
+              to: '/',
             },
           ],
         },
