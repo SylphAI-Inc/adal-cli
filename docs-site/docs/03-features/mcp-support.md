@@ -10,48 +10,6 @@ A quick guide to adding and using MCP servers in AdaL CLI to extend AdaL's capab
 
 ---
 
-## Getting Started with MCP
-
-### What is MCP?
-
-MCP (Model Context Protocol) is a standard that lets AI agents connect to external services and data sources. Think of it as a universal adapter that lets AdaL talk to Linear, GitHub, Notion, databases, and any other service that speaks MCP.
-
-**What is an MCP server?** An MCP server is a program that exposes a service's capabilities (like creating Linear issues or querying GitHub) through the MCP protocol. Each server runs as a separate process on your machine and handles communication between AdaL and the actual service (e.g., Linear's API, your local database).
-
-**Why use MCP?**
-- **Extend AdaL's capabilities**: Access real-world services without writing custom integrations
-- **Unified interface**: One protocol works across all services (no learning different APIs)
-- **Secure**: Servers run on your machine, credentials stay local
-
-### What You'll Be Able to Do
-
-Once you connect MCP servers:
-- Create Linear issues, search Notion pages, query databases - all from conversations
-- AdaL automatically picks the right tools based on your requests
-- Work across multiple services in a single conversation
-
-### MCP Primitives
-
-MCP servers expose three types of capabilities:
-
-1. **Tools** - Actions the agent can perform
-   - Example: `linear_create_issue`, `github_search_code`, `postgres_query`
-   - AdaL calls these automatically based on your requests
-   - Most common primitive you'll interact with
-
-2. **Resources** - Data the agent can read
-   - Example: Project settings, database schemas, documentation pages
-   - Accessed via URI paths (e.g., `linear://team/ENG/projects`)
-   - Used by some enterprise servers for multi-tenant setups
-
-3. **Prompts** - Pre-written instructions for specific tasks
-   - Example: Bug report template, PR review checklist
-   - Rarely used (most interactions are tool-based)
-
-**In practice**: You'll mostly see **Tools** working automatically. Resources are relevant when using the `--resource` flag for enterprise servers (see Custom Servers section).
-
----
-
 ## How It Works
 
 When you add an MCP server:
@@ -91,6 +49,47 @@ adal
 **How to verify**: After authentication, AdaL displays the tool count (e.g., "15 tools available"). This confirms the server is connected and working.
 
 Done! Now AdaL can use the server's tools.
+
+---
+
+## Using MCP Tools
+
+Once servers are added and authenticated, just talk to AdaL naturally:
+
+**Linear Example**:
+```
+You: Create a Linear issue titled "Fix login bug" in the Backend project with high priority
+
+AdaL: I'll create that Linear issue for you.
+[Uses linear_create_issue tool]
+✓ Created issue BACK-123: Fix login bug
+   Priority: High
+   URL: https://linear.app/company/issue/BACK-123
+```
+
+**GitHub Example**:
+```
+You: Show me my recent GitHub pull requests
+
+AdaL: Let me fetch your recent pull requests.
+[Uses github_list_prs tool]
+Found 3 open pull requests:
+1. feat: MCP integration (#276) - opened 2 days ago
+2. fix: Auth timeout (#275) - opened 5 days ago
+3. docs: Update README (#274) - opened 1 week ago
+```
+
+**Postgres Example**:
+```
+You: Query the users table and show the count by status
+
+AdaL: I'll query the users table for you.
+[Uses postgres_query tool]
+Results:
+- active: 1,234 users
+- inactive: 456 users
+- pending: 89 users
+```
 
 ---
 
@@ -333,6 +332,8 @@ You can add the same server type multiple times for different environments or te
 
 Each instance maintains its own authentication and connection.
 
+**Note on `--resource` flag**: In the current AdaL CLI + mainstream MCP server usage, `--resource` is no longer a necessary concept, but rather an optional, legacy/enterprise-level parameter. Most popular MCP servers (Linear, GitHub, Notion, etc.) don't require resource specification - they handle multi-tenant scenarios through authentication and configuration. The `--resource` flag is primarily used for enterprise servers that need explicit tenant/workspace identification.
+
 ### Advanced: Custom Server Flags
 
 | Flag           | Usage                          | Example                                           |
@@ -345,6 +346,8 @@ Each instance maintains its own authentication and connection.
 | `--env`        | Environment variables          | `--env "KEY=value,KEY2=value2"`                   |
 | `--resource`   | Resource URL (multi-instance)  | `--resource https://tenant.atlassian.net`         |
 | `--timeout`    | Connection timeout             | `--timeout 60000` (milliseconds)                  |
+
+**Note on `--resource`**: This is an optional, legacy/enterprise-level parameter. In current AdaL CLI + mainstream MCP server usage, `--resource` is not necessary for most servers (Linear, GitHub, Notion, etc.). Only use it if the server's documentation explicitly requires it for multi-tenant setups.
 
 **Transport Types**:
 - **stdio**: Local process communication (package-based servers)
@@ -436,44 +439,3 @@ Navigate to a server → press Enter:
 1. Server is **disconnected immediately**
 2. Configuration is **deleted** from `~/.adal/settings.json`
 3. **OAuth tokens remain** in `~/.adal/mcp-auth/` (use "Remove Authentication" to clear them)
-
----
-
-## Using MCP Tools
-
-Once servers are added and authenticated, just talk to AdaL naturally:
-
-**Linear Example**:
-```
-You: Create a Linear issue titled "Fix login bug" in the Backend project with high priority
-
-AdaL: I'll create that Linear issue for you.
-[Uses linear_create_issue tool]
-✓ Created issue BACK-123: Fix login bug
-   Priority: High
-   URL: https://linear.app/company/issue/BACK-123
-```
-
-**GitHub Example**:
-```
-You: Show me my recent GitHub pull requests
-
-AdaL: Let me fetch your recent pull requests.
-[Uses github_list_prs tool]
-Found 3 open pull requests:
-1. feat: MCP integration (#276) - opened 2 days ago
-2. fix: Auth timeout (#275) - opened 5 days ago
-3. docs: Update README (#274) - opened 1 week ago
-```
-
-**Postgres Example**:
-```
-You: Query the users table and show the count by status
-
-AdaL: I'll query the users table for you.
-[Uses postgres_query tool]
-Results:
-- active: 1,234 users
-- inactive: 456 users
-- pending: 89 users
-```
