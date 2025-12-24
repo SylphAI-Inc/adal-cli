@@ -36,4 +36,4 @@ All commands start with `/`. Type `/` and press `Tab` for autocomplete.
 - Use `/compact` to shrink long conversations, or switch to a larger‑context model via `/model` when needed.
 - Run `/init` to generate AGENTS.md so that AdaL can understand your codebase better.
 
-**Related:** [MCP Support](./mcp-support.md) · [Troubleshooting](../07-troubleshooting/installation.md)
+**Related:** [MCP](./mcp-support-proposed.md) · [Troubleshooting](../07-troubleshooting/installation.md)
