@@ -24,6 +24,6 @@ services:
         destination: /index.html
     envVars:
       - key: NODE_VERSION
-        value: 18.20.0
+        value: 20
       - key: NODE_ENV
         value: production
