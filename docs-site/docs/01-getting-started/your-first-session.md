@@ -1,6 +1,7 @@
 ---
 sidebar_position: 0
 title: Quickstart
+slug: /
 ---
 
 # Quickstart
