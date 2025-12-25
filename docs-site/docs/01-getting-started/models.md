@@ -94,4 +94,4 @@ See [Pricing](https://app.adal.ml/subscription) for subscription tiers and credi
 
 ---
 
-**Related:** [Quickstart](./your-first-session.md) · [Input Methods](./input-methods.md) · [BYOAK](../features/bring-your-own-api-key.md)
+**Related:** [Quickstart](./your-first-session.md) · [Input Methods](./input-methods.md) · [BYOAK](../03-features/bring-your-own-api-key.md)
