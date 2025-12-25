@@ -31,9 +31,9 @@ First run opens browser for authentication, then you're ready.
 ```
 > Hello, what can you help me with?
 
-> Summarize the codebase or run /init to create AGENTS.md
+> Summarize the codebase
 
-> @src/server.ts Add error handling to this file
+> /init
 ```
 
 ---
