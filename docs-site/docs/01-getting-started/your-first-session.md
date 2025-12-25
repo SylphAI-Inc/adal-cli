@@ -18,8 +18,9 @@ npm install -g @sylphai/adal-cli
 
 ## Launch
 
+Open any terminal—macOS Terminal, Linux shell, or an IDE terminal like VS Code—then `cd` to your working directory and run:
+
 ```bash
-cd your-project
 adal
 ```
 
