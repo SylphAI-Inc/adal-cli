@@ -18,8 +18,9 @@ npm install -g @sylphai/adal-cli
 
 ## Launch
 
+Open any terminal—macOS Terminal, Linux shell, or an IDE terminal like VS Code—then `cd` to your working directory and run:
+
 ```bash
-cd your-project
 adal
 ```
 
@@ -30,9 +31,9 @@ First run opens browser for authentication, then you're ready.
 ```
 > Hello, what can you help me with?
 
-> Create a simple REST endpoint for user registration
+> Summarize the codebase
 
-> @src/server.ts Add error handling to this file
+> /init
 ```
 
 ---
