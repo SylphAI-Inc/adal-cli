@@ -31,7 +31,7 @@ First run opens browser for authentication, then you're ready.
 ```
 > Hello, what can you help me with?
 
-> Create a simple REST endpoint for user registration
+> Summarize the codebase or run /init to create AGENTS.md
 
 > @src/server.ts Add error handling to this file
 ```
