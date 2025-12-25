@@ -1,6 +1,7 @@
 ---
 title: Input Methods
 sidebar_position: 3
+sidebar_label: Input
 ---
 
 # How to Input Text and Images
