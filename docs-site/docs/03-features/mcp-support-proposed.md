@@ -61,7 +61,10 @@ Pre-configured by the AdaL CLI team. Just use the name - no flags needed.
 **API Key Servers** (github, gitlab, slack):
 ```bash
 # Set token BEFORE starting AdaL
-export GITHUB_TOKEN="ghp_xxxx"
+export GITHUB_TOKEN="ghp_xxxx" # macOS / Linux 
+# OR
+$env:GITHUB_TOKEN="ghp_xxxx" # Windows
+
 adal
 /mcp add github
 ```
