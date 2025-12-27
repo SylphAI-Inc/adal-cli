@@ -58,10 +58,11 @@ const config: Config = {
         alt: 'AdaL Logo',
         src: 'logo.png',
         srcDark: 'logo_dark.png',
+        href: '/getting-started/welcome',
       },
       items: [
         {
-          to: '/',
+          to: '/getting-started/welcome',
           label: 'Get Started',
           position: 'left',
         },
