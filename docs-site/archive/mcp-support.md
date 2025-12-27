@@ -113,7 +113,8 @@ Done! Now AdaL can use the server's tools.
 **API Key Services** (set environment variable first):
 ```bash
 # Set your token
-export GITHUB_TOKEN="ghp_xxxxxxxxxxxx"
+export GITHUB_TOKEN="ghp_xxxxxxxxxxxx"  # macOS / Linux
+$env:GITHUB_TOKEN="ghp_xxxxxxxxxxxx"    # Windows PowerShell
 
 # Add server
 /mcp add github      # Repositories and issues
@@ -211,10 +212,12 @@ Examples:
 # Slack: https://api.slack.com/apps
 
 # 2. Set your token (AdaL must be closed)
-export GITHUB_TOKEN="your_token_here"
+export GITHUB_TOKEN="your_token_here"       # macOS / Linux
+$env:GITHUB_TOKEN="your_token_here"         # Windows PowerShell
 
 # 3. Verify the token is set (should display your token)
-echo $GITHUB_TOKEN
+echo $GITHUB_TOKEN                          # macOS / Linux
+echo $env:GITHUB_TOKEN                      # Windows PowerShell
 
 # 4. Add server
 /mcp add github
@@ -228,10 +231,19 @@ adal
 **How to verify**: After adding the server, AdaL will display "X tools available" (e.g., "26 tools available" for GitHub). This confirms your token is valid and the server is working.
 
 **Make it permanent** (survives terminal restarts):
+
+*macOS / Linux:*
 ```bash
 # Add to shell config (run once)
 echo 'export GITHUB_TOKEN="your_token_here"' >> ~/.zshrc
 source ~/.zshrc
+```
+
+*Windows PowerShell:*
+```powershell
+# Set as user environment variable (permanent)
+[System.Environment]::SetEnvironmentVariable('GITHUB_TOKEN', 'your_token_here', 'User')
+# Restart terminal to apply
 ```
 
 **Token storage**: API keys are stored in your **environment**, not by AdaL. AdaL reads them from env vars each time it starts.
