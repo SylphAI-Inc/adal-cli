@@ -15,7 +15,6 @@ Quick reference for all keyboard shortcuts in AdaL CLI.
 | `Ctrl+E` | Move cursor to end of line   |
 | `Ctrl+U` | Clear from start to cursor   |
 | `Ctrl+K` | Clear from cursor to end     |
-| `Ctrl+W` | Delete word before cursor    |
 | `Ctrl+L` | Clear screen (display only)  |
 
 ## History Navigation
