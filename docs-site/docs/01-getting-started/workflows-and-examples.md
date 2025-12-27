@@ -183,6 +183,6 @@ adal --question "Create a user schema" > schema.prisma
 
 ---
 
-**Next:** [Quickstart →](./your-first-session.md)
+**Next:** [Quickstart →](./quickstart.md)
 
 **Help:** [Discord](https://discord.com/invite/ezzszrRZvT) · [GitHub](https://github.com/SylphAI-Inc)
