@@ -108,7 +108,7 @@ adal
 
 ✅ **Installation complete!** Now:
 
-1. **[Quickstart →](../01-getting-started/your-first-session.md)**  
+1. **[Quickstart →](../01-getting-started/quickstart.md)**  
    Start your first AdaL session in 5 minutes
 
 2. **[Workflows & Examples →](../01-getting-started/workflows-and-examples.md)**  
@@ -120,7 +120,7 @@ adal
 
 If you encounter issues during installation:
 
-1. **[Getting Started →](../01-getting-started/your-first-session.md)** - Start using AdaL CLI
+1. **[Getting Started →](../01-getting-started/quickstart.md)** - Start using AdaL CLI
 2. **[Features →](../03-features/slash-commands.md)** - Complete feature reference
 3. **[Discord Community](https://discord.com/invite/ezzszrRZvT)** - Get help from the community
 4. **Email Support:** contact@sylph.ai
