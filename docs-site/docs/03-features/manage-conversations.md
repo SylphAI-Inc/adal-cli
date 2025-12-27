@@ -70,7 +70,7 @@ Your terminal shows the last 10 messages to stay fast. To see everything, copy t
 **Benefits:**
 - **Complete history** - See every message, tool call, and response
 - **Syntax highlighting** - Code blocks with proper formatting
-- **Searchable** - Find commands instantly with Cmd+F
+- **Searchable** - Find commands instantly with Cmd+F (macOS) or Ctrl+F (Windows/Linux)
 - **Shareable** - Save or share the HTML file
 
 Perfect for reviewing long sessions or documenting your workflow.
