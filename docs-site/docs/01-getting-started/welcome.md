@@ -4,8 +4,8 @@ title: Welcome
 slug: /
 ---
 
-<div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="/img/adal-mascot.webp" alt="AdaL Mascot" style={{maxWidth: '400px', borderRadius: '16px'}} />
+<div style={{textAlign: 'center', marginBottom: '3rem', marginTop: '2rem'}}>
+  <img src="/img/adal-mascot-with-bg.png" alt="AdaL Mascot" style={{maxWidth: '500px', width: '100%', display: 'block', margin: '0 auto', borderRadius: '20px', border: 'none', outline: 'none', boxShadow: 'none'}} />
 </div>
 
 # Hi, I'm AdaL
