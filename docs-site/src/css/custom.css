@@ -379,9 +379,20 @@ html {
 }
 
 [data-theme='light'] .footer__title,
-[data-theme='light'] .footer__link-item,
-[data-theme='light'] .footer__copyright {
+[data-theme='light'] .footer__link-item {
   color: #1a1a1a !important;
+}
+
+/* Footer copyright - subtle, smaller, muted */
+.footer__copyright,
+[data-theme='dark'] .footer__copyright {
+  color: var(--theme-text-muted) !important;
+  font-size: 0.85rem;
+}
+
+[data-theme='light'] .footer__copyright {
+  color: #666 !important;
+  font-size: 0.85rem;
 }
 
 [data-theme='light'] .footer__link-item:hover {
