@@ -9,6 +9,34 @@ Practical patterns for everyday development.
 
 ---
 
+## Terminal Setup
+
+**Recommended terminals:**
+- **Native terminal** — macOS Terminal, iTerm2, Windows Terminal, or your Linux terminal
+- **VS Code integrated terminal** — Drag the terminal panel to the top-right corner for a wider, taller view
+
+**Tip:** A larger terminal window gives AdaL more room to display code and diffs clearly.
+
+---
+
+## Set Up Project Context
+
+Ensure AdaL understands your codebase by creating an `AGENTS.md` file:
+
+```
+/init
+```
+
+This generates a project-specific `AGENTS.md` with:
+- Repository structure and key files
+- Build commands and workflows
+- Coding conventions and patterns
+- Important context for better assistance
+
+**Tip:** Review and customize the generated file for your team's needs.
+
+---
+
 ## Explore Codebase
 
 ```
@@ -132,13 +160,22 @@ Analyze thoroughly the performance bottlenecks
 
 ---
 
-## Session Management
+## Manage Work Sessions
+
+Keep your session focused and clean:
 
 ```
-/compact    # Reduce context
+/clear      # Clear context and start fresh
+/compact    # Summarize and reduce context (keep working)
 /resume     # Resume previous session
 /quit       # Exit (or Ctrl+C)
 ```
+
+**Auto-compact:** AdaL automatically compacts when context grows large, preserving key information while freeing space.
+
+**When to use:**
+- `/clear` — Switching to unrelated task
+- `/compact` — Long session getting slow, want to continue same work
 
 ---
 
