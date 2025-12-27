@@ -5,7 +5,7 @@ slug: /
 ---
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="/img/adal-mascot.png" alt="AdaL Mascot" style={{maxWidth: '400px', borderRadius: '16px'}} />
+  <img src="/img/adal-mascot.webp" alt="AdaL Mascot" style={{maxWidth: '400px', borderRadius: '16px'}} />
 </div>
 
 # Hi, I'm AdaL
