@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'AdaL CLI',
+  title: 'AdaL',
   tagline: 'Your Agentic Coding Tool in Terminal',
   favicon: 'logo.png',
 
@@ -53,7 +53,7 @@ const config: Config = {
     // Replace with your project's social card
     // image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'AdaL CLI',
+      title: 'AdaL',
       logo: {
         alt: 'AdaL Logo',
         src: 'logo.png',
@@ -62,7 +62,7 @@ const config: Config = {
       items: [
         {
           to: '/',
-          label: 'Getting Started',
+          label: 'Get Started',
           position: 'left',
         },
         {
@@ -102,6 +102,10 @@ const config: Config = {
           title: 'Community',
           items: [
             {
+              label: 'Follow AdaL',
+              href: 'https://x.com/adaboringai',
+            },
+            {
               label: 'Discord',
               href: 'https://discord.gg/sylphai',
             },
@@ -125,7 +129,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} SylphAI.`,
+      copyright: `> Built by AdaL & SylphAI © ${new Date().getFullYear()}`,
     },
     prism: {
       theme: prismThemes.github,
