@@ -19,14 +19,6 @@ Think of Skills as a hybrid of **MCP** and **[AGENTS.md](https://agents.md/)**:
 
 This means you don't need to repeatedly provide the same guidance across conversations—the agent discovers and loads the right expertise automatically.
 
-### How Teams Use Skills
-
-Turn your feature docs and technical specs into skills. The agent loads them automatically when relevant, so you:
-
-- **Skip repetitive context** — No more pasting the same background for every task
-- **Share knowledge** — Team patterns and conventions become discoverable
-- **Avoid missed dependencies** — Cross-feature context loads automatically
-
 **Key characteristics:**
 - **Filesystem-based**: Skills live in folders containing `SKILL.md` and optional supporting files
 - **On-demand loading**: Agent searches and loads skills when your task matches
@@ -57,6 +49,16 @@ Marketplace (GitHub repo, e.g., anthropics/skills)
 - **Skill**: An individual capability. Used automatically by the agent.
 
 **Example:** The [anthropics/skills](https://github.com/anthropics/skills) marketplace contains the `document-skills` plugin, which includes skills for `xlsx`, `docx`, `pptx`, and `pdf`.
+
+## Teams Can Use Skills to Share Knowledge
+
+Turn your feature docs and technical specs into skills. The agent loads them automatically when relevant, so you:
+
+- **Skip repetitive context** — No more pasting the same background for every task
+- **Share knowledge** — Team patterns and conventions become discoverable
+- **Avoid missed dependencies** — Cross-feature context loads automatically
+
+**Example:** Your team has `payment-flow.md` documenting the checkout process. As a skill, the agent loads it automatically when you work on payment-related code.
 
 ## Quick Start & Commands
 
