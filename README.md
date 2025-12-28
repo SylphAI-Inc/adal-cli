@@ -16,11 +16,11 @@
 This is the **public documentation site** for [AdaL CLI](https://github.com/SylphAI-Inc/adal-cli), built with Docusaurus. We welcome community contributions!
 
 **What you can do here:**
-- **Report issues** 🐛 with AdaL CLI agent behavior
-- **Suggest documentation fixes** 📝 or improvements
+- **Report issues** with AdaL CLI agent behavior
+- **Suggest documentation fixes** or improvements
 - **Contribute** to make the docs better
 
-## Reporting Issues
+## 🐛 Reporting Issues
 
 Found a bug with AdaL CLI or notice something wrong in the docs?
 
@@ -32,7 +32,7 @@ Please include:
 - AdaL CLI version (`adal -v`)
 - OS and terminal
 
-## Contributing
+## 📝 Contributing
 
 We appreciate documentation improvements! Here's how:
 
