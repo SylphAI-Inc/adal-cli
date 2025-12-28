@@ -57,6 +57,10 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     // image: 'img/docusaurus-social-card.jpg',
+    colorMode: {
+      defaultMode: 'dark',
+      respectPrefersColorScheme: true,
+    },
     navbar: {
       title: 'AdaL',
       logo: {
@@ -78,6 +82,11 @@ const config: Config = {
         {
           to: '/troubleshooting/installation',
           label: 'Troubleshooting',
+          position: 'left',
+        },
+        {
+          to: '/changelog',
+          label: 'Changelog',
           position: 'left',
         },
         {
