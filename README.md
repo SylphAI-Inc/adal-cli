@@ -16,8 +16,8 @@
 This is the **public documentation site** for [AdaL CLI](https://github.com/SylphAI-Inc/adal-cli), built with Docusaurus. We welcome community contributions!
 
 **What you can do here:**
-- 🐛 **Report issues** with AdaL CLI agent behavior
-- 📝 **Suggest documentation fixes** or improvements
+- **Report issues** 🐛 with AdaL CLI agent behavior
+- **Suggest documentation fixes** 📝 or improvements
 - **Contribute** to make the docs better
 
 ## Reporting Issues
