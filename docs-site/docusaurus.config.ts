@@ -42,8 +42,8 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           sidebarCollapsible: false, // Keep all categories expanded
           routeBasePath: '/', // Docs as homepage
-          // Enable 'Edit this page' button
-          editUrl: 'https://github.com/SylphAI-Inc/adal-cli/tree/main/docs-site/',
+          // Disabled - users can find edit instructions in README
+          // editUrl: 'https://github.com/SylphAI-Inc/adal-cli/tree/main/docs-site/',
         },
         blog: false,
         theme: {
