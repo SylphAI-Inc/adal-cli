@@ -13,9 +13,9 @@ AdaL skills are compatible with [Claude Code skills](https://code.claude.com/doc
 
 ## What Are Skills?
 
-Think of Skills as a hybrid of **MCP** and **[AGENTS.md](https://agents.md/)**:
+Think of Skills as a hybrid of **[MCP](./mcp-support-proposed.md)** and **[AGENTS.md](https://agents.md/)**:
 - Unlike [AGENTS.md](https://agents.md/) (which loads all project context upfront), Skills load **on-demand** when relevant
-- Unlike MCP servers (which require running processes), Skills are **simple markdown files** with optional bash scripts for tools
+- Unlike [MCP](./mcp-support-proposed.md) servers (which require running processes), Skills are **simple markdown files** with optional bash scripts for tools
 
 This means you don't need to repeatedly provide the same guidance across conversations—the agent discovers and loads the right expertise automatically.
 
