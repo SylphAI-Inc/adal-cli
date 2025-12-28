@@ -52,12 +52,23 @@ Marketplace (GitHub repo, e.g., anthropics/skills)
 
 ## Quick Start & Commands
 
+### `/skills` - View All Active Skills
+
+Shows **all skills** the agent can currently see and use, from all sources:
+- Personal skills (`~/.adal/skills/`)
+- Project skills (`.adal/skills/`)
+- Plugin skills (installed from marketplaces)
+
+### `/plugin` - Manage External Skills
+
+Manages external skills from different marketplaces (GitHub repositories):
+
 | Step | Command | Description |
 |------|---------|-------------|
 | 1 | `/plugin marketplace add <owner/repo>` | **Add a marketplace** (one-time setup) |
 | 2 | `/plugin` | Browse available plugins and marketplaces |
 | 3 | `/plugin install <plugin>@<marketplace>` | Install a plugin (or use dialog) |
-| 4 | `/skills` | Browse all installed skills |
+| 4 | `/skills` | View all active skills |
 | 5 | *Use naturally* | The agent invokes skills when relevant |
 
 **Example workflow:**
