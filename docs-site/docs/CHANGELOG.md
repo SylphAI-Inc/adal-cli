@@ -1,6 +1,7 @@
 ---
 sidebar_position: 99
 title: Changelog
+slug: /changelog
 ---
 
 # Changelog
