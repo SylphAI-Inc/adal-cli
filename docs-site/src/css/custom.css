@@ -11,10 +11,11 @@
 :root {
   /* AdaL Brand Colors */
   --terminal-accent: #00FF88;
-  --terminal-accent-dark: #00CC6A;
+  --terminal-accent-dark: #00994D;
   --terminal-accent-glow: rgba(0, 255, 136, 0.2);
-  --theme-bg: #0F0F0F;
-  --theme-surface: #1A1A1A;
+  /* VS Code Dark style - softer than pure black */
+  --theme-bg: #1E1E1E;
+  --theme-surface: #252525;
   --theme-text: #E4E4E4;
   --theme-text-muted: #A0A0A0;
   
@@ -47,10 +48,10 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   
   /* Apply AdaL dark theme background - all same color for consistency */
-  --ifm-background-color: #0F0F0F;
-  --ifm-background-surface-color: #0F0F0F;
-  --ifm-navbar-background-color: #0F0F0F;
-  --ifm-footer-background-color: #0F0F0F;
+  --ifm-background-color: #1E1E1E;
+  --ifm-background-surface-color: #1E1E1E;
+  --ifm-navbar-background-color: #1E1E1E;
+  --ifm-footer-background-color: #1E1E1E;
   --ifm-color-content: var(--theme-text);
   --ifm-color-content-secondary: var(--theme-text-muted);
 }
@@ -157,9 +158,25 @@ article {
   border-bottom-color: rgba(0, 0, 0, 0.2);
 }
 
+/* Light mode - GitHub Light style with darker green for contrast */
+[data-theme='light'] {
+  /* GitHub Light background */
+  --ifm-background-color: #FAFAFA;
+  --ifm-background-surface-color: #FFFFFF;
+  
+  /* Much darker green for better light mode contrast */
+  --ifm-color-primary: #007A3D;
+  --ifm-color-primary-dark: #006B35;
+  --ifm-color-primary-darker: #00552B;
+  --ifm-color-primary-darkest: #004420;
+  --ifm-color-primary-light: #008A45;
+  --ifm-color-primary-lighter: #00994D;
+  --ifm-color-primary-lightest: #00B35A;
+}
+
 [data-theme='light'] .markdown a:not(.hash-link):hover {
-  color: var(--terminal-accent-dark);
-  border-bottom-color: var(--terminal-accent-dark);
+  color: #007A3D;
+  border-bottom-color: #007A3D;
 }
 
 /* Refined code blocks */
@@ -208,12 +225,12 @@ html {
 [data-theme='dark'] .row,
 [data-theme='dark'] .docItemContainer_Djhp,
 [data-theme='dark'] [class*="docItemContainer"] {
-  background: #0F0F0F !important;
+  background: #1E1E1E !important;
 }
 
-/* Glassmorphism navbar */
+/* Glassmorphism navbar - VS Code Dark style */
 [data-theme='dark'] .navbar {
-  background: rgba(15, 15, 15, 0.8) !important;
+  background: rgba(30, 30, 30, 0.9) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -347,7 +364,7 @@ html {
 
 /* Footer - force consistent background */
 [data-theme='dark'] .footer {
-  background: #0F0F0F !important;
+  background: #1E1E1E !important;
   border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
@@ -355,11 +372,11 @@ html {
 [data-theme='dark'] .footer__links,
 [data-theme='dark'] .footer__link-item,
 [data-theme='dark'] .footer__col {
-  background: #0F0F0F !important;
+  background: #1E1E1E !important;
 }
 
 [data-theme='dark'] .footer.footer--dark {
-  background: #0F0F0F !important;
+  background: #1E1E1E !important;
   border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
