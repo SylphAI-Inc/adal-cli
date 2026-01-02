@@ -8,6 +8,15 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.3.4] - 2025-01-01
+- Full support for skills (/skills): plugins/marketplace, personal and project skills
+- Improved branch display with cleaner format showing directory and branch
+- More robust auto-compact
+- Faster and more token efficient manual compact (/compact)
+- Added GPT-4o model support with robust output parsing
+- Enhanced error recovery
+- Other minor bug fixes and improvements
+
 ## [0.3.3] - 2025-12-24
 - More reliable file editing
 - Reduced UI flickering
