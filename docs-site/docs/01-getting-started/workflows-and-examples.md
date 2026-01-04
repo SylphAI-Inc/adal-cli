@@ -149,14 +149,16 @@ Create a meaningful commit message and push to origin
 
 ## Thinking Mode
 
-Press `Tab` or use keywords:
-```
-Think deeply about how to optimize this algorithm
+Extended reasoning for complex tasks. **Powerful but token-intensive.**
 
-Reason carefully about security implications
+**Enable on-demand:**
+- **Keywords**: "think hard", "think deeply", "reason carefully"
+  ```
+  > debug this auth error, think hard
+  ```
+- **Tab shortcut**: Toggle mid-task. Takes effect at the next step—no need to cancel your query.
 
-Analyze thoroughly the performance bottlenecks
-```
+**Tip:** Reserve for complex debugging, architecture decisions, or when initial responses miss the mark.
 
 ---
 
