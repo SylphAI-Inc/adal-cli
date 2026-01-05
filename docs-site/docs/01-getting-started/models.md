@@ -38,7 +38,7 @@ All pricing shown per **million tokens (MTok)**. Caching significantly reduces c
 
 ### Flagship Models
 
-| Model | Input | Cached Input | Output | Best For |
+| Model | Input ($/M) | Cached Input ($/M) | Output ($/M) | Best For |
 |-------|-------|--------------|--------|----------|
 | **Claude Opus 4.5** | $5 | $0.50 (90% off) | $25 | Complex reasoning, production code |
 | **Claude Sonnet 4.5** | $3 | $0.30 (90% off) | $15 | Daily coding, thinking mode, best value |
@@ -47,7 +47,7 @@ All pricing shown per **million tokens (MTok)**. Caching significantly reduces c
 
 ### Mid-Tier Models
 
-| Model | Input | Cached Input | Output | Best For |
+| Model | Input ($/M) | Cached Input ($/M) | Output ($/M) | Best For |
 |-------|-------|--------------|--------|----------|
 | **GPT-4.1** | $2 | $0.50 (75% off) | $8 | 1M context, large codebases |
 | **GPT-4o** | $2.50 | $1.25 (50% off) | $10 | General purpose, fast responses |
@@ -55,7 +55,7 @@ All pricing shown per **million tokens (MTok)**. Caching significantly reduces c
 
 ### Budget Models
 
-| Model | Input | Output | Best For |
+| Model | Input ($/M) | Output ($/M) | Best For |
 |-------|-------|--------|----------|
 | **Claude Haiku 4.5** | $1 | $5 | Quick tasks, batch processing |
 | **Gemini 2.5 Flash Lite** | $0.10 | $0.40 | Ultra-low cost, high volume |
