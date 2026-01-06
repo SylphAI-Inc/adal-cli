@@ -803,4 +803,39 @@ kbd {
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
+/* ===== iOS SAFARI MOBILE SIDEBAR FIX ===== */
+/* iOS Safari has bugs with visibility:hidden + position:fixed + transform */
+
+/* Force the sidebar to use GPU compositing on iOS */
+.navbar-sidebar {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* When shown, ensure iOS renders correctly */
+.navbar-sidebar--show .navbar-sidebar {
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+/* Fix backdrop on iOS */
+.navbar-sidebar__backdrop {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Ensure proper stacking context for iOS */
+.navbar-sidebar--show {
+  z-index: 9999;
+}
+
+/* iOS viewport height fix - use dvh if supported */
+@supports (height: 100dvh) {
+  .navbar-sidebar {
+    height: 100dvh;
+  }
+}
+
+
 
