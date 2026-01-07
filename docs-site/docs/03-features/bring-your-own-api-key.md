@@ -69,6 +69,5 @@ Each provider is independent. You can:
 - Never logged or transmitted (except to provider)
 - Masked in UI display
 
----
 
 **Related:** [Slash Commands](./slash-commands.md) · [Keyboard Shortcuts](./keyboard-shortcuts.md)
