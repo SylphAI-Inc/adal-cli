@@ -8,6 +8,14 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.3.5] - 2026-01-05
+- Faster query response
+- Supported more general web content for websearch, including images, places, and more
+- Fixed issues of fetching URL content
+- Fixed the "unknown slash command" issues
+- Improved bug reporting (/bug)
+- Enhanced file path handling
+
 ## [0.3.4] - 2026-01-01
 - Full support for skills (/skills): plugins/marketplace, personal and project skills
 - Improved branch display with cleaner format showing directory and branch
