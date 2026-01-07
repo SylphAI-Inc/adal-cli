@@ -1,7 +1,7 @@
 ---
 title: Input Methods
 sidebar_position: 3
-sidebar_label: Input
+sidebar_label: Input Methods
 ---
 
 # How to Input Text and Images
@@ -13,8 +13,6 @@ This guide shows you different ways to provide content when using AdaL CLI.
 - **Type/Paste** - Platform-specific (⌘V vs Ctrl+V)
 - **@ References** - Universal (images, files, directories)
 - **Drag & Drop** - Shows path, agent reads
-
----
 
 ## @ References (Universal)
 
@@ -29,8 +27,6 @@ Type `@` followed by a path to include images, files, or directories. Works on *
 :::tip Best for Working Directory
 @ references work best for files within your current working directory. For files outside, use paste or drag & drop.
 :::
-
----
 
 ## Text Input
 
@@ -53,8 +49,6 @@ Type `@` followed by a path to include images, files, or directories. Works on *
 |----------|----------|
 | macOS | ⌘V |
 | Linux/Windows | Ctrl+V |
-
----
 
 ## Image Input
 
@@ -90,8 +84,6 @@ Image paste not available. Use @ reference or drag & drop instead.
 **@ Reference** ✅
 - `@screenshot.png` → image attached
 
----
-
 ## Combining Inputs
 
 Mix and match in a single message:
@@ -106,3 +98,11 @@ Why is this failing? @src/handler.py
 > [Image #1]
   ⎿ Read error-screenshot.png
 ```
+
+## Adding Context Mid-Run
+
+While AdaL is processing your request, you can keep typing and sending to add more context:
+
+- **Append queries** - Type additional instructions that the agent will see
+- **Add clarification** - Provide extra details without interrupting
+- **Correct direction** - Steer the agent mid-response

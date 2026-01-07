@@ -7,7 +7,6 @@ title: Workflows & Examples
 
 Practical patterns for everyday development.
 
----
 
 ## Terminal Setup
 
@@ -17,7 +16,6 @@ Practical patterns for everyday development.
 
 **Tip:** A larger terminal window gives AdaL more room to display code and diffs clearly.
 
----
 
 ## Set Up Project Context
 
@@ -35,7 +33,6 @@ This generates a project-specific `AGENTS.md` with:
 
 **Tip:** Review and customize the generated file for your team's needs.
 
----
 
 ## Explore Codebase
 
@@ -47,7 +44,6 @@ Where is the authentication logic implemented?
 @src/auth/service.ts Explain how this works
 ```
 
----
 
 ## Debug Issues
 
@@ -61,7 +57,6 @@ AdaL analyzes, proposes fixes, implements with tests.
 Run the tests to verify the fix
 ```
 
----
 
 ## Refactor Code
 
@@ -81,7 +76,6 @@ Create a git branch called refactor/auth-service
 Now refactor the auth system step by step, running tests after each change
 ```
 
----
 
 ## Web Search
 
@@ -95,7 +89,6 @@ What's the latest version of Next.js?
 Research PostgreSQL indexing best practices
 ```
 
----
 
 ## Work with Tests
 
@@ -107,7 +100,6 @@ Create integration tests for /api/auth endpoints
 Write failing tests for shopping cart, then implement it
 ```
 
----
 
 ## Generate Documentation
 
@@ -119,7 +111,6 @@ Add JSDoc comments to @src/services/userService.ts
 Update README with the new authentication setup
 ```
 
----
 
 ## Create PRs
 
@@ -131,7 +122,6 @@ Create a pull request description for these changes
 Create a meaningful commit message and push to origin
 ```
 
----
 
 ## Reference Files with @
 
@@ -145,7 +135,6 @@ Create a meaningful commit message and push to origin
 
 **Use @** when targeting specific files. **Skip @** when creating new files or searching.
 
----
 
 ## Thinking Mode
 
@@ -160,7 +149,6 @@ Extended reasoning for complex tasks. **Powerful but token-intensive.**
 
 **Tip:** Reserve for complex debugging, architecture decisions, or when initial responses miss the mark.
 
----
 
 ## Manage Work Sessions
 
@@ -179,7 +167,6 @@ Keep your session focused and clean:
 - `/clear` — Switching to unrelated task
 - `/compact` — Long session getting slow, want to continue same work
 
----
 
 ## Parallel Sessions (Git Worktrees)
 
@@ -193,7 +180,6 @@ git worktree add ../project-feature-b feature/payments
 cd ../project-feature-b && adal
 ```
 
----
 
 ## Unix-Style Usage
 
@@ -206,7 +192,6 @@ npm test 2>&1 | adal --question "Why are tests failing?"
 adal --question "Create a user schema" > schema.prisma
 ```
 
----
 
 
 ## Best Practices
@@ -220,8 +205,3 @@ adal --question "Create a user schema" > schema.prisma
 - Use environment variables
 - Review generated code
 
----
-
-**Next:** [Quickstart →](./quickstart.md)
-
-**Help:** [Discord](https://discord.com/invite/ezzszrRZvT) · [GitHub](https://github.com/SylphAI-Inc)

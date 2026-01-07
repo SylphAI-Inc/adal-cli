@@ -35,7 +35,6 @@ MCP (Model Context Protocol) connects AdaL to external tools and data sources. H
 | **Web search** | `brave-search` | Search the web from within AdaL |
 | **Read web pages** | `puppeteer` | Navigate sites, extract content, take screenshots |
 
----
 
 ## For Teams
 
@@ -65,7 +64,6 @@ MCP (Model Context Protocol) connects AdaL to external tools and data sources. H
 
 **Example workflow**: "What's causing the spike in 500 errors today?" → AdaL analyzes Sentry data.
 
----
 
 ## Recommended Setups
 
@@ -87,7 +85,6 @@ postgres + brave-search + filesystem
 ```
 Query data, research context, and save results locally.
 
----
 
 ## Getting Started
 

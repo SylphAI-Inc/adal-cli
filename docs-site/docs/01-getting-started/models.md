@@ -24,8 +24,8 @@ Your selection persists for the current project.
 | Provider | Models Available | Key Strength |
 |----------|-----------------|--------------|
 | **Anthropic** | Claude Opus 4.5, Sonnet 4.5, Haiku 4.5 | Extended thinking, 90% cache discount |
-| **Google** | Gemini 3 Pro, 2.5 Pro/Flash/Lite | Multimodal, 1M context, ultra-fast |
-| **OpenAI** | GPT-4.1, GPT-4o | 1M context, coding-optimized |
+| **Google** | Gemini 3 Pro, 3 Flash, 2.5 Pro | Multimodal, 1M context, ultra-fast |
+| **OpenAI** | GPT-4.1 | 1M context, coding-optimized |
 
 ### Coming Soon
 - **GPT-5.2** - Next-gen OpenAI reasoning model
@@ -38,47 +38,42 @@ All pricing shown per **million tokens (MTok)**. Caching significantly reduces c
 
 ### Flagship Models
 
-| Model | Input ($/M) | Cached Input ($/M) | Output ($/M) | Best For |
-|-------|-------|--------------|--------|----------|
-| **Claude Opus 4.5** | $5 | $0.50 (90% off) | $25 | Complex reasoning, production code |
-| **Claude Sonnet 4.5** | $3 | $0.30 (90% off) | $15 | Daily coding, thinking mode, best value |
-| **Gemini 3 Pro** | $2 | $0.50 (75% off) | $12 | Multimodal, image understanding |
-| **Gemini 2.5 Pro** | $1.25 | $0.31 (75% off) | $10 | Multimodal reasoning, 1M context |
+| Model | Input ($/M) | Output ($/M) | Cache Discount | Best For |
+|-------|-------------|--------------|----------------|----------|
+| **Claude Opus 4.5** | $5 | $25 | 90% off | Complex reasoning, production code |
+| **Claude Sonnet 4.5** | $3 | $15 | 90% off | Daily coding, thinking mode, best value |
+| **Claude Sonnet 4.5 (1M)** | $6 | $22.50 | 90% off | Extended context for large codebases |
+| **Gemini 3 Pro** | $2 | $12 | 75% off | Multimodal reasoning, 1M context |
+| **Gemini 2.5 Pro** | $1.25 | $10 | 75% off | Multimodal reasoning, 1M context |
 
 ### Mid-Tier Models
 
-| Model | Input ($/M) | Cached Input ($/M) | Output ($/M) | Best For |
-|-------|-------|--------------|--------|----------|
-| **GPT-4.1** | $2 | $0.50 (75% off) | $8 | 1M context, large codebases |
-| **GPT-4o** | $2.50 | $1.25 (50% off) | $10 | General purpose, fast responses |
-| **Gemini 2.5 Flash** | $0.30 | $0.075 (75% off) | $2.50 | Fast iteration, prototyping |
+| Model | Input ($/M) | Output ($/M) | Cache Discount | Best For |
+|-------|-------------|--------------|----------------|----------|
+| **GPT-4.1** | $2 | $8 | 75% off | 1M context, large codebases |
 
 ### Budget Models
 
-| Model | Input ($/M) | Output ($/M) | Best For |
-|-------|-------|--------|----------|
-| **Claude Haiku 4.5** | $1 | $5 | Quick tasks, batch processing |
-| **Gemini 2.5 Flash Lite** | $0.10 | $0.40 | Ultra-low cost, high volume |
+| Model | Input ($/M) | Output ($/M) | Cache Discount | Best For |
+|-------|-------------|--------------|----------------|----------|
+| **Gemini 3 Flash** | $0.50 | $3 | 90% off | Quick tasks, 1M context |
+| **Claude Haiku 4.5** | $1 | $5 | 90% off | Quick tasks |
+
 
 ## Key Features
 
 ### Thinking Models
-Models with extended reasoning (Claude Sonnet/Opus 4.5, Gemini 3 Pro/2.5 Pro) automatically break down complex problems before answering. Perfect for debugging, architecture decisions, and complex refactoring.
+Models with extended reasoning (Claude Sonnet/Opus 4.5, Gemini 3 Pro/2.5 Pro, etc.) automatically break down complex problems before answering. Perfect for debugging, architecture decisions, and complex refactoring.
 
 ### Prompt Caching
-Reusing context (files, conversation history) costs **50-90% less** with cached inputs:
-- **Anthropic**: 90% discount on cached tokens
-- **OpenAI**: 90% discount (GPT-5), 75% (GPT-4.1)
-- **Google**: 75% discount
-
-Caching is automatic—AdaL handles it behind the scenes.
+Reusing context (files, conversation history) costs **50-90% less** with cached inputs. Caching is automatic—AdaL handles it behind the scenes.
 
 ### Extended Context
 Handle large codebases with models supporting up to **1M tokens**:
 - Claude Sonnet 4.5 (1M)
-- GPT-4.1 (1M)
 - Gemini 3 Pro (1M)
 - Gemini 2.5 Flash (1M)
+- GPT-4.1 (1M)
 
 Perfect for reviewing entire repositories or understanding complex systems.
 
@@ -92,6 +87,5 @@ AdaL offers two billing options:
 
 See [Pricing](https://app.adal.ml/subscription) for subscription tiers and credit details.
 
----
 
 **Related:** [Quickstart](./quickstart.md) · [Input Methods](./input-methods.md) · [BYOAK](../03-features/bring-your-own-api-key.md)

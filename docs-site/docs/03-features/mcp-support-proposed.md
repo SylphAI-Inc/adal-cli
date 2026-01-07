@@ -22,7 +22,6 @@ adal
 
 Done! Ask AdaL: *"Create a Linear issue for the login bug"*
 
----
 
 ## Two Ways to Add Servers
 
@@ -107,7 +106,6 @@ For any MCP package not in the shortcut list. Use `--command` and `--args` flags
 | `--url` | Server URL | `--url https://...` |
 | `--header` | Auth header | `--header "Authorization:Bearer xxx"` |
 | `--env` | Env vars | `--env "KEY=value"` |
----
 
 ## Managing Servers
 
@@ -121,7 +119,6 @@ For any MCP package not in the shortcut list. Use `--command` and `--args` flags
 - **Remove** - Delete server configuration
 
 
----
 
 ## Authenticate Servers
 
