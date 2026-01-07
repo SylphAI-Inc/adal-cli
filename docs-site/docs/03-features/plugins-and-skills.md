@@ -183,10 +183,8 @@ mkdir -p ~/.adal/skills/my-skill
 
 **~/.adal/skills/my-skill/SKILL.md:**
 ```yaml
----
 name: my-skill
 description: Brief description of what this skill does and when to use it
----
 
 # My Skill
 
@@ -251,6 +249,5 @@ When skills have the same name, first-loaded wins:
 | `.adal/skills/` | Project-specific skills |
 | `~/.adal/settings.json` | Plugin settings |
 
----
 
 **Related:** [Slash Commands](./slash-commands.md) · [MCP Support](./mcp-support-proposed.md)

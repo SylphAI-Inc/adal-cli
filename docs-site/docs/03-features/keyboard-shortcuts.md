@@ -15,22 +15,20 @@ Quick reference for all keyboard shortcuts in AdaL CLI.
 | `Ctrl+E` | Move cursor to end of line   |
 | `Ctrl+U` | Clear from start to cursor   |
 | `Ctrl+K` | Clear from cursor to end     |
-| `Ctrl+L` | Clear screen (display only)  |
+| `Ctrl+L` | Clear screen but keep conversation memory  |
 
 ## History Navigation
 
-| Shortcut        | Action                      |
-| --------------- | --------------------------- |
-| `Ctrl+P` or `↑` | Previous command in history |
-| `Ctrl+N` or `↓` | Next command in history     |
-| `Ctrl+R`        | Search command history      |
+| Shortcut | Action                  |
+| -------- | ----------------------- |
+| `↑`      | Previous command        |
+| `↓`      | Next command            |
 
 ## During Agent Response
 
 | Shortcut | Action                            |
 | -------- | --------------------------------- |
 | `ESC`    | Cancel/interrupt current response |
-| `Ctrl+C` | Force stop agent                  |
 
 ## Modes & Toggles
 
@@ -38,6 +36,7 @@ Quick reference for all keyboard shortcuts in AdaL CLI.
 | ----------- | ----------------------------------------- |
 | `Tab`       | Toggle thinking mode (extended reasoning) |
 | `Shift+Tab` | Toggle auto-accept edit mode              |
+| `Ctrl+P`    | Toggle plan mode                          |
 | `Ctrl+R`    | Expand/collapse thinking content          |
 | `?`         | Toggle shortcuts display in footer        |
 
@@ -52,14 +51,7 @@ When AdaL shows a tool confirmation prompt:
 | `ESC` or `3`       | Reject and ask for alternative |
 | `↑` / `↓`          | Navigate options               |
 
-## Autocomplete
 
-| Shortcut | Action                            |
-| -------- | --------------------------------- |
-| `Tab`    | Accept suggestion / cycle options |
-| `ESC`    | Cancel suggestions                |
-
----
 
 ## Mode Explanations
 
@@ -103,7 +95,6 @@ When enabled, file edits are applied automatically without confirmation:
 
 **Use carefully:** Only enable when you trust the changes.
 
----
 
 **Related:** [Slash Commands](./slash-commands.md) · [Workflows & Examples](../01-getting-started/workflows-and-examples.md)
 

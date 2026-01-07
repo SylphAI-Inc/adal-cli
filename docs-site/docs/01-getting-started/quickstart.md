@@ -13,7 +13,7 @@ Get AdaL running in 2 minutes.
 npm install -g @sylphai/adal-cli
 ```
 
-**Requires:** Node.js 20+ · [Detailed installation →](../07-troubleshooting/installation.md)
+**Requires:** [Node.js 20+](https://nodejs.org/en/download) · [Installation help →](../07-troubleshooting/installation.md)
 
 ## Launch
 
@@ -35,7 +35,6 @@ First run opens browser for authentication, then you're ready.
 > /init
 ```
 
----
 
 ## Essential Commands
 
@@ -54,6 +53,7 @@ First run opens browser for authentication, then you're ready.
 |----------|--------------|
 | `Tab` | Toggle thinking mode |
 | `Shift+Tab` | Toggle auto-accept edits |
+| `Ctrl+P` | Toggle plan mode |
 | `ESC` | Cancel/reject |
 | `?` | Show all shortcuts |
 
@@ -61,10 +61,9 @@ First run opens browser for authentication, then you're ready.
 
 | Prefix | What it does | Example |
 |--------|--------------|---------|
-| `@` | Target specific file | `@src/api.ts add validation` |
+| `@` | Target specific file as context | `@src/api.ts add validation` |
 | `!` | Run shell command | `!npm test` |
 
----
 
 ## What's Next?
 
