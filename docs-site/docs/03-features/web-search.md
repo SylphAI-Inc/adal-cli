@@ -34,4 +34,4 @@ AdaL will automatically select the appropriate search type based on your query, 
 ## Related
 
 - [Slash Commands](./slash-commands.md)
-- [Plugins and Skills](./plugins-and-skills.md)
+- [Skills](./plugins-and-skills.md)

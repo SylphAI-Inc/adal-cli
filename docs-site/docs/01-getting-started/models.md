@@ -87,6 +87,5 @@ AdaL offers two billing options:
 
 See [Pricing](https://app.adal.ml/subscription) for subscription tiers and credit details.
 
----
 
 **Related:** [Quickstart](./quickstart.md) · [Input Methods](./input-methods.md) · [BYOAK](../03-features/bring-your-own-api-key.md)

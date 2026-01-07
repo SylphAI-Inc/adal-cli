@@ -81,6 +81,5 @@ Perfect for reviewing long sessions or documenting your workflow.
 - Working context (files referenced, commands run)
 - Session metadata (timestamps, message count)
 
----
 
 **Related:** [Slash Commands](./slash-commands.md) · [Keyboard Shortcuts](./keyboard-shortcuts.md)

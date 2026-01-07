@@ -35,7 +35,6 @@ First run opens browser for authentication, then you're ready.
 > /init
 ```
 
----
 
 ## Essential Commands
 
@@ -65,7 +64,6 @@ First run opens browser for authentication, then you're ready.
 | `@` | Target specific file as context | `@src/api.ts add validation` |
 | `!` | Run shell command | `!npm test` |
 
----
 
 ## What's Next?
 

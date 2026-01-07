@@ -78,7 +78,6 @@ title: Installation
 - **SSD:** For better performance
 - **Internet:** Stable broadband connection
 
----
 
 ## Installation Methods
 
@@ -115,7 +114,6 @@ adal
 2. **[Workflows & Examples →](../01-getting-started/workflows-and-examples.md)**  
    Learn practical development patterns
 
----
 
 ## Need Help?
 
