@@ -5,7 +5,7 @@ title: Installation
 
 # Installation
 
-> **TL;DR:** `npm install -g @sylphai/adal-cli` on macOS, Windows, or Linux (Node.js 20+ required)
+> **TL;DR:** `npm install -g @sylphai/adal-cli` on macOS, Windows, or Linux ([Node.js 20+](https://nodejs.org/en/download) required)
 
 ## System Requirements
 
@@ -25,15 +25,17 @@ title: Installation
   - Windows Server 2019 or newer
 
 - **Linux:**
-  - Ubuntu 22.04 LTS or newer
-  - Debian 12+ (Bookworm)
-  - Fedora 36+
-  - RHEL 9+, Rocky Linux 9+, AlmaLinux 9+
+  - Ubuntu 18.10 or newer
+  - Debian 10+ (Buster)
+  - Fedora 29+
+  - RHEL 8+, Rocky Linux 8+, AlmaLinux 8+
+  - CentOS 8+
   - Amazon Linux 2023
-  - **Requires GLIBC 2.35 or newer**
+  - **Requires GLIBC 2.28 or newer**
 
 **❌ Not Supported:**
-- Ubuntu 20.04 and older (GLIBC too old)
+- Ubuntu 18.04 and older (GLIBC too old)
+- RHEL 7 / CentOS 7 (EOL, GLIBC 2.17)
 - macOS 10.14 Mojave and older
 - Windows 7, 8, 8.1
 - 32-bit systems
@@ -45,7 +47,6 @@ title: Installation
 - **Node.js:** Version 20.0.0 or newer
   - Check: `node --version`
   - Download: [nodejs.org](https://nodejs.org/)
-  - Recommended: Use LTS version (currently 20.x)
 
 - **npm or yarn:** Package manager
   - npm comes with Node.js
@@ -120,10 +121,9 @@ adal
 
 If you encounter issues during installation:
 
-1. **[Getting Started →](../01-getting-started/quickstart.md)** - Start using AdaL CLI
-2. **[Features →](../03-features/slash-commands.md)** - Complete feature reference
-3. **[Discord Community](https://discord.com/invite/ezzszrRZvT)** - Get help from the community
-4. **Email Support:** contact@sylph.ai
+1. **[GitHub Issues](https://github.com/SylphAI-Inc/adal-cli/issues)** - Report bugs or request features
+2. **[Discord Community](https://discord.com/invite/ezzszrRZvT)** - Get help from the community
+3. **Email Support:** contact@sylph.ai
 
 **When reporting issues, include:**
 - Operating system and version
