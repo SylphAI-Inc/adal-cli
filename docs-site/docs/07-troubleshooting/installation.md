@@ -7,6 +7,52 @@ title: Installation
 
 > **TL;DR:** `npm install -g @sylphai/adal-cli` on macOS, Windows, or Linux ([Node.js 20+](https://nodejs.org/en/download) required)
 
+## Installation Methods
+
+This is the easiest and recommended way to install AdaL CLI.
+
+### Global Installation (Recommended)
+
+```bash
+# Install globally
+npm install -g @sylphai/adal-cli
+
+# Verify installation
+adal -v
+
+# Start AdaL
+adal
+```
+
+**Why global?**
+- Available from any directory
+- Simple `adal` command
+- Automatic PATH configuration
+
+## Updating AdaL
+
+### Auto-Update (Default)
+
+AdaL checks for updates every time you start a session. No action required—updates happen automatically. If a new version is available:
+1. The update scheduled in the background
+2. When you quit the session, the update is applied (takes a few seconds)
+3. Next time you run `adal`, you'll have the latest version
+
+### Manual Update
+
+If auto-update fails, you can do manual update:
+
+```bash
+# Standard update
+npm update -g @sylphai/adal-cli
+
+# Or reinstall to latest
+npm install -g @sylphai/adal-cli
+
+# If permission denied, use sudo
+sudo npm install -g @sylphai/adal-cli
+```
+
 ## System Requirements
 
 ### Operating System
@@ -77,31 +123,6 @@ title: Installation
 - **Disk:** 2GB+ free space
 - **SSD:** For better performance
 - **Internet:** Stable broadband connection
-
-
-## Installation Methods
-
-This is the easiest and recommended way to install AdaL CLI.
-
-### Global Installation (Recommended)
-
-```bash
-# Install globally
-npm install -g @sylphai/adal-cli
-
-# Verify installation
-adal -v
-
-# Start AdaL
-adal
-```
-
-**Why global?**
-- Available from any directory
-- Simple `adal` command
-- Automatic PATH configuration
-
-
 
 
 ## Next Steps
