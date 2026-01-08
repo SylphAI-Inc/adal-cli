@@ -95,6 +95,40 @@ When enabled, file edits are applied automatically without confirmation:
 
 **Use carefully:** Only enable when you trust the changes.
 
+### Plan Mode (`Ctrl+P`)
+
+When enabled, AdaL helps you design and plan features without modifying code or config files:
+
+```
+[Plan Mode: ON]
+
+> Plan how to implement rate limiting for our API
+
+✓ Reading API structure...
+✓ Researching best practices...
+✓ Creating docs/plan_rate_limiting.md
+
+Created comprehensive plan with:
+- Current implementation analysis
+- Recommended approach (token bucket algorithm)
+- Files to modify (middleware.js, config.js)
+- Step-by-step implementation
+- Testing strategy
+```
+
+**Capabilities in Plan Mode:**
+- ✅ Read any file (explore codebase)
+- ✅ Web search and research
+- ✅ Create/edit planning docs (`.md`, `.txt`, `.rst`, etc.)
+- ❌ Modify code/config files (`.py`, `.js`, `.json`, `.yaml`, etc.)
+
+**When to use:**
+- Planning complex features before implementation
+- Researching design patterns and best practices
+- Creating technical specs and architecture docs
+- Analyzing codebases without making changes
+
+**Workflow:** `Ctrl+P` → design → review plan → `Ctrl+P` again → implement
 
 **Related:** [Slash Commands](./slash-commands.md) · [Workflows & Examples](../01-getting-started/workflows-and-examples.md)
 
