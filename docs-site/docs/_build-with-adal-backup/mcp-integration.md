@@ -1,3 +1,7 @@
+<!-- 
+Duplicate of /features/mcp-support-proposed - Commented out to avoid duplicate content in docs.
+Original content preserved below for reference if needed.
+
 ---
 sidebar_position: 2
 title: How to leverage MCP
@@ -95,3 +99,4 @@ See [Features → MCP](/features/mcp-support-proposed) for setup instructions.
 - [MCP Documentation](https://modelcontextprotocol.io)
 - [Server Repository](https://github.com/modelcontextprotocol/servers)
 - [Awesome MCP Servers](https://github.com/wong2/awesome-mcp-servers)
+-->
