@@ -8,6 +8,12 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.4.0] - 2026-01-07
+- Supported more Linux distributions
+- Added Plan Mode (Ctrl+P) for planning-first workflows
+- Added google-gemini-3-flash-preview (/model)
+- Removed google-gemini-flash-2.5 and gpt-4o
+
 ## [0.3.5] - 2026-01-05
 - Faster query response
 - Supported more general web content for websearch, including images, places, and more
