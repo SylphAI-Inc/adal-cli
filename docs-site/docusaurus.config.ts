@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'AdaL',
   tagline: 'Your Agentic Coding Tool in Terminal',
-  favicon: 'logo.png',
+  favicon: 'adal-face-logo.svg',
 
   // Set the production url of your site here
   url: 'https://adal-cli-docs.onrender.com',
@@ -62,11 +62,11 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'AdaL',
+      title: '',
       logo: {
         alt: 'AdaL Logo',
-        src: 'logo.png',
-        srcDark: 'logo_dark.png',
+        src: 'adal-face-logo.svg',
+        srcDark: 'adal-face-logo.svg',
       },
       items: [
         {
@@ -148,6 +148,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: ['bash', 'json', 'yaml', 'typescript', 'python', 'markdown', 'diff'],
     },
   } satisfies Preset.ThemeConfig,
 };

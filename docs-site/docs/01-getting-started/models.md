@@ -15,22 +15,20 @@ AdaL gives you access to the best AI models from leading providers—all in one 
 
 Select from frontier models optimized for engineering tasks:
 
-![Model Selection](/img/getting-started/model-selection.png)
+```
+> Select Model
+
+  ○ 1. Claude Sonnet 4.5         Anthropic • Thinking • 200K tokens • Default
+  ○ 2. Claude Haiku 4.5          Anthropic • Thinking • 200K tokens • Fast
+  ○ 3. Claude Sonnet 4.5 (1M)    Anthropic • Thinking • 1M tokens
+  ● 4. Claude Opus 4.5           Anthropic • Thinking • 200K tokens
+  ○ 5. Gemini 3 Pro (Preview)    Google • Thinking • 1M tokens
+  ○ 6. Gemini 3 Flash (Preview)  Google • Thinking • 1M tokens • Fast
+  ○ 7. Gemini 2.5 Pro            Google • Thinking • 1M tokens
+  ○ 8. GPT-4.1                   OpenAI • 1M tokens
+```
 
 Your selection persists for the current project.
-
-## Supported Providers
-
-| Provider | Models Available | Key Strength |
-|----------|-----------------|--------------|
-| **Anthropic** | Claude Opus 4.5, Sonnet 4.5, Haiku 4.5 | Extended thinking, 90% cache discount |
-| **Google** | Gemini 3 Pro, 3 Flash, 2.5 Pro | Multimodal, 1M context, ultra-fast |
-| **OpenAI** | GPT-4.1 | 1M context, coding-optimized |
-
-### Coming Soon
-- **GPT-5.2** - Next-gen OpenAI reasoning model
-- **GPT-5-Codex** - Specialized coding variant
-- **Ollama** - Open source local models (FREE, runs offline)
 
 ## Pricing
 
@@ -38,35 +36,40 @@ All pricing shown per **million tokens (MTok)**. Caching significantly reduces c
 
 ### Flagship Models
 
-| Model | Input ($/M) | Output ($/M) | Cache Discount | Best For |
-|-------|-------------|--------------|----------------|----------|
-| **Claude Opus 4.5** | $5 | $25 | 90% off | Complex reasoning, production code |
-| **Claude Sonnet 4.5** | $3 | $15 | 90% off | Daily coding, thinking mode, best value |
-| **Claude Sonnet 4.5 (1M)** | $6 | $22.50 | 90% off | Extended context for large codebases |
-| **Gemini 3 Pro** | $2 | $12 | 75% off | Multimodal reasoning, 1M context |
-| **Gemini 2.5 Pro** | $1.25 | $10 | 75% off | Multimodal reasoning, 1M context |
+| Model | Provider | Input ($/M) | Output ($/M) | Cache | Best For |
+|-------|----------|-------------|--------------|-------|----------|
+| **Claude Opus 4.5** | Anthropic | $5 | $25 | 90% off | Complex reasoning, production code |
+| **Claude Sonnet 4.5** | Anthropic | $3 | $15 | 90% off | Daily coding, thinking mode|
+| **Claude Sonnet 4.5 (1M)** | Anthropic | $6 | $22.50 | 90% off | Extended context for large codebases |
+| **Gemini 3 Pro** | Google | $2 | $12 | 75% off | Multimodal reasoning, 1M context |
+| **Gemini 2.5 Pro** | Google | $1.25 | $10 | 75% off | Multimodal reasoning, 1M context |
 
 ### Mid-Tier Models
 
-| Model | Input ($/M) | Output ($/M) | Cache Discount | Best For |
-|-------|-------------|--------------|----------------|----------|
-| **GPT-4.1** | $2 | $8 | 75% off | 1M context, large codebases |
+| Model | Provider | Input ($/M) | Output ($/M) | Cache | Best For |
+|-------|----------|-------------|--------------|-------|----------|
+| **GPT-4.1** | OpenAI | $2 | $8 | 75% off | 1M context, large codebases |
 
 ### Budget Models
 
-| Model | Input ($/M) | Output ($/M) | Cache Discount | Best For |
-|-------|-------------|--------------|----------------|----------|
-| **Gemini 3 Flash** | $0.50 | $3 | 90% off | Quick tasks, 1M context |
-| **Claude Haiku 4.5** | $1 | $5 | 90% off | Quick tasks |
+| Model | Provider | Input ($/M) | Output ($/M) | Cache | Best For |
+|-------|----------|-------------|--------------|-------|----------|
+| **Gemini 3 Flash** | Google | $0.50 | $3 | 90% off | Ultra-fast, 1M context |
+| **Claude Haiku 4.5** | Anthropic | $1 | $5 | 90% off | Quick tasks |
+
+<!-- ### Coming Soon
+- **GPT-5.2** (OpenAI) - Next-gen reasoning model
+- **GPT-5-Codex** (OpenAI) - Specialized coding variant
+- **Ollama** - Open source local models (FREE, runs offline) -->
 
 
 ## Key Features
 
 ### Thinking Models
-Models with extended reasoning (Claude Sonnet/Opus 4.5, Gemini 3 Pro/2.5 Pro, etc.) automatically break down complex problems before answering. Perfect for debugging, architecture decisions, and complex refactoring.
+Models with extended reasoning (Claude Sonnet/Opus 4.5, Gemini 3 Pro/2.5 Pro, etc.) automatically break down complex problems before answering. Perfect for debugging, architecture decisions, and complex refactoring. Toggle thinking mode with `Tab`.
 
 ### Prompt Caching
-Reusing context (files, conversation history) costs **50-90% less** with cached inputs. Caching is automatic—AdaL handles it behind the scenes.
+Reusing context (files, conversation history) costs **50-90% less** with cached inputs. Caching is automatic - AdaL handles it behind the scenes.
 
 ### Extended Context
 Handle large codebases with models supporting up to **1M tokens**:
