@@ -13,6 +13,9 @@ This guide shows you different ways to provide content when using AdaL CLI.
 - **Type/Paste** - Platform-specific (⌘V vs Ctrl+V)
 - **@ References** - Universal (images, files, directories)
 - **Drag & Drop** - Shows path, agent reads
+- **Click to Position** - Click anywhere to move cursor
+- **History** - Up/Down arrows for previous messages
+- **Clear Input** - Press ESC when idle to clear all input
 
 ## @ References (Universal)
 
@@ -35,6 +38,18 @@ Type `@` followed by a path to include images, files, or directories. Works on *
 **Type Directly**
 - Simply type your question or message
 - Best for short queries and commands
+
+**Cursor Navigation**
+- Click anywhere in your input to position the cursor
+
+**Multi-line Input**
+- Press `Shift+Enter` to add new lines (Mac VS Code terminal)
+
+**Navigate History**
+- Use `Up/Down` arrows to navigate through previous messages
+
+**Clear Input**
+- Press `ESC` when idle to clear all input
 
 **Copy & Paste**
 - **Short text**: Appears exactly as pasted
