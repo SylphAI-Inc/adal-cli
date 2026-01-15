@@ -66,8 +66,7 @@ const config: Config = {
       logo: {
         alt: 'AdaL Logo',
         src: 'adal-face-logo.svg',
-        srcDark: 'logo_dark.png',
-
+        srcDark: 'adal-face-logo.svg',
       },
       items: [
         {

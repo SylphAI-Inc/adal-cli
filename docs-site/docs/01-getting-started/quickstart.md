@@ -43,7 +43,7 @@ First run opens browser for authentication, then you're ready.
 | `/help` | Show all commands |
 | `/model` | Switch AI model |
 | `/init` | Generate project context (AGENTS.md) |
-| `/clear` | Clear conversation |
+| `/resume` | Resume a previous conversation |
 | `/compact` | Compress memory when full |
 | `/quit` or `Ctrl+C` | Exit |
 
@@ -51,18 +51,18 @@ First run opens browser for authentication, then you're ready.
 
 | Shortcut | What it does |
 |----------|--------------|
+| `?` | Show all shortcuts |
 | `Tab` | Toggle thinking mode |
 | `Shift+Tab` | Toggle auto-accept edits |
 | `Ctrl+P` | Toggle plan mode |
 | `ESC` | Cancel/reject |
-| `?` | Show all shortcuts |
 
 ## Essential Prefixes
 
 | Prefix | What it does | Example |
 |--------|--------------|---------|
 | `@` | Target specific file as context | `@src/api.ts add validation` |
-| `!` | Run shell command | `!npm test` |
+| `!` | Run shell command | `!git status` |
 
 
 ## What's Next?
