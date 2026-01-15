@@ -16,6 +16,25 @@ Practical patterns for everyday development.
 
 **Tip:** A larger terminal window gives AdaL more room to display code and diffs clearly.
 
+### Truecolor Support
+
+AdaL themes require **truecolor (24-bit color)** for accurate rendering. Most modern terminals support this by default.
+
+**Check your terminal:**
+```bash
+echo $COLORTERM
+```
+Output should be `truecolor` or `24bit`.
+
+**Enable truecolor:** Add to your shell profile (`.zshrc`, `.bashrc`):
+```bash
+export COLORTERM=truecolor
+```
+
+:::tip macOS Native Terminal
+If colors appear off in the macOS Terminal app, upgrade to macOS 26+ for full truecolor support, or use iTerm2 / VS Code terminal instead.
+:::
+
 
 ## Set Up Project Context
 
@@ -145,7 +164,7 @@ Extended reasoning for complex tasks. **Powerful but token-intensive.**
   ```
   > debug this auth error, think hard
   ```
-- **Tab shortcut**: Toggle mid-task. Takes effect at the next step—no need to cancel your query.
+- **Tab shortcut**: Toggle mid-task. Takes effect at the next step — no need to cancel your query.
 
 **Tip:** Reserve for complex debugging, architecture decisions, or when initial responses miss the mark.
 
@@ -167,7 +186,7 @@ Keep your session focused and clean:
 - `/clear` — Switching to unrelated task
 - `/compact` — Long session getting slow, want to continue same work
 
-
+<!-- 
 ## Parallel Sessions (Git Worktrees)
 
 ```bash
@@ -190,7 +209,7 @@ npm test 2>&1 | adal --question "Why are tests failing?"
 
 # Pipe output
 adal --question "Create a user schema" > schema.prisma
-```
+``` -->
 
 
 
