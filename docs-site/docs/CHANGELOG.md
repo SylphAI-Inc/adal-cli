@@ -8,6 +8,17 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.5.0] - 2026-01-13
+- New UI: more stable, no flashing, no flickering, faster performance throughout the session
+- Improved input experience: cursor navigation, Shift+Enter for multi-line input, better query history navigation via up/down arrow
+- New logo and header design
+- Simplified /theme
+- Better markdown formatting and table rendering
+- Enhanced image understanding
+- Improved /compact
+- Enhanced /changelog with more history and link to documentation
+- Fixed auto-edit UI not updating after Shift+Tab or option selection during edit confirmations
+
 ## [0.4.0] - 2026-01-07
 - Supported more Linux distributions
 - Added Plan Mode (Ctrl+P) for planning-first workflows

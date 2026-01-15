@@ -542,11 +542,19 @@ h3:hover .hash-link {
 }
 
 /* ===== CODE BLOCKS - Enhanced ===== */
+/* Code block container wrapper */
+[class*="codeBlockContainer"],
+[class*="codeBlock_"] {
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
 pre {
-  border-radius: 10px !important;
+  border-radius: 12px !important;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 1rem !important;
-  margin: 1.5rem 0;
+  padding: 0.15rem 0.35rem !important;
+  margin: 0.2rem 0;
+  line-height: 1.2;
 }
 
 [data-theme='dark'] pre {
