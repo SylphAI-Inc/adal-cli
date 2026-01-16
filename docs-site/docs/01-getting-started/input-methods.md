@@ -15,7 +15,7 @@ This guide shows you different ways to provide content when using AdaL CLI.
 - **Drag & Drop** - Shows path, agent reads
 - **Click to Position** - Click anywhere to move cursor
 - **History** - Up/Down arrows for previous messages
-- **Clear Input** - Press ESC when idle to clear all input
+- **Clear Input** - Press ESC to clear all input
 
 ## @ References (Universal)
 
@@ -43,13 +43,13 @@ Type `@` followed by a path to include images, files, or directories. Works on *
 - Click anywhere in your input to position the cursor
 
 **Multi-line Input**
-- Press `Shift+Enter` to add new lines (Mac VS Code terminal)
+- Press `\+Enter` or `Shift+Enter` (Mac VS Code terminal) to start a newline
 
 **Navigate History**
 - Use `Up/Down` arrows to navigate through previous messages
 
 **Clear Input**
-- Press `ESC` when idle to clear all input
+- Press `ESC` to clear all input
 
 **Copy & Paste**
 - **Short text**: Appears exactly as pasted

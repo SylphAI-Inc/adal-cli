@@ -19,7 +19,6 @@ All commands start with `/`. Type `/` and press `Tab` for autocomplete.
 | `/init [optional msg]`   | -           | Generate AGENTS.md file      |
 | `/compact`      | -           | Compress conversation memory |
 | `/stats`        | `/usage`    | Show session statistics      |
-| `/health`       | -           | Check system health          |
 | `/mcp`          | -           | Manage MCP servers           |
 | `/bashes`       | -           | List background processes    |
 | `/auth`         | -           | Show auth status             |

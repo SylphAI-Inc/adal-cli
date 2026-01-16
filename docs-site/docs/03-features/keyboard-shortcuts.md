@@ -11,11 +11,13 @@ Quick reference for all keyboard shortcuts in AdaL CLI.
 
 | Shortcut | Action                       |
 | -------- | ---------------------------- |
+| `\+Enter` or `Shift+Enter` (Mac VS Code terminal) | Start a newline  |
+| `ESC`    | Clear input                       |
+| `Ctrl+L` | Clear screen but keep conversation memory  |
 | `Ctrl+A` | Move cursor to start of line |
 | `Ctrl+E` | Move cursor to end of line   |
 | `Ctrl+U` | Clear from start to cursor   |
 | `Ctrl+K` | Clear from cursor to end     |
-| `Ctrl+L` | Clear screen but keep conversation memory  |
 
 ## History Navigation
 
@@ -28,7 +30,7 @@ Quick reference for all keyboard shortcuts in AdaL CLI.
 
 | Shortcut | Action                            |
 | -------- | --------------------------------- |
-| `ESC`    | Cancel/interrupt current response |
+| `Ctrl+C` | Cancel agent streaming/running|
 
 ## Modes & Toggles
 
@@ -39,18 +41,6 @@ Quick reference for all keyboard shortcuts in AdaL CLI.
 | `Ctrl+P`    | Toggle plan mode                          |
 | `Ctrl+R`    | Expand/collapse thinking content          |
 | `?`         | Toggle shortcuts display in footer        |
-
-## Tool Confirmation
-
-When AdaL shows a tool confirmation prompt:
-
-| Shortcut           | Action                         |
-| ------------------ | ------------------------------ |
-| `Enter` or `1`     | Accept (allow once)            |
-| `Shift+Tab` or `2` | Always allow this session      |
-| `ESC` or `3`       | Reject and ask for alternative |
-| `↑` / `↓`          | Navigate options               |
-
 
 
 ## Mode Explanations
