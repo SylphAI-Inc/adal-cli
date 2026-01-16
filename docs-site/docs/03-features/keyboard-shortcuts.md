@@ -30,7 +30,7 @@ Quick reference for all keyboard shortcuts in AdaL CLI.
 
 | Shortcut | Action                            |
 | -------- | --------------------------------- |
-| `Ctrl+C` | Cancel/interrupt current response |
+| `Ctrl+C` | Cancel agent streaming/running|
 
 ## Modes & Toggles
 

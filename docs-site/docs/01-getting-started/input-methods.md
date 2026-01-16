@@ -15,7 +15,7 @@ This guide shows you different ways to provide content when using AdaL CLI.
 - **Drag & Drop** - Shows path, agent reads
 - **Click to Position** - Click anywhere to move cursor
 - **History** - Up/Down arrows for previous messages
-- **Clear Input** - Press ESC when idle to clear all input
+- **Clear Input** - Press ESC to clear all input
 
 ## @ References (Universal)
 
@@ -49,7 +49,7 @@ Type `@` followed by a path to include images, files, or directories. Works on *
 - Use `Up/Down` arrows to navigate through previous messages
 
 **Clear Input**
-- Press `ESC` when idle to clear all input
+- Press `ESC` to clear all input
 
 **Copy & Paste**
 - **Short text**: Appears exactly as pasted
