@@ -55,7 +55,7 @@ First run opens browser for authentication, then you're ready.
 | `Tab` | Toggle thinking mode |
 | `Shift+Tab` | Toggle auto-accept edits |
 | `Ctrl+P` | Toggle plan mode |
-| `Ctrl+C` | Cancel streaming |
+| `Ctrl+C` | Cancel agent streaming/running|
 | `ESC` | Clear input |
 
 ## Essential Prefixes
