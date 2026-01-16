@@ -8,34 +8,6 @@ title: Workflows & Examples
 Practical patterns for everyday development.
 
 
-## Terminal Setup
-
-**Recommended terminals:**
-- **Native terminal** — macOS Terminal, iTerm2, Windows Terminal, or your Linux terminal
-- **VS Code integrated terminal** — Drag the terminal panel to the top-right corner for a wider, taller view
-
-**Tip:** A larger terminal window gives AdaL more room to display code and diffs clearly.
-
-### Truecolor Support
-
-AdaL themes require **truecolor (24-bit color)** for accurate rendering. Most modern terminals support this by default.
-
-**Check your terminal:**
-```bash
-echo $COLORTERM
-```
-Output should be `truecolor` or `24bit`.
-
-**Enable truecolor:** Add to your shell profile (`.zshrc`, `.bashrc`):
-```bash
-export COLORTERM=truecolor
-```
-
-:::tip macOS Native Terminal
-If colors appear off in the macOS Terminal app, upgrade to macOS 26+ for full truecolor support, or use iTerm2 / VS Code terminal instead.
-:::
-
-
 ## Set Up Project Context
 
 Ensure AdaL understands your codebase by creating an `AGENTS.md` file:

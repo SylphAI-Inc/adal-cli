@@ -43,7 +43,7 @@ Type `@` followed by a path to include images, files, or directories. Works on *
 - Click anywhere in your input to position the cursor
 
 **Multi-line Input**
-- Press `Shift+Enter` to add new lines (Mac VS Code terminal)
+- Press `\+Enter` or `Shift+Enter` (Mac VS Code terminal) to start a newline
 
 **Navigate History**
 - Use `Up/Down` arrows to navigate through previous messages
