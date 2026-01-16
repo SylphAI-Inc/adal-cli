@@ -8,6 +8,14 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.5.1] - 2026-01-15
+- Improved scrolling experience across all platforms
+- Smarter code display with automatic line wrapping in diffs and code blocks
+- Fixed known bugs in /model and /theme selections
+- Consolidated keyboard shortcuts and slash commands
+- Use Ctrl+C to cancel streaming anytime
+- Git-aware file operations that preserve history, better multi-line commit messages
+
 ## [0.5.0] - 2026-01-13
 - New UI: more stable, no flashing, no flickering, faster performance throughout the session
 - Improved input experience: cursor navigation, Shift+Enter for multi-line input, better query history navigation via up/down arrow
