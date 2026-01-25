@@ -8,6 +8,16 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.5.2] - 2026-01-24
+- Thinking mode on by default
+- Better view when resuming sessions
+- Removed redundant aliases for a tidier command palette
+- Added spinner for bash tool execution display
+- Clearer plan mode separators in message history
+- Unified notification toasts for copy actions
+- Theme improvements
+- Other minor bug fixes
+
 ## [0.5.1] - 2026-01-15
 - Improved scrolling experience across all platforms
 - Smarter code display with automatic line wrapping in diffs and code blocks
