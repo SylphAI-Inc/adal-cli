@@ -162,15 +162,21 @@ Keep your session focused and clean:
 ## Work on Multiple Branches
 
 ```bash
-# Terminal 1
+# Create workspace
 adal workspace create feature-auth
-cd ../adal-cli-feature-auth
-adal
+# ✓ Created workspace-feature-auth-main
+#   Path: /path/to/project/.adal_workspace/workspace-feature-auth
+#   Base: main
+#
+# To start working:
+#   cd /path/to/project/.adal_workspace/workspace-feature-auth && adal
 
-# Terminal 2
+# Start working in workspace
+cd .adal_workspace/workspace-feature-auth && adal
+
+# In another terminal, create second workspace
 adal workspace create feature-payments
-cd ../adal-cli-feature-payments
-adal
+cd .adal_workspace/workspace-feature-payments && adal
 
 # Check workspaces
 adal workspace list
