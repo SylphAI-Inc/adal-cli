@@ -8,6 +8,13 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.5.3] - 2026-01-27
+- Faster @ reference search navigation
+- Workspace management to enable parallel development
+- Visual separator marker showing where compaction occurred when resuming sessions
+- Ctrl+R (thought toggle) and Ctrl+C (cancel/exit) now work when dialogs are open
+- Show changelog after auto update
+
 ## [0.5.2] - 2026-01-24
 - Thinking mode on by default
 - Better view when resuming sessions
