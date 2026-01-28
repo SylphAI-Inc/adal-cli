@@ -158,30 +158,26 @@ Keep your session focused and clean:
 - `/clear` — Switching to unrelated task
 - `/compact` — Long session getting slow, want to continue same work
 
-<!-- 
-## Parallel Sessions (Git Worktrees)
+
+## Work on Multiple Branches
 
 ```bash
 # Terminal 1
-git worktree add ../project-feature-a feature/user-auth
-cd ../project-feature-a && adal
+adal workspace create feature-auth
+cd ../adal-cli-feature-auth
+adal
 
 # Terminal 2
-git worktree add ../project-feature-b feature/payments
-cd ../project-feature-b && adal
+adal workspace create feature-payments
+cd ../adal-cli-feature-payments
+adal
+
+# Check workspaces
+adal workspace list
+
+# Remove when done
+adal workspace remove feature-auth
 ```
-
-
-## Unix-Style Usage
-
-```bash
-# Pipe input
-git diff | adal --question "Explain these changes"
-npm test 2>&1 | adal --question "Why are tests failing?"
-
-# Pipe output
-adal --question "Create a user schema" > schema.prisma
-``` -->
 
 
 
