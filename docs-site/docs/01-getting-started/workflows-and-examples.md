@@ -161,6 +161,8 @@ Keep your session focused and clean:
 
 ## Work on Multiple Branches
 
+Create isolated workspaces to work on different features simultaneously without switching branches:
+
 ```bash
 # Create workspace
 adal workspace create feature-auth
