@@ -65,6 +65,16 @@ First run opens browser for authentication, then you're ready.
 | `@` | Target specific file as context | `@src/api.ts add validation` |
 | `!` | Run shell command | `!git status` |
 
+## Workspace Management
+
+Work on multiple branches in parallel:
+
+| Command | What it does |
+|---------|--------------|
+| `adal workspace create <name>` | Create new workspace |
+| `adal workspace list` | List all workspaces |
+| `adal workspace remove <name>` | Remove workspace |
+
 ## Terminal Setup
 
 **Recommended terminals:**
