@@ -8,6 +8,9 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.5.4] - 2026-01-28
+- Minor bug fixes for compaction and session resume
+
 ## [0.5.3] - 2026-01-27
 - Faster @ reference search navigation
 - Workspace management to enable parallel development
