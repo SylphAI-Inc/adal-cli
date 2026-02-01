@@ -8,6 +8,22 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.6.0] - 2026-01-31
+- Parallel tool calls for ~50% faster execution and lower token cost
+- Lightning-fast memory compaction averaging 8s with more effective context retention
+- Better error handling with faster failure on context overflow
+- More accurate @ reference search navigation
+- Improved agent memory management
+- Improved session resume with consistent thinking content and message counts
+- Skills auto-update and improved UI
+- Supported using skills CLI to install skills to AdaL
+- Changed default model to Claude Opus 4.5
+- Clearer /init onboarding experience
+- Added 'i' keyboard shortcut in dialogs to open documentation
+- Supported Mermaid diagram rendering
+- Fixed table border misalignment and code block highlighting in answer rendering
+- Added current model name below the input box
+
 ## [0.5.4] - 2026-01-28
 - Minor bug fixes for compaction and session resume
 
