@@ -8,6 +8,13 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.6.1] - 2026-02-02
+- Simplified thinking mode from 3 modes to 2 modes (on/off)
+- Better scrolling experience with automatic scroll-to-bottom on query submission
+- Automatic retry logic for network errors
+- Better error handling and recovery
+- Minor bug fixes
+
 ## [0.6.0] - 2026-01-31
 - Parallel tool calls for ~50% faster execution and lower token cost
 - Lightning-fast memory compaction averaging 8s with more effective context retention
