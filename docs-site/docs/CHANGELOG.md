@@ -8,6 +8,13 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.6.2] - 2026-02-05
+- Added Claude Opus 4.6 day 1 support (/model)
+- Improved error handling and retry experience
+- Smoother tool cancellation experience
+- Improved workspace management to enable parallel development
+- Optimized UI display for input area and toggle displays
+
 ## [0.6.1] - 2026-02-02
 - Simplified thinking mode from 3 modes to 2 modes (on/off)
 - Better scrolling experience with automatic scroll-to-bottom on query submission
