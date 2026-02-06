@@ -8,7 +8,7 @@ const config: Config = {
   favicon: 'adal-face-logo.svg',
 
   // Set the production url of your site here
-  url: 'https://adal-cli-docs.onrender.com',
+  url: 'https://docs.sylph.ai',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For Render deployment, use root
   baseUrl: '/',
