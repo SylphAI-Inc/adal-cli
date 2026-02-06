@@ -111,16 +111,16 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Follow AdaL',
-              href: 'https://x.com/adaboringai',
+              label: 'X (Twitter)',
+              href: 'https://x.com/adalengineer',
             },
             {
               label: 'Discord',
-              href: 'https://discord.gg/sylphai',
+              href: 'https://discord.com/invite/ezzszrRZvT',
             },
             {
-              label: 'GitHub Discussions',
-              href: 'https://github.com/SylphAI-Inc/adal/discussions',
+              label: 'GitHub',
+              href: 'https://github.com/SylphAI-Inc',
             },
           ],
         },
