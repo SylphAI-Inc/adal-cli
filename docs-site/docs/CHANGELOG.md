@@ -8,6 +8,12 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.6.3] - 2026-02-05
+- Added Claude Opus 4.6 (1M context window)
+- Always-on adaptive thinking that removes the thinking toggle
+- Loading indicator UI improvements
+- Model tags and display name cleanup
+
 ## [0.6.2] - 2026-02-05
 - Added Claude Opus 4.6 day 1 support (/model)
 - Improved error handling and retry experience

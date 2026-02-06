@@ -36,7 +36,6 @@ Quick reference for all keyboard shortcuts in AdaL CLI.
 
 | Shortcut    | Action                                    |
 | ----------- | ----------------------------------------- |
-| `Tab`       | Toggle thinking mode (extended reasoning) |
 | `Shift+Tab` | Toggle auto-accept edit mode              |
 | `Ctrl+P`    | Toggle plan mode                          |
 | `Ctrl+R`    | Expand/collapse thinking content          |
@@ -44,30 +43,6 @@ Quick reference for all keyboard shortcuts in AdaL CLI.
 
 
 ## Mode Explanations
-
-### Thinking Mode (`Tab`)
-
-When enabled, AdaL shows its reasoning process:
-
-```
-[Thinking mode: ON]
-
-> How should I structure this authentication system?
-
-<thinking>
-- Need to consider security best practices
-- JWT vs session tokens
-- Password hashing algorithm choice
-- Rate limiting for login attempts
-</thinking>
-
-Here's my recommendation...
-```
-
-**When to enable:**
-- Complex architectural decisions
-- Debugging tricky issues
-- Performance optimization
 
 ### Auto-Accept Mode (`Shift+Tab`)
 
