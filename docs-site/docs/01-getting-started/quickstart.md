@@ -52,7 +52,6 @@ First run opens browser for authentication, then you're ready.
 | Shortcut | What it does |
 |----------|--------------|
 | `?` | Show all shortcuts |
-| `Tab` | Toggle thinking mode |
 | `Shift+Tab` | Toggle auto-accept edits |
 | `Ctrl+P` | Toggle plan mode |
 | `Ctrl+C` | Cancel agent streaming/running|
