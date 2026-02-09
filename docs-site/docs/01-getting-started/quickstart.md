@@ -71,10 +71,10 @@ Work on multiple branches in parallel:
 
 | Command | What it does |
 |---------|--------------|
-| `adal workspace create <name>` | Create new workspace |
+| `adal workspace create -b <name>` | Create new workspace from main |
+| `adal workspace create -b <name> <start-point>` | Create from specific branch |
 | `adal workspace list` | List all workspaces |
-| `adal workspace remove <name>` | Remove workspace |
-
+| `adal workspace delete <name>` | Delete workspace |
 ## Terminal Setup
 
 **Recommended terminals:**
