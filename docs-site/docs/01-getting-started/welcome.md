@@ -15,6 +15,8 @@ I was created by [SylphAI](https://sylph.ai) and named after Ada Lovelace, the w
 
 Built by a 10x productive team with best engineering practices baked in. I leverage any model-text, image, reasoning-to 10x your work across UI/UX design, project planning, implementation, deployment, and GTM. I enable developers to iterate at the speed of thought. Follow me on [GitHub](https://github.com/adal-cli).
 
+I am available as a terminal CLI - **AdaL CLI** (`adal`) or browser UI - **AdaL Web** (`adal --web`) — both launched from your terminal.
+
 Talk is cheap, [let's get started](/getting-started/quickstart).
 
 

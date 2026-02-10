@@ -8,6 +8,12 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.7.0] - 2026-02-10
+- AdaL Web (Preview): a new browser-based interface for AdaL that can access core capabilities (`adal --web`)
+- Blazing-fast file search performance
+- Smarter auto-retry for model provider issues
+- Recommended models section in /model for quick access to top picks
+
 ## [0.6.3] - 2026-02-05
 - Added Claude Opus 4.6 (1M context window)
 - Always-on adaptive thinking that removes the thinking toggle
