@@ -164,29 +164,40 @@ Keep your session focused and clean:
 Create isolated workspaces to work on different features simultaneously without switching branches:
 
 ```bash
-# Create workspace
-adal workspace create feature-auth
-# ✓ Created workspace-feature-auth-main
-#   Path: /path/to/project/.adal_workspace/workspace-feature-auth
-#   Base: main
-#
-# To start working:
-#   cd /path/to/project/.adal_workspace/workspace-feature-auth && adal
+# Create workspace from main (default)
+adal workspace create -b feature-auth
+
+# Create workspace from a specific branch
+adal workspace create -b feature-auth develop
+
+# Create workspace from remote branch
+adal workspace create -b hotfix origin/main
 
 # Start working in workspace
 cd .adal_workspace/workspace-feature-auth && adal
 
 # In another terminal, create second workspace
-adal workspace create feature-payments
+adal workspace create -b feature-payments
 cd .adal_workspace/workspace-feature-payments && adal
 
 # Check workspaces
 adal workspace list
 
-# Remove when done
-adal workspace remove feature-auth
+# Delete when done (use -f to force delete with unsaved changes)
+adal workspace delete feature-auth
 ```
 
+**Environment files are copied automatically.** When you create a workspace, AdaL copies your `.env` files so API keys and secrets are available without manual setup.
+
+Customize what gets copied with `.adal_workspace_config` in your project root:
+
+```ini
+[copy]
+include = .env
+include = config/*.json
+```
+
+Add any files your workspaces need — database configs, local settings, credential files — and they'll be included automatically on `workspace create`.
 
 
 ## Best Practices
