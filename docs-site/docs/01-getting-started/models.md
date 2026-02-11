@@ -18,13 +18,13 @@ Select from frontier models optimized for engineering tasks:
 ```
 > Select Model
 
-  ● 1. Claude Opus 4.5           Anthropic • 200K tokens • Default
-  ○ 2. Claude Opus 4.6           Anthropic • 200K tokens • New
-  ○ 3. Claude Opus 4.6 (1M)      Anthropic • 1M tokens • New
+  ● 1. Claude Opus 4.5           Anthropic • 200K tokens
+  ○ 2. Claude Opus 4.6           Anthropic • 200K tokens
+  ○ 3. Claude Opus 4.6 (1M)      Anthropic • 1M tokens
   ○ 4. Claude Sonnet 4.5         Anthropic • 200K tokens
-  ○ 5. Claude Haiku 4.5          Anthropic • 200K tokens • Fast
+  ○ 5. Claude Haiku 4.5          Anthropic • 200K tokens
   ○ 6. Gemini 3 Pro              Google • 1M tokens
-  ○ 7. Gemini 3 Flash            Google • 1M tokens • Fast
+  ○ 7. Gemini 3 Flash            Google • 1M tokens
   ○ 8. Gemini 2.5 Pro            Google • 1M tokens
   ○ 9. GPT-4.1                   OpenAI • 1M tokens
 ```
