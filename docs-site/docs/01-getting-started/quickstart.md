@@ -17,7 +17,7 @@ npm install -g @sylphai/adal-cli
 
 ## Launch
 
-Open any terminal (VS Code, iTerm, PowerShell, Linux shell, etc.), `cd` to your working directory, and run:
+Open any terminal (VS Code, iTerm, macOS Terminal (macOS 26+ supports AdaL themes better), PowerShell, Linux shell, etc.), `cd` to your working directory, and run:
 
 ### AdaL CLI (default)
 
