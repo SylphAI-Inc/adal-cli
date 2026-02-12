@@ -8,6 +8,14 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.7.1] - 2026-02-12
+- Improved @ search by skipping autocomplete when a space follows @
+- Fixed file editing issues on Windows
+- Reduced hallucination and improved error self-recovery
+- Bash confirmation dialog now shows agent description for better context
+- AdaL Web: smart scrolling with automatic scroll-to-bottom on query submission
+- AdaL Web: added AGENTS.md creation in the sidebar
+
 ## [0.7.0] - 2026-02-10
 - AdaL Web (Preview): a new browser-based interface for AdaL that can access core capabilities (`adal --web`)
 - Blazing-fast file search performance

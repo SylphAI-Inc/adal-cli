@@ -26,6 +26,7 @@ AdaL Web shares the same agent engine and backend as AdaL CLI. Core capabilities
 - Conduct tasks with all tools, such as read, edit, web search, bash tools.
 - Toggles for model selection, plan mode, auto-approve edits
 - Image upload and select project files as context from the sidebar
+- AGENTS.md creation from the sidebar
 - One-click memory compaction from the sidebar
 - Resume previous conversations from the sidebar
 
