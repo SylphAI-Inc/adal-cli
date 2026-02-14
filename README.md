@@ -11,6 +11,14 @@
   [![Docs](https://img.shields.io/badge/docs-docs.sylph.ai-blue)](https://docs.sylph.ai)
   [![Discord](https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white)](https://discord.com/invite/ezzszrRZvT)
   [![X](https://img.shields.io/badge/follow-%40adalengineer-black?logo=x)](https://x.com/adalengineer)
+
+  <br />
+
+  <a href="https://www.youtube.com/watch?v=3kLl0V4uDR8">
+    <img src="https://img.youtube.com/vi/3kLl0V4uDR8/maxresdefault.jpg" alt="AdaL CLI Demo" width="600" />
+  </a>
+  <br />
+  <a href="https://www.youtube.com/watch?v=3kLl0V4uDR8">▶️ Watch the demo on YouTube</a>
 </div>
 
 ---
