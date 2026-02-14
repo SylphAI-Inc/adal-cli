@@ -17,6 +17,8 @@ Built by a 10x productive team with best engineering practices baked in. I lever
 
 I am available as a terminal CLI - **AdaL CLI** (`adal`) or browser UI - **AdaL Web** (`adal --web`) — both launched from your terminal.
 
+[> Watch the demo on YouTube](https://www.youtube.com/watch?v=3kLl0V4uDR8)
+
 Talk is cheap, [let's get started](/getting-started/quickstart).
 
 
