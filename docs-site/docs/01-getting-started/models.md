@@ -18,15 +18,27 @@ Select from frontier models optimized for engineering tasks:
 ```
 > Select Model
 
-  ● 1. Claude Opus 4.5           Anthropic • 200K tokens
-  ○ 2. Claude Opus 4.6           Anthropic • 200K tokens
-  ○ 3. Claude Opus 4.6 (1M)      Anthropic • 1M tokens
-  ○ 4. Claude Sonnet 4.5         Anthropic • 200K tokens
-  ○ 5. Claude Haiku 4.5          Anthropic • 200K tokens
-  ○ 6. Gemini 3 Pro              Google • 1M tokens
-  ○ 7. Gemini 3 Flash            Google • 1M tokens
-  ○ 8. Gemini 2.5 Pro            Google • 1M tokens
-  ○ 9. GPT-4.1                   OpenAI • 1M tokens
+Switch AI model for this project. 22 models available
+
+Recommended
+
+● Claude Sonnet 4.6 ✓     Anthropic • 200K
+○ Claude Opus 4.6         Anthropic • 200K
+○ Gemini 3 Pro            Google • 1M
+○ Gemini 3 Flash          Google • 1M
+○ GPT-5.2 Codex           OpenAI • 400K
+○ MiniMax M2.5            MiniMax • 200K
+○ MiniMax M2.5 Highspeed  MiniMax • 200K
+
+Providers
+
+○ Anthropic ✓           7 models →
+○ OpenAI                8 models →
+○ Google                3 models →
+○ MiniMax               2 models →
+○ Ollama                2 models →
+
+↑↓ navigate · Enter select/open · Press i for info · Esc exit
 ```
 
 Your selection also applies to future AdaL CLI sessions in this project.
@@ -59,10 +71,19 @@ All pricing shown per **million tokens (MTok)**. Caching significantly reduces c
 | **Gemini 3 Flash** | Google | $0.50 | $3 | 90% off | Ultra-fast, 1M context |
 | **Claude Haiku 4.5** | Anthropic | $1 | $5 | 90% off | Quick tasks |
 
-<!-- ### Coming Soon
-- **GPT-5.2** (OpenAI) - Next-gen reasoning model
-- **GPT-5-Codex** (OpenAI) - Specialized coding variant
-- **Ollama** - Open source local models (FREE, runs offline) -->
+## Local Models (Preview)
+
+Run AI models entirely on your machine — no API key, no cloud costs, no data leaving your device.
+
+AdaL supports local models via [Ollama](https://ollama.ai). Once Ollama is running with a model pulled, select it from `/model` under the **Local** section.
+
+```bash
+/model   # scroll to Ollama section → select a model
+```
+
+Supported models include `GPT-OSS 20B` and `Qwen3-Coder 30B`. Local models are free to use but require a capable GPU/CPU.
+
+→ **[Full setup guide: Local Models with Ollama](../03-features/local-models.md)**
 
 
 ## Key Features
