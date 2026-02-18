@@ -29,5 +29,6 @@ AdaL Web shares the same agent engine and backend as AdaL CLI. Core capabilities
 - AGENTS.md creation from the sidebar
 - One-click memory compaction from the sidebar
 - Resume previous conversations from the sidebar
+- Diff viewer in the sidebar for reviewing changes
 
 Both AdaL interfaces (CLI and Web) connect to the same backend — your project context, session history, and more are shared.
