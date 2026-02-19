@@ -56,11 +56,22 @@ Please include:
 - AdaL CLI version (`adal -v`)
 - OS and terminal
 
+### 📬 Stay Updated
+
+Want to receive notifications for new issues and updates? See our [Contributing Guide](CONTRIBUTING.md#-getting-notifications-for-issues) for instructions on:
+- Watching the repository
+- Subscribing to specific issues
+- Configuring notification preferences
+
 ## 📝 Contributing
 
-We welcome documentation improvements!
+We welcome documentation improvements! See our full [Contributing Guide](CONTRIBUTING.md) for details on:
+- Getting notifications for issues and updates
+- Reporting bugs and requesting features
+- Contributing documentation improvements
+- Pull request process
 
-### Quick Edits
+### Quick Start
 
 1. Find the page you want to fix at [docs.sylph.ai](https://docs.sylph.ai)
 2. Locate the corresponding file in `docs-site/docs/`
@@ -74,12 +85,6 @@ npm install
 npm run start    # Dev server at http://localhost:3000
 npm run build    # Production build
 ```
-
-### Guidelines
-
-- Keep docs clear and concise
-- Test changes locally with `npm run build`
-- Follow existing formatting conventions
 
 ## Project Structure
 
