@@ -8,6 +8,22 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.8.0] - 2026-02-19
+- Improved agentic tool use and communication across all models
+- New models - Google: Gemini 3.1 Pro
+- New models - MiniMax: M2.5 and M2.5 Highspeed
+- New models - Anthropic: Claude Sonnet 4.6
+- New models — OpenAI: GPT-5.2 Codex and 9 more
+- Redesigned /model dialog with provider-specific sections
+- Suppoprted click to expand and collapse for lengthy display
+- Improved diff view with inline change highlighting
+- Overlay-style floating header on the top right corner
+- New theme selection with configurable terminal background
+- New user query UI design
+- Improved bash confirmation dialog layout
+- AdaL Web: real-time git branch updates and auto-refresh file explorer on branch change
+- AdaL Web: diff viewer in the sidebar for reviewing changes
+
 ## [0.7.1] - 2026-02-12
 - Improved @ search by skipping autocomplete when a space follows @
 - Fixed file editing issues on Windows

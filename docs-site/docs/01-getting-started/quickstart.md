@@ -33,7 +33,7 @@ adal --web
 
 This automatically opens AdaL in your default browser. Same agent capabilities as AdaL CLI — file editing, web search, code generation, etc — with a graphical interface. 
 
-[Learn more about AdaL Web→](./adal-web.md)
+→ **[Learn more about AdaL Web](./adal-web.md)**
 
 First run opens browser for authentication, then you're ready.
 

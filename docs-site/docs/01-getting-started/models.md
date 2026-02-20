@@ -1,9 +1,9 @@
 ---
 sidebar_position: 2
-title: Models & Pricing
+title: Models & Billing
 ---
 
-# Models & Pricing
+# Models & Billing
 
 AdaL gives you access to the best AI models from leading providers—all in one CLI. Switch models instantly with `/model` to match your task needs and budget.
 
@@ -18,52 +18,81 @@ Select from frontier models optimized for engineering tasks:
 ```
 > Select Model
 
-  ● 1. Claude Opus 4.5           Anthropic • 200K tokens
-  ○ 2. Claude Opus 4.6           Anthropic • 200K tokens
-  ○ 3. Claude Opus 4.6 (1M)      Anthropic • 1M tokens
-  ○ 4. Claude Sonnet 4.5         Anthropic • 200K tokens
-  ○ 5. Claude Haiku 4.5          Anthropic • 200K tokens
-  ○ 6. Gemini 3 Pro              Google • 1M tokens
-  ○ 7. Gemini 3 Flash            Google • 1M tokens
-  ○ 8. Gemini 2.5 Pro            Google • 1M tokens
-  ○ 9. GPT-4.1                   OpenAI • 1M tokens
+Switch AI model for this project. 24 models available
+
+Recommended
+
+● Claude Sonnet 4.6 ✓     Anthropic • 200K
+○ Claude Opus 4.6         Anthropic • 200K
+○ Gemini 3.1 Pro          Google • 1M
+○ Gemini 3 Flash          Google • 1M
+○ GPT-5.2 Codex           OpenAI • 400K
+○ MiniMax M2.5            MiniMax • 200K
+○ MiniMax M2.5 Highspeed  MiniMax • 200K
+
+Providers
+
+○ Anthropic ✓           7 models →
+○ OpenAI               11 models →
+○ Google                4 models →
+○ MiniMax               2 models →
+
+↑↓ navigate · Enter select/open · Press i for info · Esc exit
 ```
 
-Your selection also applies to future AdaL CLI sessions in this project.
+Your selection persists across future AdaL sessions in this project.
 
-## Pricing
+## Recommended Models
 
-All pricing shown per **million tokens (MTok)**. Caching significantly reduces costs for repeated context.
+These are our top picks, balancing capability, speed, and cost:
 
-### Flagship Models
+| Model | Provider | Context | Best For |
+|-------|----------|---------|----------|
+| **Claude Sonnet 4.6** | Anthropic | 200K | Daily coding, cost-effective reasoning |
+| **Claude Opus 4.6** | Anthropic | 200K | Complex reasoning, production-quality code |
+| **Gemini 3.1 Pro** | Google | 1M | Flagship reasoning, advanced agentic capabilities |
+| **Gemini 3 Flash** | Google | 1M | Ultra-fast responses, budget-friendly |
+| **GPT-5.2 Codex** | OpenAI | 400K | Coding-optimized, large codebase support |
+| **MiniMax M2.5** | MiniMax | 200K | Strong reasoning at competitive pricing |
+| **MiniMax M2.5 Highspeed** | MiniMax | 200K | Strong and fast |
 
-| Model | Provider | Input ($/M) | Output ($/M) | Cache | Best For |
-|-------|----------|-------------|--------------|-------|----------|
-| **Claude Opus 4.5** | Anthropic | $5 | $25 | 90% off | Complex reasoning, production code |
-| **Claude Opus 4.6** | Anthropic | $5 | $25 | 90% off | Latest reasoning, production code |
-| **Claude Opus 4.6 (1M)** | Anthropic | $10 | $37.50 | 90% off | Extended context for large codebases |
-| **Claude Sonnet 4.5** | Anthropic | $3 | $15 | 90% off | Daily coding, balanced cost |
-| **Gemini 3 Pro** | Google | $2 | $12 | 75% off | Multimodal reasoning, 1M context |
-| **Gemini 2.5 Pro** | Google | $1.25 | $10 | 75% off | Multimodal reasoning, 1M context |
+## All Models by Provider
 
-### Mid-Tier Models
+### Anthropic (7 models)
 
-| Model | Provider | Input ($/M) | Output ($/M) | Cache | Best For |
-|-------|----------|-------------|--------------|-------|----------|
-| **GPT-4.1** | OpenAI | $2 | $8 | 75% off | 1M context, large codebases |
+- **Claude Sonnet 4.6** — Default model, adaptive thinking, 200K context
+- **Claude Sonnet 4.6 (1M)** — Extended 1M context for large codebases
+- **Claude Opus 4.6** — Top-tier reasoning, 200K context
+- **Claude Opus 4.6 (1M)** — Extended 1M context variant
+- **Claude Sonnet 4.5** — Previous generation, solid all-rounder
+- **Claude Opus 4.5** — Previous generation flagship
+- **Claude Haiku 4.5** — Fast and lightweight for quick tasks
 
-### Budget Models
+### OpenAI (11 models)
 
-| Model | Provider | Input ($/M) | Output ($/M) | Cache | Best For |
-|-------|----------|-------------|--------------|-------|----------|
-| **Gemini 3 Flash** | Google | $0.50 | $3 | 90% off | Ultra-fast, 1M context |
-| **Claude Haiku 4.5** | Anthropic | $1 | $5 | 90% off | Quick tasks |
+- **GPT-5.2** — Latest GPT model, 400K context
+- **GPT-5.2 Codex** — Coding-optimized, 128K output, 400K context
+- **GPT-5.1** — Previous generation, 196K context
+- **GPT-5.1 Codex** — Coding-focused, 400K context
+- **GPT-5.1 Codex Max** — Extended reasoning Codex variant
+- **GPT-5** — 200K context
+- **GPT-5 Mini** — Fast and affordable, 128K context
+- **GPT-5 Codex** — Coding-focused, 200K context
+- **o4 Mini** — Fast reasoning model, 200K context
+- **GPT-4.1** — 1M context, large codebase support
+- **GPT-4.1 Mini** — 1M context, large codebase support
 
-<!-- ### Coming Soon
-- **GPT-5.2** (OpenAI) - Next-gen reasoning model
-- **GPT-5-Codex** (OpenAI) - Specialized coding variant
-- **Ollama** - Open source local models (FREE, runs offline) -->
+### Google (4 models)
 
+- **Gemini 3.1 Pro** — Latest flagship reasoning, 1M context, advanced agentic capabilities
+- **Gemini 3 Pro** — Previous flagship reasoning, 1M context, multimodal
+- **Gemini 3 Flash** — Ultra-fast, 1M context, best value
+- **Gemini 2.5 Pro** — Legacy generation, 1M context
+
+### MiniMax (2 models)
+
+- **MiniMax M2.5** — Strong reasoning at competitive pricing, 200K context
+- **MiniMax M2.5 Highspeed** — Faster variant, optimized for speed
 
 ## Key Features
 
@@ -71,14 +100,13 @@ All pricing shown per **million tokens (MTok)**. Caching significantly reduces c
 All models use adaptive thinking that automatically scales reasoning depth based on task complexity. There's no toggle—thinking is always on and adjusts itself. Perfect for debugging, architecture decisions, and complex refactoring.
 
 ### Prompt Caching
-Reusing context (files, conversation history) costs **50-90% less** with cached inputs. Caching is automatic - AdaL handles it behind the scenes.
+Reusing context (files, conversation history) costs **50-90% less** with cached inputs. Caching is automatic — AdaL handles it behind the scenes.
 
 ### Extended Context
 Handle large codebases with models supporting up to **1M tokens**:
-- Claude Opus 4.6 (1M)
-- Gemini 3 Pro (1M)
-- Gemini 2.5 Pro (1M)
-- GPT-4.1 (1M)
+- Claude Sonnet 4.6 (1M) / Opus 4.6 (1M)
+- Gemini 3.1 Pro / 3 Pro / Flash / 2.5 Pro
+- GPT-4.1
 
 Perfect for reviewing entire repositories or understanding complex systems.
 
@@ -86,11 +114,20 @@ Perfect for reviewing entire repositories or understanding complex systems.
 
 AdaL offers two billing options:
 
-1. **AdaL CLI Subscription** - Subscribe with monthly credits included. Use any model seamlessly—credits are deducted automatically based on token usage.
+1. **AdaL CLI Subscription** — Subscribe with monthly credits included. Use any model seamlessly—credits are deducted automatically based on token usage.
 
-2. **Pro + BYOAK (Bring Your Own API Key)** - Use your own API keys for supported providers (main models or supporting models) while maintaining a Pro subscription (or higher) to ensure all features work seamlessly.
+2. **Pro + BYOAK (Bring Your Own API Key)** — Use your own API keys for supported providers while maintaining a Pro subscription (or higher) to ensure all features work seamlessly.
 
-See [Pricing](https://app.adal.ml/subscription) for subscription tiers and credit details.
+See [Pricing](https://adal.sylph.ai/pricing) for subscription tiers and credit details.
 
+### Pricing Reference
+
+All models use **pay-per-token** pricing based on input and output tokens. Prompt caching reduces costs by **50–90%** on repeated context.
+
+For official pricing from each provider:
+- [Anthropic](https://docs.claude.com/en/docs/about-claude/pricing)
+- [OpenAI](https://openai.com/api/pricing/)
+- [Google](https://ai.google.dev/pricing)
+- [MiniMax](https://platform.minimax.io/docs/pricing/pay-as-you-go)
 
 **Related:** [Quickstart](./quickstart.md) · [Input Methods](./input-methods.md) · [BYOAK](../03-features/bring-your-own-api-key.md)
