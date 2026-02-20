@@ -18,13 +18,13 @@ Select from frontier models optimized for engineering tasks:
 ```
 > Select Model
 
-Switch AI model for this project. 23 models available
+Switch AI model for this project. 24 models available
 
 Recommended
 
 ● Claude Sonnet 4.6 ✓     Anthropic • 200K
 ○ Claude Opus 4.6         Anthropic • 200K
-○ Gemini 3 Pro            Google • 1M
+○ Gemini 3.1 Pro          Google • 1M
 ○ Gemini 3 Flash          Google • 1M
 ○ GPT-5.2 Codex           OpenAI • 400K
 ○ MiniMax M2.5            MiniMax • 200K
@@ -34,7 +34,7 @@ Providers
 
 ○ Anthropic ✓           7 models →
 ○ OpenAI               11 models →
-○ Google                3 models →
+○ Google                4 models →
 ○ MiniMax               2 models →
 
 ↑↓ navigate · Enter select/open · Press i for info · Esc exit
@@ -50,7 +50,7 @@ These are our top picks, balancing capability, speed, and cost:
 |-------|----------|---------|----------|
 | **Claude Sonnet 4.6** | Anthropic | 200K | Daily coding, cost-effective reasoning |
 | **Claude Opus 4.6** | Anthropic | 200K | Complex reasoning, production-quality code |
-| **Gemini 3 Pro** | Google | 1M | Multimodal reasoning, large context |
+| **Gemini 3.1 Pro** | Google | 1M | Flagship reasoning, advanced agentic capabilities |
 | **Gemini 3 Flash** | Google | 1M | Ultra-fast responses, budget-friendly |
 | **GPT-5.2 Codex** | OpenAI | 400K | Coding-optimized, large codebase support |
 | **MiniMax M2.5** | MiniMax | 200K | Strong reasoning at competitive pricing |
@@ -82,11 +82,12 @@ These are our top picks, balancing capability, speed, and cost:
 - **GPT-4.1** — 1M context, large codebase support
 - **GPT-4.1 Mini** — 1M context, large codebase support
 
-### Google (3 models)
+### Google (4 models)
 
-- **Gemini 3 Pro** — Flagship reasoning, 1M context, multimodal
+- **Gemini 3.1 Pro** — Latest flagship reasoning, 1M context, advanced agentic capabilities
+- **Gemini 3 Pro** — Previous flagship reasoning, 1M context, multimodal
 - **Gemini 3 Flash** — Ultra-fast, 1M context, best value
-- **Gemini 2.5 Pro** — Previous generation, 1M context
+- **Gemini 2.5 Pro** — Legacy generation, 1M context
 
 ### MiniMax (2 models)
 
@@ -104,7 +105,7 @@ Reusing context (files, conversation history) costs **50-90% less** with cached 
 ### Extended Context
 Handle large codebases with models supporting up to **1M tokens**:
 - Claude Sonnet 4.6 (1M) / Opus 4.6 (1M)
-- Gemini 3 Pro / Flash / 2.5 Pro
+- Gemini 3.1 Pro / 3 Pro / Flash / 2.5 Pro
 - GPT-4.1
 
 Perfect for reviewing entire repositories or understanding complex systems.
