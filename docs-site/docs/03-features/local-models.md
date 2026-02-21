@@ -1,7 +1,6 @@
 ---
 sidebar_position: 6
 title: Local Models
-draft: true
 ---
 
 # Use AdaL with Local Models
@@ -67,7 +66,6 @@ Larger models produce better results but require more memory. On Apple Silicon M
 
 - **No image input** — local models are text-only
 - **Slower response** — depends on your hardware
-- **No prompt caching** — no cost savings from caching (but also no cost at all)
 - Tool calling quality varies by model
 
 ## Troubleshooting

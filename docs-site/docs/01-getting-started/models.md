@@ -94,6 +94,20 @@ These are our top picks, balancing capability, speed, and cost:
 - **MiniMax M2.5** — Strong reasoning at competitive pricing, 200K context
 - **MiniMax M2.5 Highspeed** — Faster variant, optimized for speed
 
+## Local Models (Preview)
+
+Run AI models entirely on your machine — no API key, no cloud costs, no data leaving your device.
+
+AdaL supports local models via [Ollama](https://ollama.ai). Once Ollama is running with a model pulled, select it from `/model` under the **Local** section.
+
+```bash
+/model # scroll to Ollama section → select a model
+```
+
+Supported models include `GPT-OSS 20B` and `Qwen3-Coder 30B`. Local models are free to use but require a capable GPU/CPU.
+
+→ **[Full setup guide: Local Models with Ollama](../03-features/local-models.md)**
+
 ## Key Features
 
 ### Adaptive Thinking
