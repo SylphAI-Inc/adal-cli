@@ -8,6 +8,15 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.8.2] - 2026-02-21
+- Faster MCP startup
+- Sync MCP tools when switching models
+
+## [0.8.1] - 2026-02-21
+- Added read image tool to analyze images directly
+- Improved file editing with fewer retries and more reliable edits
+- Local model support via ollama (preview)
+
 ## [0.8.0] - 2026-02-19
 - Improved agentic tool use and communication across all models
 - New models - Google: Gemini 3.1 Pro
@@ -15,7 +24,7 @@ All notable changes to AdaL CLI will be documented in this file.
 - New models - Anthropic: Claude Sonnet 4.6
 - New models — OpenAI: GPT-5.2 Codex and 9 more
 - Redesigned /model dialog with provider-specific sections
-- Suppoprted click to expand and collapse for lengthy display
+- Supported click to expand and collapse for lengthy display
 - Improved diff view with inline change highlighting
 - Overlay-style floating header on the top right corner
 - New theme selection with configurable terminal background
