@@ -68,6 +68,19 @@ Now refactor the auth system step by step, running tests after each change
 ```
 
 
+## Generate & Analyze Images
+
+```
+Generate an image of a futuristic city at sunset
+
+Create 4 variants of a logo design for a coffee shop
+
+Read this screenshot and explain the layout issue
+```
+
+AdaL generates images using Google Gemini models. Use `n` for multiple variants from the same prompt. See [Image Generation & Analysis](../features/image-generation) for details.
+
+
 ## Web Search
 
 ```
