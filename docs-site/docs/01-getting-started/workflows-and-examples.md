@@ -200,6 +200,31 @@ include = config/*.json
 Add any files your workspaces need — database configs, local settings, credential files — and they'll be included automatically on `workspace create`.
 
 
+## Quick Reference
+
+| Task | How to Ask AdaL |
+|------|-----------------|
+| **Generate image** | "Generate an image of a sunset over mountains" |
+| **Multiple variants** | "Generate 4 variants of a logo design" |
+| **Analyze image** | "Read this screenshot and tell me what's wrong" |
+| **Web search** | "Search for React best practices" |
+| **Read file** | "@src/utils/helper.ts summarize this" |
+| **Edit file** | "@src/app.py fix the bug at line 42" |
+| **Run tests** | "Run pytest for the auth module" |
+| **Debug error** | "I'm getting TypeError at line X" |
+
+### Common Slash Commands
+
+```
+/help         # Show available commands
+/clear        # Clear context and start fresh
+/compact      # Summarize and reduce context
+/resume       # Resume previous session
+/stats        # Show session info
+/quit         # Exit
+```
+
+
 ## Best Practices
 
 **Prompts:**
