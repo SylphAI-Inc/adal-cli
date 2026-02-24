@@ -45,6 +45,7 @@ Pre-configured by the AdaL CLI team. Just use the name - no flags needed.
 | `postgres` | Conn String | `/mcp add postgres <connection_string>` |
 | `filesystem` | None | `/mcp add filesystem` |
 | `playwright` | None | `/mcp add playwright` |
+| `chrome-devtools` | None | `/mcp add chrome-devtools` |
 | `brave-search` | API Key | `/mcp add brave-search` |
 
 #### Setting Up Shortcuts
@@ -80,7 +81,6 @@ For any MCP package not in the shortcut list. Use `--command` and `--args` flags
 #### NPM Packages
 
 ```bash
-/mcp add chrome-devtools --command npx --args "-y,chrome-devtools-mcp@latest"
 /mcp add airtable --command npx --args "-y,airtable-mcp-server" --env "AIRTABLE_API_KEY=xxx"
 ```
 
