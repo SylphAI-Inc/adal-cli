@@ -16,7 +16,7 @@ Draw a cute cartoon dog with a red hat
 Create a minimalist logo for a coffee shop
 ```
 
-AdaL uses Google's Gemini image models to generate high-quality images and saves them to your project directory.
+AdaL uses Google's Gemini image models (including Nano Banana / `gemini-2.5-flash-image`) to generate high-quality images and saves them to your project directory.
 
 ### Variants
 
