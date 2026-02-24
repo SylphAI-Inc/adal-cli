@@ -1,11 +1,12 @@
 ---
 sidebar_position: 2
 title: Models & Billing
+description: "AdaL supports 24+ AI models — Claude Sonnet/Opus, GPT-5, Gemini 3, MiniMax, and local models via Ollama. Switch models instantly. Pay-per-token with prompt caching for 50-90% savings."
 ---
 
 # Models & Billing
 
-AdaL gives you access to the best AI models from leading providers—all in one CLI. Switch models instantly with `/model` to match your task needs and budget.
+AdaL gives you access to the best AI models from leading providers — all in one CLI. Switch models instantly with `/model` to match your task needs and budget.
 
 ## Switching Models
 

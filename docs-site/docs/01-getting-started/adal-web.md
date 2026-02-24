@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
-title: AdaL Web (New)
+title: AdaL Web — Browser UI
+description: "AdaL Web is a browser-based AI coding agent interface. Same capabilities as AdaL CLI — file editing, web search, code generation — with a graphical UI. Launch with adal --web."
 ---
 
 # AdaL Web (Preview)

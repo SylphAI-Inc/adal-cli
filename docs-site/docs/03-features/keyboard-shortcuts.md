@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Keyboard Shortcuts
+description: "All keyboard shortcuts for AdaL CLI — input editing, plan mode, auto-accept edits, thinking toggle, and history navigation."
 ---
 
 # Keyboard Shortcuts

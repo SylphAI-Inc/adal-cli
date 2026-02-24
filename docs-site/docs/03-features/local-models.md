@@ -1,9 +1,10 @@
 ---
 sidebar_position: 6
-title: Local Models
+title: Local Models (Ollama)
+description: "Run AI coding agents locally with Ollama — no API key, no cloud costs, no data leaving your device. Use GPT-OSS, Qwen3-Coder, and other open-source models with AdaL."
 ---
 
-# Use AdaL with Local Models
+# Use AdaL with Local Models (Ollama)
 
 Run AI models entirely on your own machine — no API key, no cloud costs, no data leaving your device. AdaL integrates with [Ollama](https://ollama.com) to let you use open-source models locally.
 

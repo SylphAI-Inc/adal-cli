@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
-title: Bring Your Own API Key
+title: Bring Your Own API Key (BYOAK)
+description: "Use your own Anthropic, OpenAI, or Google AI API keys with AdaL. Mix and match providers — use your key for one, AdaL credits for another."
 sidebar_label: BYOAK
 ---
 

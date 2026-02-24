@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3.5
-title: Skills
+title: Skills & Plugins
+description: "Extend AdaL with Skills — reusable domain expertise for coding agents. Compatible with Claude Code skills. Install from Anthropic, Hugging Face, and community marketplaces. Create custom skills for your team."
 ---
 
 # Skills
@@ -250,4 +251,14 @@ When skills have the same name, first-loaded wins:
 | `~/.adal/settings.json` | Plugin settings |
 
 
-**Related:** [Slash Commands](./slash-commands.md) · [MCP Support](./mcp-support-proposed.md)
+## Skills vs Other Approaches
+
+| Approach | Pros | Cons |
+|----------|------|------|
+| **Skills** | On-demand loading, no running processes, team-shareable via git | Markdown-based (not real-time APIs) |
+| **MCP Servers** | Real-time API access, standard protocol | Requires running processes, more setup |
+| **AGENTS.md** | Simple, always loaded | All-or-nothing (no selective loading) |
+
+Use **Skills** for domain expertise and workflows, **MCP** for real-time tool access, and **AGENTS.md** for project-wide context. They complement each other.
+
+**Related:** [Slash Commands](./slash-commands.md) · [MCP Servers](./mcp-support-proposed.md) · [Workflows & Examples](../01-getting-started/workflows-and-examples.md)

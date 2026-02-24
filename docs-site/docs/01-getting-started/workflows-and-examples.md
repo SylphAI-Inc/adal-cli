@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 title: Workflows & Examples
+description: "Practical AI coding patterns with AdaL — debug issues, refactor code, generate tests, create PRs, search the web, generate images, and manage work sessions."
 ---
 
 # Workflows & Examples

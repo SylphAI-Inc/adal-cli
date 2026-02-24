@@ -1,6 +1,7 @@
 ---
 sidebar_position: 0
 title: Slash Commands
+description: "Complete reference for AdaL CLI slash commands — model switching, MCP server management, session control, plugins, AGENTS.md generation, and more."
 ---
 
 # Slash Commands

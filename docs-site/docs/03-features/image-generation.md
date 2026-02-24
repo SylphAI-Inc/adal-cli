@@ -1,8 +1,10 @@
 ---
 sidebar_position: 7
+title: Image Generation & Analysis
+description: "Generate AI images from text prompts and analyze screenshots directly in AdaL. Uses Google Gemini Nano Banana models. Support for multiple variants, aspect ratios, and resolutions."
 ---
 
-# Image Generation & Analysis
+# AI Image Generation & Analysis
 
 AdaL can generate images from text prompts and analyze existing images directly in your workflow.
 
@@ -61,4 +63,5 @@ PNG, JPEG, GIF, WEBP
 ## Related
 
 - [Web Search](./web-search.md)
+- [Input Methods](../getting-started/input-methods) — Paste and analyze images
 - [Slash Commands](./slash-commands.md)

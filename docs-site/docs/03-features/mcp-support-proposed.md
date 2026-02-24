@@ -1,11 +1,12 @@
 ---
 sidebar_position: 3
-title: MCP
+title: MCP Servers
+description: "Connect AdaL to Linear, GitHub, Notion, Slack, PostgreSQL, Playwright, and more using MCP (Model Context Protocol). Add servers in seconds with built-in shortcuts or custom configurations."
 ---
 
-# Connect AdaL CLI to Tools via MCP
+# Connect AdaL to Tools via MCP (Model Context Protocol)
 
-Connect AdaL to Linear, GitHub, Notion, databases, and more using MCP (Model Context Protocol).
+Connect AdaL to Linear, GitHub, Notion, databases, and more using [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) — the open standard for connecting AI agents to external tools and data sources.
 
 ## Quick Start (2 minutes)
 
@@ -182,3 +183,14 @@ source ~/.zshrc
 
 **Postgres**:
 > "Count users by status in the users table"
+
+## Why MCP with AdaL?
+
+MCP (Model Context Protocol) is the emerging open standard for connecting AI agents to external tools. AdaL's MCP support means you can:
+
+- **Use the same MCP servers** you'd use with Claude Desktop, Cursor, or other MCP-compatible clients
+- **Manage servers from the CLI** — no config files to edit manually
+- **OAuth built-in** — one-click auth for Linear, Notion, Sentry
+- **Enable/disable on the fly** — save tokens by only loading what you need
+
+**Related:** [Skills & Plugins](./plugins-and-skills.md) · [Slash Commands](./slash-commands.md) · [Keyboard Shortcuts](./keyboard-shortcuts.md)
