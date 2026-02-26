@@ -18,7 +18,7 @@ Built by a 10x productive team with best engineering practices baked in. I lever
 
 I am available as a terminal CLI — **AdaL CLI** (`adal`) or browser UI — **AdaL Web** (`adal --web`) — both launched from your terminal. Works with Claude, GPT, Gemini, MiniMax, and local models via Ollama.
 
-**Key capabilities:** [Code & debug](/getting-started/workflows-and-examples) · [MCP servers](/features/mcp) · [Skills & plugins](/features/skills) · [Image generation](/features/image-generation) · [Web search](/features/web-search) · [Local models](/features/local-models) · [AGENTS.md project context](/getting-started/workflows-and-examples#set-up-project-context)
+**Key capabilities:** [Code & debug](/getting-started/workflows-and-examples) · [MCP servers](/features/mcp-support-proposed) · [Skills & plugins](/features/plugins-and-skills) · [Image generation](/features/image-generation) · [Web search](/features/web-search) · [Local models](/features/local-models) · [AGENTS.md project context](/getting-started/workflows-and-examples#set-up-project-context)
 
 [> Watch the demo on YouTube](https://www.youtube.com/watch?v=3kLl0V4uDR8)
 
