@@ -145,4 +145,4 @@ For official pricing from each provider:
 - [Google](https://ai.google.dev/pricing)
 - [MiniMax](https://platform.minimax.io/docs/pricing/pay-as-you-go)
 
-**Related:** [Quickstart](./quickstart.md) · [Input Methods](./input-methods.md) · [BYOAK](../03-features/bring-your-own-api-key.md)
+**Related:** [Quickstart](./quickstart.md) · [Input Methods](./input-methods.md) · [BYOAK](../03-features/bring-your-own-api-key.md) · [ChatGPT Subscription](../03-features/chatgpt-subscription.md)
