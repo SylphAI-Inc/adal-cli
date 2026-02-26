@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 title: Workflows & Examples
+description: "Practical AI coding patterns with AdaL — debug issues, refactor code, generate tests, create PRs, search the web, generate images, and manage work sessions."
 ---
 
 # Workflows & Examples
@@ -66,6 +67,19 @@ Create a git branch called refactor/auth-service
 
 Now refactor the auth system step by step, running tests after each change
 ```
+
+
+## Generate & Analyze Images
+
+```
+Generate an image of a futuristic city at sunset
+
+Create 4 variants of a logo design for a coffee shop
+
+Read this screenshot and explain the layout issue
+```
+
+AdaL generates images using Google Gemini models. Use `n` for multiple variants from the same prompt. See [Image Generation & Analysis](../features/image-generation) for details.
 
 
 ## Web Search
@@ -198,6 +212,31 @@ include = config/*.json
 ```
 
 Add any files your workspaces need — database configs, local settings, credential files — and they'll be included automatically on `workspace create`.
+
+
+## Quick Reference
+
+| Task | How to Ask AdaL |
+|------|-----------------|
+| **Generate image** | "Generate an image of a sunset over mountains" |
+| **Multiple variants** | "Generate 4 variants of a logo design" |
+| **Analyze image** | "Read this screenshot and tell me what's wrong" |
+| **Web search** | "Search for React best practices" |
+| **Read file** | "@src/utils/helper.ts summarize this" |
+| **Edit file** | "@src/app.py fix the bug at line 42" |
+| **Run tests** | "Run pytest for the auth module" |
+| **Debug error** | "I'm getting TypeError at line X" |
+
+### Common Slash Commands
+
+```
+/help         # Show available commands
+/clear        # Clear context and start fresh
+/compact      # Summarize and reduce context
+/resume       # Resume previous session
+/stats        # Show session info
+/quit         # Exit
+```
 
 
 ## Best Practices

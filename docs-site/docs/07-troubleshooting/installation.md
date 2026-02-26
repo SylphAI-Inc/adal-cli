@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: Installation
+description: "Install AdaL CLI on macOS, Windows, or Linux. Requires Node.js 20+. Supports Apple Silicon, Intel, ARM64. Auto-updates included."
 ---
 
 # Installation

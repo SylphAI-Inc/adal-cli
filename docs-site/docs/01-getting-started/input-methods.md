@@ -2,6 +2,7 @@
 title: Input Methods
 sidebar_position: 3
 sidebar_label: Input Methods
+description: "How to input text, images, and files in AdaL CLI — paste, drag & drop, @ references, multi-line input, and image analysis from terminal."
 ---
 
 # How to Input Text and Images

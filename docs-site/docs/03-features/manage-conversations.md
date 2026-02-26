@@ -1,9 +1,10 @@
 ---
 sidebar_position: 2
-title: Manage/Resume Sessions
+title: Manage & Resume Sessions
+description: "Save, resume, and manage AI coding sessions in AdaL. View session stats, token usage, and browse full conversation history in your browser."
 ---
 
-# Manage/Resume Sessions
+# Manage & Resume Sessions
 
 Track activity and resume previous conversations.
 

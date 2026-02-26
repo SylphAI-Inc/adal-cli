@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: Web Search
+description: "Search the web directly from AdaL — general search, academic papers, news, images, videos, and patents. Real-time information retrieval for AI-assisted development."
 ---
 
 # Web Search
@@ -34,4 +36,5 @@ AdaL will automatically select the appropriate search type based on your query, 
 ## Related
 
 - [Slash Commands](./slash-commands.md)
-- [Skills](./plugins-and-skills.md)
+- [Skills & Plugins](./plugins-and-skills.md)
+- [Image Generation](./image-generation.md)

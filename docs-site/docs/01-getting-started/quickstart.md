@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Quickstart
+description: "Install and start using AdaL AI coding agent in 2 minutes. Works in any terminal — VS Code, iTerm, macOS Terminal, PowerShell, or Linux shell."
 ---
 
 # Quickstart
