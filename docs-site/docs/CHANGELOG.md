@@ -8,6 +8,15 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.8.3] - 2026-02-25
+- Added image generation tool via Google Gemini's Nano Banana
+- Supported using ChatGPT subscription in adal to use OpenAI models
+- Added headless mode to run adal in non-interactive CLI execution (`adal -q "query"`)
+- Supported select text to copy on all major platforms and terminals
+- Supported copy images from screenshots
+- Unified design on click to expand and collapse
+- Move status notification to display on the same row as the loading indicator for a more compact UI layout
+
 ## [0.8.2] - 2026-02-21
 - Faster MCP startup
 - Sync MCP tools when switching models
