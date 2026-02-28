@@ -8,6 +8,12 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.8.4] - 2026-02-27
+- Fixed GPT models crashing during long sessions
+- Improved context window utilization to enable longer conversations before compaction
+- Deprecated older OpenAI models (GPT-4.1, o4-mini, standard GPT-5/5.1) and prioritized Codex variants
+- Added GPT-5.2 Codex as a recommended model
+
 ## [0.8.3] - 2026-02-25
 - Added image generation tool via Google Gemini's Nano Banana
 - Supported using ChatGPT subscription in adal to use OpenAI models
