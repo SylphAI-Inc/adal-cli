@@ -8,6 +8,9 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.8.5] - 2026-02-28
+- Fixed GPT models via ChatGPT subscription returning "Unsupported parameter" errors
+
 ## [0.8.4] - 2026-02-27
 - Fixed GPT models crashing during long sessions
 - Improved context window utilization to enable longer conversations before compaction
