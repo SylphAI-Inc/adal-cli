@@ -22,11 +22,10 @@ All commands start with `/`. Type `/` and press `Tab` for autocomplete.
 | `/stats`               | Show session statistics      |
 | `/mcp`                 | Manage MCP servers           |
 | `/bashes`              | List background processes    |
-| `/auth`                | Show auth status             |
 | `/logout`              | Sign out and exit            |
 | `/quit`                | Exit AdaL CLI                |
 | `/theme`               | Change theme                 |
-| `/about`               | Show version info            |
+| `/about`               | Show version and auth status |
 | `/bug [desc]`          | Report a bug                 |
 | `/byoak`               | Bring your own API keys      |
 | `/skills`              | List loaded skills           |
