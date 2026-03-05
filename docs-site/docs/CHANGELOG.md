@@ -8,6 +8,23 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.9.0] - 2026-03-05
+- Added subagent support to improve AdaL's efficiency and performance
+- Optimized prompt caching to make AdaL 2x cost-effective
+- Added GPT-5.3 Codex and GPT-5.4 from OpenAI and set GPT-5.3 Codex as the current default model
+- Added GLM-5, GLM-4.7 FlashX and 3 more models from Zai
+- Upgraded image generation to Nano Banana 2 and enabled image editing
+- Memory optimization improvements for smoother long sessions
+- Corrected the effective input context window for all OpenAI models from 400k to 272k
+- Bug fixes in Ollama local model support
+- Refined /model panel metadata, pricing display, and selector UX
+- Removed /auth and merged auth details into /about
+- Keyboard shortcuts now respond to both lowercase and uppercase keys
+- Slash autocomplete completes commands without auto-running, allowing arguments to be added before execution
+- Fixed and optimized scrollbar behavior
+- Added context percentage display in the footer
+- Fixed inaccurate line counts in “click to expand”
+
 ## [0.8.5] - 2026-02-28
 - Fixed GPT models via ChatGPT subscription returning "Unsupported parameter" errors
 
