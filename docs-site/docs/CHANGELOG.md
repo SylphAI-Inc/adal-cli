@@ -8,10 +8,10 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
-## [0.9.0] - 2026-03-04
+## [0.9.0] - 2026-03-05
 - Added subagent support to improve AdaL's efficiency and performance
 - Optimized prompt caching to make AdaL 2x cost-effective
-- Added GPT-5.3 Codex from OpenAI and set it as the current default model
+- Added GPT-5.3 Codex and GPT-5.4 from OpenAI and set GPT-5.3 Codex as the current default model
 - Added GLM-5, GLM-4.7 FlashX and 3 more models from Zai
 - Upgraded image generation to Nano Banana 2 and enabled image editing
 - Memory optimization improvements for smoother long sessions

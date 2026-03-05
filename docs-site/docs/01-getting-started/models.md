@@ -50,8 +50,9 @@ These are our top picks, balancing capability, speed, and cost:
 - **Claude Opus 4.5**
 - **Claude Haiku 4.5**
 
-### OpenAI (7 models)
+### OpenAI (8 models)
 
+- **GPT-5.4**
 - **GPT-5.3 Codex**
 - **GPT-5.2**
 - **GPT-5.2 Codex**
