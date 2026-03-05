@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 title: Models & Billing
-description: "AdaL supports 20+ AI models — Claude Sonnet/Opus, GPT-5, Gemini 3, MiniMax, and local models via Ollama. Switch models instantly. Pay-per-token with prompt caching for 50-90% savings."
+description: "AdaL supports 20+ AI models — Claude Sonnet/Opus, GPT-5, Gemini 3, Z.ai GLM, MiniMax, and local models via Ollama. Switch models instantly. Pay-per-token with prompt caching for 50-90% savings."
 ---
 
 # Models & Billing
@@ -14,37 +14,12 @@ AdaL gives you access to the best AI models from leading providers — all in on
 /model
 ```
 
-Select from frontier models optimized for engineering tasks:
+Use `/model` to browse four sections:
 
-```
-> Select Model
-
-Switch AI model for this project. 21 models available
-
-Recommended
-
-○ Claude Sonnet 4.6      Anthropic • 200K
-○ Claude Opus 4.6        Anthropic • 200K
-○ Gemini 3.1 Pro         Google • 1M
-○ Gemini 3 Flash         Google • 1M
-○ GPT-5.2 Codex          OpenAI • 400K
-○ MiniMax M2.5           MiniMax • 200K
-○ MiniMax M2.5 Highspeed MiniMax • 200K
-
-Providers
-
-○ Anthropic  7 models →
-○ OpenAI     6 models →
-○ Google     4 models →
-○ MiniMax    2 models →
-○ Ollama     2 models →
-
-Third Party Subscriptions
-
-○ ChatGPT Subscription  Connected →
-
-↑↓ navigate · Enter select/open · Press i for info · Esc exit
-```
+- **Recommended**: curated top picks for most workflows
+- **New**: recently added models
+- **Providers**: full model lists grouped by provider
+- **Third Party Subscriptions**: OAuth-based third-party model access, such as ChatGPT Subscription
 
 Your selection persists across future AdaL sessions in this project.
 
@@ -54,46 +29,56 @@ These are our top picks, balancing capability, speed, and cost:
 
 | Model | Provider | Context | Best For |
 |-------|----------|---------|----------|
-| **Claude Sonnet 4.6** | Anthropic | 200K | Daily coding, cost-effective reasoning |
-| **Claude Opus 4.6** | Anthropic | 200K | Complex reasoning, production-quality code |
-| **Gemini 3.1 Pro** | Google | 1M | Flagship reasoning, advanced agentic capabilities |
-| **Gemini 3 Flash** | Google | 1M | Ultra-fast responses, budget-friendly |
-| **GPT-5.2 Codex** | OpenAI | 400K | Coding-optimized, large codebase support |
-| **MiniMax M2.5** | MiniMax | 200K | Strong reasoning at competitive pricing |
-| **MiniMax M2.5 Highspeed** | MiniMax | 200K | Strong and fast |
+| **GPT-5.3 Codex** | OpenAI | 272K | Coding-optimized for long-horizon tasks (default, price baseline) |
+| **Claude Sonnet 4.6** | Anthropic | 200K | Daily coding (slightly more expensive) |
+| **Claude Opus 4.6** | Anthropic | 200K | Complex reasoning, production code (2x more expensive) |
+| **Gemini 3.1 Pro** | Google | 1M | Multi-modal reasoning, design tasks (slightly cheaper) |
+| **Gemini 3 Flash** | Google | 1M | Ultra-fast, simple tasks (4x in / 5x out cheaper) |
+| **GLM-5** | Zai | 200K | General coding and reasoning (2x in / 5x out cheaper) |
+| **GLM-4.7 FlashX** | Zai | 200K | Fast budget coding (29x in / 40x out cheaper) |
+| **MiniMax M2.5 Highspeed** | MiniMax | 200K | Balanced for speed and reasoning (7x in / 4x out cheaper) |
 
 ## All Models by Provider
 
 ### Anthropic (7 models)
 
-- **Claude Sonnet 4.6** — Default model, adaptive thinking, 200K context
-- **Claude Sonnet 4.6 (1M)** — Extended 1M context for large codebases
-- **Claude Opus 4.6** — Top-tier reasoning, 200K context
-- **Claude Opus 4.6 (1M)** — Extended 1M context variant
-- **Claude Sonnet 4.5** — Previous generation, solid all-rounder
-- **Claude Opus 4.5** — Previous generation flagship
-- **Claude Haiku 4.5** — Fast and lightweight for quick tasks
+- **Claude Sonnet 4.6**
+- **Claude Sonnet 4.6 (1M)**
+- **Claude Opus 4.6**
+- **Claude Opus 4.6 (1M)**
+- **Claude Sonnet 4.5**
+- **Claude Opus 4.5**
+- **Claude Haiku 4.5**
 
-### OpenAI (6 models)
+### OpenAI (7 models)
 
-- **GPT-5.2** — General-purpose GPT model, 400K context
-- **GPT-5.2 Codex** — Coding-optimized, 400K context
-- **GPT-5 Mini** — Fast, cost-effective, 400K context
-- **GPT-5.1 Codex** — Reliable coding assistant, 400K context
-- **GPT-5.1 Codex Max** — Extended reasoning for hard problems, 400K context
-- **GPT-5 Codex** — Stable baseline Codex model, 400K context
+- **GPT-5.3 Codex**
+- **GPT-5.2**
+- **GPT-5.2 Codex**
+- **GPT-5 Mini**
+- **GPT-5.1 Codex**
+- **GPT-5.1 Codex Max**
+- **GPT-5 Codex**
 
 ### Google (4 models)
 
-- **Gemini 3.1 Pro** — Latest flagship reasoning, 1M context, advanced agentic capabilities
-- **Gemini 3 Pro** — Previous flagship reasoning, 1M context, multimodal
-- **Gemini 3 Flash** — Ultra-fast, 1M context, best value
-- **Gemini 2.5 Pro** — Legacy generation, 1M context
+- **Gemini 3.1 Pro**
+- **Gemini 3 Pro**
+- **Gemini 3 Flash**
+- **Gemini 2.5 Pro**
+
+### Zai (5 models)
+
+- **GLM-5**
+- **GLM-4.7**
+- **GLM-4.7 FlashX**
+- **GLM-4.7 Flash**
+- **GLM-4.5 Flash**
 
 ### MiniMax (2 models)
 
-- **MiniMax M2.5** — Strong reasoning at competitive pricing, 200K context
-- **MiniMax M2.5 Highspeed** — Faster variant, optimized for speed
+- **MiniMax M2.5**
+- **MiniMax M2.5 Highspeed**
 
 ## Third Party Subscriptions
 
