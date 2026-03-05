@@ -30,6 +30,7 @@ All commands start with `/`. Type `/` and press `Tab` for autocomplete.
 | `/byoak`               | Bring your own API keys      |
 | `/skills`              | List loaded skills           |
 | `/plugin`              | Manage plugins/marketplaces  |
+| `/subagent`            | Configure subagents          |
 
 
 ## Tips
