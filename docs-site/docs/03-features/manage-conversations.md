@@ -83,4 +83,4 @@ Perfect for reviewing long sessions or documenting your workflow.
 - Session metadata (timestamps, message count)
 
 
-**Related:** [Slash Commands](./slash-commands.md) · [Keyboard Shortcuts](./keyboard-shortcuts.md)
+**Related:** [Slash Commands](./slash-commands.md) · [Keyboard Shortcuts](./keyboard-shortcuts.md) · [Session Sharing](./session-sharing.md) · [Persistent Memory](./persistent-memory.md)

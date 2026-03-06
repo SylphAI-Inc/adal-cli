@@ -31,6 +31,8 @@ All commands start with `/`. Type `/` and press `Tab` for autocomplete.
 | `/skills`              | List loaded skills           |
 | `/plugin`              | Manage plugins/marketplaces  |
 | `/subagent`            | Configure subagents          |
+| `/memory`              | Browse and manage memory     |
+| `/share`               | Share current session        |
 
 
 ## Tips
@@ -39,4 +41,4 @@ All commands start with `/`. Type `/` and press `Tab` for autocomplete.
 - Run `/init` to generate AGENTS.md so that AdaL can understand your codebase better.
 - Use `/compact` after a milestone is achieved to save context and stay focused, or switch to a larger-context model via `/model` when needed.
 
-**Related:** [MCP](./mcp-support-proposed.md) · [BYOAK](./bring-your-own-api-key.md)
+**Related:** [MCP](./mcp-support-proposed.md) · [BYOAK](./bring-your-own-api-key.md) · [Session Sharing](./session-sharing.md) · [Persistent Memory](./persistent-memory.md)
