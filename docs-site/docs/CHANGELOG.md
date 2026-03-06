@@ -8,6 +8,12 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.9.1] - 2026-03-05
+- Added GPT-5.4 in ChatGPT subscription
+- Optimized cache hit rate
+- Optimized error self-recovery and subagent performance
+- AdaL Web: aligned stream/subagent behavior with AdaL CLI
+
 ## [0.9.0] - 2026-03-05
 - Added subagent support to improve AdaL's efficiency and performance
 - Optimized prompt caching to make AdaL 2x cost-effective
