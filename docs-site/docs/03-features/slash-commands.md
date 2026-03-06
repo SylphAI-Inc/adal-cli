@@ -37,6 +37,6 @@ All commands start with `/`. Type `/` and press `Tab` for autocomplete.
 
 - Use `/help` for information of all slash commands.
 - Run `/init` to generate AGENTS.md so that AdaL can understand your codebase better.
-- Use `/compact` to shrink long conversations, or switch to a larger‑context model via `/model` when needed.
+- Use `/compact` after a milestone is achieved to save context and stay focused, or switch to a larger-context model via `/model` when needed.
 
 **Related:** [MCP](./mcp-support-proposed.md) · [BYOAK](./bring-your-own-api-key.md)
