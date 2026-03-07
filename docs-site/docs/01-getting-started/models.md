@@ -36,19 +36,8 @@ These are our top picks, balancing capability, speed, and cost:
 | **Gemini 3 Flash** | Google | 1M | Ultra-fast, simple tasks (4x in / 5x out cheaper) |
 | **GLM-5** | Zai | 200K | General coding and reasoning (2x in / 5x out cheaper) |
 | **GLM-4.7 FlashX** | Zai | 200K | Fast budget coding (29x in / 40x out cheaper) |
-| **MiniMax M2.5 Highspeed** | MiniMax | 200K | Balanced for speed and reasoning (7x in / 4x out cheaper) |
 
 ## All Models by Provider
-
-### Anthropic (7 models)
-
-- **Claude Sonnet 4.6**
-- **Claude Sonnet 4.6 (1M)**
-- **Claude Opus 4.6**
-- **Claude Opus 4.6 (1M)**
-- **Claude Sonnet 4.5**
-- **Claude Opus 4.5**
-- **Claude Haiku 4.5**
 
 ### OpenAI (8 models)
 
@@ -60,6 +49,16 @@ These are our top picks, balancing capability, speed, and cost:
 - **GPT-5.1 Codex**
 - **GPT-5.1 Codex Max**
 - **GPT-5 Codex**
+
+### Anthropic (7 models)
+
+- **Claude Sonnet 4.6**
+- **Claude Sonnet 4.6 (1M)**
+- **Claude Opus 4.6**
+- **Claude Opus 4.6 (1M)**
+- **Claude Sonnet 4.5**
+- **Claude Opus 4.5**
+- **Claude Haiku 4.5**
 
 ### Google (4 models)
 
