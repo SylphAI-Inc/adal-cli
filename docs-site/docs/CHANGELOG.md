@@ -8,6 +8,13 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.9.2] - 2026-03-06
+- Improved subagent performance
+- Added automatic subagent folding after completion
+- Further optimized prompt caching
+- Added @ autocomplete directory suggestions
+- Refined /model panel UI
+
 ## [0.9.1] - 2026-03-05
 - Added GPT-5.4 in ChatGPT subscription
 - Optimized cache hit rate
