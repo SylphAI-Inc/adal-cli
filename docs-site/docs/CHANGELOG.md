@@ -8,6 +8,10 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.9.3] - 2026-03-07
+- Terminal tab title now shows AdaL
+- Bug fix in edit file path resolution
+
 ## [0.9.2] - 2026-03-06
 - Improved subagent performance
 - Added automatic subagent folding after completion
