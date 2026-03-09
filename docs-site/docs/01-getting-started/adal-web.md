@@ -1,12 +1,12 @@
 ---
 sidebar_position: 5
-title: AdaL Web — Browser UI
-description: "AdaL Web is a browser-based AI coding agent interface. Same capabilities as AdaL CLI — file editing, web search, code generation — with a graphical UI. Launch with adal --web."
+title: AdaL Web (Preview)
+description: "AdaL Web (Preview) is a browser-based AI coding agent interface. Core capabilities are available today, with full feature parity planned. Launch with adal --web."
 ---
 
 # AdaL Web (Preview)
 
-AdaL Web is a browser-based interface for AdaL, launched from the same CLI you already use.
+AdaL Web is a browser-based interface for AdaL, launched from the same CLI package you already use.
 
 ## Launch
 
@@ -24,7 +24,8 @@ AdaL Web shares the same agent engine and backend as AdaL CLI. Core capabilities
 
 ### Available Now
 
-- Conduct tasks with all tools, such as read, edit, web search, bash tools.
+- Conduct tasks with all tools, such as read, edit, web search, and bash tools
+- Subagent availability
 - Toggles for model selection, plan mode, auto-approve edits
 - Image upload and select project files as context from the sidebar
 - AGENTS.md creation from the sidebar
