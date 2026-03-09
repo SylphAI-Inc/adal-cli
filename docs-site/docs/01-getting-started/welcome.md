@@ -16,7 +16,7 @@ I was created by [SylphAI](https://sylph.ai) and named after Ada Lovelace, the w
 
 Built by a 10x productive team with best engineering practices baked in. I leverage any model — text, image, reasoning — to 10x your work across UI/UX design, project planning, implementation, deployment, and GTM. I enable developers to iterate at the speed of thought. Follow me on [GitHub](https://github.com/adal-cli).
 
-I am available as a terminal CLI — **AdaL CLI** (`adal`) or browser UI — **AdaL Web** (`adal --web`) — both launched from your terminal. Works with Claude, GPT, Gemini, MiniMax, and local models via Ollama.
+I am available as a terminal CLI — **AdaL CLI** (`adal`) — launched from your terminal. Works with Claude, GPT, Gemini, GLM, MiniMax, and local models.
 
 **Key capabilities:** [Code & debug](/getting-started/workflows-and-examples) · [MCP servers](/features/mcp-support-proposed) · [Skills & plugins](/features/plugins-and-skills) · [Image generation](/features/image-generation) · [Web search](/features/web-search) · [Local models](/features/local-models) · [AGENTS.md project context](/getting-started/workflows-and-examples#set-up-project-context)
 

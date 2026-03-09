@@ -20,21 +20,9 @@ npm install -g @sylphai/adal-cli
 
 Open any terminal (VS Code, iTerm, macOS Terminal (macOS 26+ supports AdaL themes better), PowerShell, Linux shell, etc.), `cd` to your working directory, and run:
 
-### AdaL CLI (default)
-
 ```bash
 adal
 ```
-
-### AdaL Web (Preview) — New ✨
-
-```bash
-adal --web
-```
-
-This automatically opens AdaL in your default browser. Same agent capabilities as AdaL CLI — file editing, web search, code generation, etc — with a graphical interface. 
-
-→ **[Learn more about AdaL Web](./adal-web.md)**
 
 First run opens browser for authentication, then you're ready.
 
@@ -116,7 +104,6 @@ If colors appear off in the macOS Terminal app, upgrade to macOS 26+ for full tr
 
 ## What's Next?
 
-- **[AdaL Web →](./adal-web.md)** - Browser-based interface
 - **[Workflows & Examples →](./workflows-and-examples.md)** - Practical development patterns
 - **[Slash Commands →](../03-features/slash-commands.md)** - All commands
 - **[Keyboard Shortcuts →](../03-features/keyboard-shortcuts.md)** - Full reference
