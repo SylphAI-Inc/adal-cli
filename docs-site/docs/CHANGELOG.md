@@ -8,6 +8,17 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.9.4] - 2026-03-11
+- Improved image generation reliability
+- Fixed incorrect mapping of queued @file references to images
+- Corrected hidden-line counts in diff view
+- Resolved a plugin install issue affecting some marketplace sources
+- Consolidated `adal --help` information
+- Renamed `adal workspace` to `adal worktree` and simplified its usage
+- Added `--model` support for headless mode to specify models
+- Added a clear "Text-only" capability indicator in model selection for non-vision models
+- Minor UI improvements for assistant messages
+
 ## [0.9.3] - 2026-03-07
 - Terminal tab title now shows AdaL
 - Bug fix in edit file path resolution

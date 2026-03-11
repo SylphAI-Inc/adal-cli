@@ -175,35 +175,35 @@ Keep your session focused and clean:
 
 ## Work on Multiple Branches
 
-Create isolated workspaces to work on different features simultaneously without switching branches:
+Create isolated worktrees to work on different features simultaneously without switching branches:
 
 ```bash
-# Create workspace from main (default)
-adal workspace create -b feature-auth
+# Create worktree from main (default)
+adal worktree create -b feature-auth
 
-# Create workspace from a specific branch
-adal workspace create -b feature-auth develop
+# Create worktree from a specific branch
+adal worktree create -b feature-auth develop
 
-# Create workspace from remote branch
-adal workspace create -b hotfix origin/main
+# Create worktree from remote branch
+adal worktree create -b hotfix origin/main
 
-# Start working in workspace
-cd .adal_workspace/workspace-feature-auth && adal
+# Start working in worktree
+cd .adal_worktree/worktree-feature-auth && adal
 
-# In another terminal, create second workspace
-adal workspace create -b feature-payments
-cd .adal_workspace/workspace-feature-payments && adal
+# In another terminal, create second worktree
+adal worktree create -b feature-payments
+cd .adal_worktree/worktree-feature-payments && adal
 
-# Check workspaces
-adal workspace list
+# Check worktrees
+adal worktree list
 
 # Delete when done (use -f to force delete with unsaved changes)
-adal workspace delete feature-auth
+adal worktree delete feature-auth
 ```
 
-**Environment files are copied automatically.** When you create a workspace, AdaL copies your `.env` files so API keys and secrets are available without manual setup.
+**Environment files are copied automatically.** When you create a worktree, AdaL copies your `.env` files so API keys and secrets are available without manual setup.
 
-Customize what gets copied with `.adal_workspace_config` in your project root:
+Customize what gets copied with `.adal_worktree_config` in your project root:
 
 ```ini
 [copy]
@@ -211,7 +211,7 @@ include = .env
 include = config/*.json
 ```
 
-Add any files your workspaces need — database configs, local settings, credential files — and they'll be included automatically on `workspace create`.
+Add any files your worktrees need — database configs, local settings, credential files — and they'll be included automatically on `worktree create`.
 
 
 ## Quick Reference
