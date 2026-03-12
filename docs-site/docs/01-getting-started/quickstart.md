@@ -65,16 +65,16 @@ First run opens browser for authentication, then you're ready.
 | `@` | Target specific file as context | `@src/api.ts add validation` |
 | `!` | Run shell command | `!git status` |
 
-## Workspace Management
+## Worktree Management
 
 Work on multiple branches in parallel:
 
 | Command | What it does |
 |---------|--------------|
-| `adal workspace create -b <name>` | Create new workspace from main |
-| `adal workspace create -b <name> <start-point>` | Create from specific branch |
-| `adal workspace list` | List all workspaces |
-| `adal workspace delete <name>` | Delete workspace |
+| `adal worktree create -b <name>` | Create new worktree from main |
+| `adal worktree create -b <name> <start-point>` | Create from specific branch |
+| `adal worktree list` | List all worktrees |
+| `adal worktree delete <name>` | Delete worktree |
 ## Terminal Setup
 
 **Recommended terminals:**
