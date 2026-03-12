@@ -8,6 +8,9 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.9.5] - 2026-03-11
+- Improved reliability for GLM requests
+
 ## [0.9.4] - 2026-03-11
 - Improved image generation reliability
 - Fixed incorrect mapping of queued @file references to images
