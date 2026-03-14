@@ -8,6 +8,9 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.9.6] - 2026-03-14
+- Fixed MCP servers incorrectly showing as "not ready" after successful authentication
+
 ## [0.9.5] - 2026-03-11
 - Improved reliability for GLM requests
 
