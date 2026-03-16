@@ -67,8 +67,9 @@ These are our top picks, balancing capability, speed, and cost:
 - **Gemini 3 Flash**
 - **Gemini 2.5 Pro**
 
-### Zai (5 models)
+### Zai (6 models)
 
+- **GLM-5-Turbo**
 - **GLM-5**
 - **GLM-4.7**
 - **GLM-4.7 FlashX**
