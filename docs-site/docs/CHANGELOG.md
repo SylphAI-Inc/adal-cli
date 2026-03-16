@@ -8,6 +8,10 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.9.7] - 2026-03-16
+- Added GLM-5-Turbo from Z.ai
+- Reduced TimeoutError for Claude Opus models to allow long responses to pass
+
 ## [0.9.6] - 2026-03-14
 - Fixed MCP servers incorrectly showing as "not ready" after successful authentication
 
