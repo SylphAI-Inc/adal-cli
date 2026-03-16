@@ -261,4 +261,4 @@ When skills have the same name, first-loaded wins:
 
 Use **Skills** for domain expertise and workflows, **MCP** for real-time tool access, and **AGENTS.md** for project-wide context. They complement each other.
 
-**Related:** [Slash Commands](./slash-commands.md) · [MCP Servers](./mcp-support-proposed.md) · [Workflows & Examples](../01-getting-started/workflows-and-examples.md)
+**Related:** [Slash Commands](./slash-commands.md) · [MCP Servers](./mcp-support-proposed.md) · [Workflows & Examples](../01-getting-started/workflows-and-examples.md) · [Persistent Memory](./persistent-memory.md)
