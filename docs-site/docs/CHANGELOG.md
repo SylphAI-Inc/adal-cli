@@ -8,6 +8,10 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.9.8] - 2026-03-17
+- Improved Claude streaming reliability with fewer timeout errors
+- Improved error messages for rate limits for clarity
+
 ## [0.9.7] - 2026-03-16
 - Added GLM-5-Turbo from Z.ai
 - Reduced TimeoutError for Claude Opus models to allow long responses to pass
