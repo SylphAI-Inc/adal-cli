@@ -31,6 +31,7 @@ All commands start with `/`. Type `/` and press `Tab` for autocomplete.
 | `/skills`              | List loaded skills           |
 | `/plugin`              | Manage plugins/marketplaces  |
 | `/subagent`            | Configure subagents          |
+| `/permissions`         | Configure approvals (includes YOLO mode) |
 
 
 ## Tips

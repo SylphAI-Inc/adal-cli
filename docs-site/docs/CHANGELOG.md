@@ -8,6 +8,10 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [0.9.9] - 2026-03-18
+- Added MiniMax M2.7 and M2.7 Highspeed models
+- Added YOLO mode to auto-approve all tools and bash commands (/permissions)
+
 ## [0.9.8] - 2026-03-17
 - Improved Claude streaming reliability with fewer timeout errors
 - Improved error messages for rate limits for clarity
