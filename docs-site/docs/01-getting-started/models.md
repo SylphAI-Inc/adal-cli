@@ -76,8 +76,10 @@ These are our top picks, balancing capability, speed, and cost:
 - **GLM-4.7 Flash**
 - **GLM-4.5 Flash**
 
-### MiniMax (2 models)
+### MiniMax (4 models)
 
+- **MiniMax M2.7**
+- **MiniMax M2.7 Highspeed**
 - **MiniMax M2.5**
 - **MiniMax M2.5 Highspeed**
 
