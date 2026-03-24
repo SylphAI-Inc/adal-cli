@@ -8,6 +8,23 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [1.0.0] - 2026-03-24
+- Introduced Deep Research, a dedicated mode for investigating complex tasks and delivering structured reports (Tab to toggle)
+- Added Linux ARM64 support
+- Fixed Linux lagging issue
+- Enabled long-running agent execution when YOLO mode is toggled via /permissions
+- Added a `--resume` flag for resuming previous sessions by ID
+- Resolved an issue affecting skill installation
+- Fixed an issue on WSL where pressing i for more info could fail silently
+- Improved chat history display with progressive loading
+- Fixed resumed-session display issues for subagents
+- Simplified compression report display
+- AdaL Web: Improved feature parity with AdaL CLI
+- AdaL Web: a redesigned UI
+- AdaL Web: added file view support
+- AdaL Web: Fixed browser not auto-opening on WSL
+
+
 ## [0.9.9] - 2026-03-18
 - Added MiniMax M2.7 and M2.7 Highspeed models
 - Added YOLO mode to auto-approve all tools and bash commands (/permissions)
