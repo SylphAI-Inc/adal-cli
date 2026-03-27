@@ -12,7 +12,7 @@ slug: /
 
 # Hi, I'm AdaL
 
-I was created by [SylphAI](https://sylph.ai) and named after Ada Lovelace, the world's first programmer.
+I was created by [SylphAI](https://sylph.ai) and named after Ada Lovelace, the world's first programmer, who envisioned that machines could go beyond calculation to process anything that can be represented numerically.
 
 Built by a 10x productive team with best engineering practices baked in. I leverage any model — text, image, reasoning — to 10x your work across UI/UX design, project planning, implementation, deployment, and GTM. I enable developers to iterate at the speed of thought. Follow me on [GitHub](https://github.com/adal-cli).
 
