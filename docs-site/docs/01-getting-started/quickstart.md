@@ -13,16 +13,16 @@ Get AdaL running in 2 minutes.
 
 ## Step 1: Install
 
-Open any terminal — we recommend iTerm2 or VS Code terminal. macOS native Terminal requires macOS 26+ for full theme support. For more details, see [Terminal Setup](#terminal-setup).
+Open any terminal — we recommend iTerm2, cmux, and VS Code terminal. macOS native Terminal requires macOS 26+ for full theme support. For more details, see [Terminal Setup](#terminal-setup).
 
 <Tabs groupId="install-method">
-  <TabItem value="native" label="Native (Recommended)" default>
+  <TabItem value="native" label="Native Install (Recommended)" default>
 
 ```bash
 curl -fsSL https://adal.sylph.ai/install.sh | bash
 ```
 
-No prerequisites — works on macOS, Linux, and WSL.
+Native install works on macOS, Linux, and WSL. For other platforms (e.g., Windows PowerShell), use the npm install.
 
   </TabItem>
   <TabItem value="npm" label="npm">
@@ -73,8 +73,8 @@ First run opens browser for authentication, then you're ready.
 | Shortcut | What it does |
 |----------|--------------|
 | `?` | Show all shortcuts |
-| `Shift+Tab` | Toggle auto-accept edits |
 | `Tab` | Toggle mode: Regular → Plan → Deep Research |
+| `Shift+Tab` | Toggle auto-accept edits |
 | `Ctrl+C` | Cancel agent streaming/running|
 | `ESC` | Clear input |
 
@@ -99,7 +99,7 @@ Work on multiple branches in parallel:
 ## Terminal Setup
 
 **Recommended terminals:**
-- **Native terminal** — macOS Terminal (macOS 26+), iTerm2, Windows Terminal, or your Linux terminal
+- **Native terminal** — macOS Terminal (macOS 26+), iTerm2, cmux, Windows Terminal, or Linux terminal
 - **VS Code integrated terminal** — Drag the terminal panel to the top-right corner for a wider, taller view
 
 **Tip:** A larger terminal window gives AdaL more room to display code and diffs clearly.
