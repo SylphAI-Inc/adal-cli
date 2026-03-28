@@ -4,21 +4,41 @@ title: Quickstart
 description: "Install and start using AdaL AI coding agent in 2 minutes. Works in any terminal — VS Code, iTerm, macOS Terminal, PowerShell, or Linux shell."
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Quickstart
 
 Get AdaL running in 2 minutes.
 
-## Install
+## Step 1: Install
+
+Open any terminal — we recommend iTerm2, cmux, and VS Code terminal. macOS native Terminal requires macOS 26+ for full theme support. For more details, see [Terminal Setup](#terminal-setup).
+
+<Tabs groupId="install-method">
+  <TabItem value="native" label="Native Install (Recommended)" default>
+
+```bash
+curl -fsSL https://adal.sylph.ai/install.sh | bash
+```
+
+Native install works on macOS, Linux, and WSL. For other platforms (e.g., Windows PowerShell), use the npm install.
+
+  </TabItem>
+  <TabItem value="npm" label="npm">
 
 ```bash
 npm install -g @sylphai/adal-cli
 ```
 
-**Requires:** [Node.js 20+](https://nodejs.org/en/download) · [Installation help →](../07-troubleshooting/installation.md)
+Requires [Node.js 20+](https://nodejs.org/en/download).
 
-## Launch
+  </TabItem>
+</Tabs>
 
-Open any terminal (VS Code, iTerm, macOS Terminal (macOS 26+ supports AdaL themes better), PowerShell, Linux shell, etc.), `cd` to your working directory, and run:
+## Step 2: Launch
+
+Go to your working directory and run:
 
 ```bash
 adal
@@ -26,7 +46,7 @@ adal
 
 First run opens browser for authentication, then you're ready.
 
-## Try It
+## Step 3: Try It
 
 ```
 > Hello, what can you help me with?
@@ -53,8 +73,8 @@ First run opens browser for authentication, then you're ready.
 | Shortcut | What it does |
 |----------|--------------|
 | `?` | Show all shortcuts |
+| `Tab` | Toggle mode: Regular → Plan → Deep Research |
 | `Shift+Tab` | Toggle auto-accept edits |
-| `Ctrl+P` | Toggle plan mode |
 | `Ctrl+C` | Cancel agent streaming/running|
 | `ESC` | Clear input |
 
@@ -75,10 +95,11 @@ Work on multiple branches in parallel:
 | `adal worktree create -b <name> <start-point>` | Create from specific branch |
 | `adal worktree list` | List all worktrees |
 | `adal worktree delete <name>` | Delete worktree |
+
 ## Terminal Setup
 
 **Recommended terminals:**
-- **Native terminal** — macOS Terminal (macOS 26+), iTerm2, Windows Terminal, or your Linux terminal
+- **Native terminal** — macOS Terminal (macOS 26+), iTerm2, cmux, Windows Terminal, or Linux terminal
 - **VS Code integrated terminal** — Drag the terminal panel to the top-right corner for a wider, taller view
 
 **Tip:** A larger terminal window gives AdaL more room to display code and diffs clearly.
