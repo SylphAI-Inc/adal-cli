@@ -74,7 +74,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          to: '/troubleshooting/installation',
+          to: '/getting-started/quickstart',
           label: 'Troubleshooting',
           position: 'left',
         },
