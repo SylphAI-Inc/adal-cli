@@ -74,11 +74,6 @@ const config: Config = {
           position: 'left',
         },
         {
-          to: '/troubleshooting/installation',
-          label: 'Troubleshooting',
-          position: 'left',
-        },
-        {
           to: '/changelog',
           label: 'Changelog',
           position: 'left',
