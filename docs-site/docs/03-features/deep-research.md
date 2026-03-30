@@ -27,13 +27,6 @@ Press Tab (You will see "Deep Research" in the footer)
 - **GitHub Deep Analysis**: Ask AdaL to clone and deep dive into relevant Git repos to map out architectures and source code.
 - **Auto-Illustrations**: Need diagrams or visuals in your report? Just ask AdaL to "add illustrations" and it will generate them using the Nano Banana image model.
 
-## Recommended Models
-
-For the best Deep Research experience, we highly recommend using top-tier models with large context windows:
-- **GPT-5.4**
-- **Claude Opus 4.6**
-- **Gemini 3.1 Pro**
-
 ## What to Expect
 
 1. **Research Plan**: AdaL creates a markdown plan outlining the questions to answer and the report structure.
