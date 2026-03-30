@@ -32,6 +32,7 @@ Press Tab (You will see "Deep Research" in the footer)
 For the best Deep Research experience, we highly recommend using top-tier models with large context windows:
 - **GPT-5.4**
 - **Claude Opus 4.6**
+- **Gemini 3.1 Pro**
 
 ## What to Expect
 
