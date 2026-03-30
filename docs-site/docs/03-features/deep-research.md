@@ -6,7 +6,7 @@ description: "Conduct deep, multi-source research and produce comprehensive, wel
 
 # Deep Research
 
-AdaL conducts deep, multi-source research and produces comprehensive, well-cited reports. Unlike standalone tools (like OpenAI Deep Research), AdaL combines live web search with your **local project context** to solve highly specific engineering problems.
+AdaL conducts deep, multi-source research and produces comprehensive, well-cited reports. Unlike standalone tools (like OpenAI Deep Research), AdaL combines live web search with your **local project context** to solve highly specific engineering and research problems.
 
 ## Quick Start (30 seconds)
 
