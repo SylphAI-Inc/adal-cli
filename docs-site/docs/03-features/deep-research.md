@@ -17,7 +17,7 @@ Think of it as having a research analyst who searches the web, reads papers, cro
 adal
 
 # 2. Toggle Deep Research Mode
-Press Tab
+Press Tab (You will see "Deep Research" in the footer)
 
 # 3. Enter your research topic
 "Research the current landscape of transformer architectures from 2021 to 2026"
@@ -25,7 +25,7 @@ Press Tab
 
 ## Usage
 
-To activate Deep Research mode, press **`Tab`** in the input area before typing your query. The interface will visually indicate that Deep Research is enabled.
+To activate Deep Research mode, start `adal` and press **`Tab`** in the input area. You will see **Deep Research** appear on the footer to mark that it's turned on.
 
 Then, describe what you want researched:
 
