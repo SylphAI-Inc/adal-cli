@@ -51,7 +51,6 @@ For substantial queries, AdaL executes a multi-step workflow:
 
 - **Write Specific Prompts**: "Compare RAG vs fine-tuning for medical Q&A, focusing on accuracy and cost" is better than "Tell me about RAG".
 - **Guide the Scope**: Specify time ranges (*"from 2023 to present"*) and target audience (*"for a technical blog"*).
-- **Use Thinking Mode**: Press `Tab` or say "think hard" for complex topics.
 - **Ask for Revisions**: Follow up with *"Expand the section on retrieval augmentation"* or *"Add a comparison table"*.
 
 ## Example Queries
