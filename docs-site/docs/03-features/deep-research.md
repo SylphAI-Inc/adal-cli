@@ -24,7 +24,7 @@ Press Tab (You will see "Deep Research" in the footer)
 ## Key Advantages
 
 - **Context-Grounded Research**: Merges your local codebase and files with live web searches.
-- **GitHub Deep Analysis**: Deeply analyzes external GitHub repositories using the `gh` CLI to map out architectures and source code. *(Tip: Use Claude Opus 4.6 for complex repo analysis).*
+- **GitHub Deep Analysis**: Ask AdaL to clone and deep dive into relevant Git repos to map out architectures and source code.
 - **Auto-Illustrations**: Need diagrams or visuals in your report? Just ask AdaL to "add illustrations" and it will generate them using the Nano Banana image model.
 
 ## Recommended Models
