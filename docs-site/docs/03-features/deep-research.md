@@ -134,6 +134,6 @@ Both are markdown files named after your research topic (e.g., `vector_databases
 
 ## Related
 
-- [Web Search](https://docs.sylph.ai/features/web-search)
-- [Image Generation](https://docs.sylph.ai/features/image-generation)
-- [Workflows & Examples](https://docs.sylph.ai/getting-started/workflows-and-examples)
+- [Web Search](./web-search.md)
+- [Image Generation](./image-generation.md)
+- [Workflows & Examples](../01-getting-started/workflows-and-examples.md)
