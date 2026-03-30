@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: Deep Research
+description: "Conduct deep, multi-source research and produce comprehensive, well-cited reports directly from your terminal or browser."
 ---
 
 # Deep Research
@@ -8,9 +10,24 @@ AdaL can conduct deep, multi-source research and produce comprehensive, well-cit
 
 Think of it as having a research analyst who searches the web, reads papers, cross-references sources, and writes a polished report with proper citations — all in one session.
 
+## Quick Start (30 seconds)
+
+```bash
+# 1. Start AdaL
+adal
+
+# 2. Toggle Deep Research Mode
+Press Tab
+
+# 3. Enter your research topic
+"Research the current landscape of transformer architectures from 2021 to 2026"
+```
+
 ## Usage
 
-Describe what you want researched:
+To activate Deep Research mode, press **`Tab`** in the input area before typing your query. The interface will visually indicate that Deep Research is enabled.
+
+Then, describe what you want researched:
 
 ```
 Research the current landscape of transformer architectures from 2021 to 2026
