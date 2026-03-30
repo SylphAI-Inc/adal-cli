@@ -29,7 +29,7 @@ Press Tab (You will see "Deep Research" in the footer)
 
 ## Research Depth
 
-AdaL adapts to your query's complexity:
+AdaL automatically adapts to your query's complexity:
 
 | Depth | When | What You Get |
 |-------|------|--------------|
@@ -37,86 +37,29 @@ AdaL adapts to your query's complexity:
 | **Standard** | Comparative analysis, multi-faceted questions | Research plan + structured report |
 | **Deep** | Emerging fields, landscape surveys, contested topics | Exhaustive plan + comprehensive report with many sources |
 
-You don't need to specify the level — AdaL infers it. But you can nudge:
-
-```
-# Nudge deeper
-Give me a comprehensive landscape analysis of vector databases in 2025-2026
-
-# Nudge quicker
-Quick summary of what RLHF is and how it works
-```
+*Tip: You can manually nudge AdaL (e.g., "Give me a comprehensive landscape analysis..." or "Quick summary of...").*
 
 ## What to Expect
 
-For substantial queries, AdaL creates a **research plan** in your working directory — outlining the questions to answer, dimensions to cover, and report structure. The plan directly shapes the final report: its sections become the report's sections, and its depth determines how much investigation each area gets.
+For substantial queries, AdaL executes a multi-step workflow:
 
-**The plan evolves.** As AdaL investigates and discovers new angles or dead ends, it revises the plan — adding sections, merging topics, or shifting focus. If you want to steer the research early, check the plan file and tell AdaL what to adjust (e.g., *"Drop the section on pricing and go deeper on performance benchmarks"*).
-
-AdaL then works through multiple rounds of searching, reading, and cross-referencing — not just skimming snippets, but reading full articles and chasing primary sources. You'll see it iterating with progressively sharper queries as it learns what matters.
-
-Once coverage is thorough, AdaL writes a **structured report** section by section. Every factual claim is cited, and a **References** section is automatically generated at the bottom:
-
-```markdown
-Transformer architectures have largely converged on the decoder-only
-design for language modeling [1], though encoder-decoder models remain
-preferred for certain translation tasks [2].
-
-## References
-
-- [1] Attention Is All You Need — Revisited | https://example.com/source1
-- [2] Encoder-Decoder vs Decoder-Only | https://example.com/source2
-```
-
-Citations are numbered and traceable — click through to verify any claim.
+1. **Research Plan**: Creates a dynamic outline (`[topic]_plan.md`) in your working directory. You can edit this early to steer the direction.
+2. **Investigation**: Iterates through multiple rounds of searching, reading full articles, and cross-referencing sources.
+3. **Structured Report**: Writes a final report (`[topic]_report.md`) section by section. Every factual claim is cited, generating a traceable **References** section at the bottom.
 
 ## Tips for Better Results
 
-### Write Specific Prompts
-
-| ✅ Effective | ❌ Too Vague |
-|-------------|-------------|
-| "Compare RAG vs fine-tuning for medical Q&A, focusing on accuracy, cost, and deployment complexity" | "Tell me about RAG" |
-| "Survey Rust web frameworks in 2025-2026, covering performance and ecosystem maturity" | "What Rust web frameworks exist?" |
-| "Analyze how attention mechanisms have evolved since the original Transformer paper" | "Explain attention" |
-
-### Guide the Scope
-
-- **Specify time ranges** for fast-moving fields: *"from 2023 to present"*
-- **Name the dimensions** you care about: *"focusing on performance, cost, and developer experience"*
-- **Mention your audience** if relevant: *"for a technical blog post"* vs *"for a PhD literature review"*
-
-### During Research
-
-- **Let it run.** Deep research takes time — AdaL may search dozens of sources across multiple rounds. This is normal.
-- **Use thinking mode** for complex topics: say "think hard" or press Tab to toggle extended reasoning.
-- **Check the plan early** if you want to steer the direction before investigation completes.
-
-### After the Report
-
-- **Spot-check citations.** AdaL verifies sources during writing, but a quick review of key claims never hurts.
-- **Edit freely.** The report is a markdown file in your directory — refine it however you like.
-- **Ask for revisions.** Follow up with: *"Expand the section on retrieval augmentation with more recent benchmarks"* or *"Add a comparison table for the top 3 approaches."*
+- **Write Specific Prompts**: "Compare RAG vs fine-tuning for medical Q&A, focusing on accuracy and cost" is better than "Tell me about RAG".
+- **Guide the Scope**: Specify time ranges (*"from 2023 to present"*) and target audience (*"for a technical blog"*).
+- **Use Thinking Mode**: Press `Tab` or say "think hard" for complex topics.
+- **Ask for Revisions**: Follow up with *"Expand the section on retrieval augmentation"* or *"Add a comparison table"*.
 
 ## Example Queries
 
-| Category | Example |
-|----------|---------|
-| **Technology survey** | "Research the current state of WebAssembly adoption in production systems" |
-| **Comparison** | "Compare PostgreSQL, CockroachDB, and TiDB for distributed OLTP workloads" |
-| **Emerging field** | "Survey recent advances in multimodal AI models (2024-2026)" |
-| **Best practices** | "Research production best practices for deploying LLMs with RAG pipelines" |
-| **Historical analysis** | "How has the Python packaging ecosystem evolved from setuptools to modern tools?" |
-| **Contested topic** | "Analyze the debate around AI scaling laws — what do proponents and critics argue?" |
-
-## Output Files
-
-After research completes, you'll find two files in your working directory:
-
-- **Research plan** — the outline with questions, dimensions, and structure
-- **Research report** — the full report with citations and references
-
-Both are markdown files named after your research topic (e.g., `vector_databases_plan.md` and `vector_databases_report.md`).
+- **Technology Survey**: "Research the current state of WebAssembly adoption in production systems"
+- **Comparison**: "Compare PostgreSQL, CockroachDB, and TiDB for distributed OLTP workloads"
+- **Codebase Strategy**: "Compare RAG vs fine-tuning for our specific data pipeline"
+- **Repo Analysis**: "Deep analyze the source code of [GitHub Repo] and summarize its architecture"
 
 ## Related
 
