@@ -8,6 +8,12 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [1.0.1] - 2026-03-31
+
+- Optimized the running memory of the AdaL session process
+- Improved Claude model requests stability
+- Added worktree info in exit UX if applicable
+
 ## [1.0.0] - 2026-03-27
 - Introduced Deep Research, a dedicated mode for investigating complex tasks and delivering structured reports (Tab to toggle)
 - Added Linux ARM64 support
