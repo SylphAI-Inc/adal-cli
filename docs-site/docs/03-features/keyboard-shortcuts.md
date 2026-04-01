@@ -37,6 +37,7 @@ Quick reference for all keyboard shortcuts in AdaL CLI.
 
 | Shortcut    | Action                                    |
 | ----------- | ----------------------------------------- |
+| `Tab`       | Cycle conversation mode (Normal/Plan/Deep Research) |
 | `Shift+Tab` | Toggle auto-accept edit mode              |
 | `Ctrl+P`    | Toggle plan mode                          |
 | `Ctrl+R`    | Expand/collapse thinking content          |
@@ -44,6 +45,11 @@ Quick reference for all keyboard shortcuts in AdaL CLI.
 
 
 ## Mode Explanations
+
+### Conversation Mode Cycle (`Tab`)
+
+Press `Tab` to cycle between conversation modes (Normal → Plan → Deep Research) when the input is empty.  
+When typing slash commands (`/`) or file mentions (`@`), `Tab` is used for autocomplete.
 
 ### Auto-Accept Mode (`Shift+Tab`)
 
@@ -60,6 +66,8 @@ When enabled, file edits are applied automatically without confirmation:
 ```
 
 **Use carefully:** Only enable when you trust the changes.
+
+**Need finer control?** Use `/permissions` to configure approval behavior for different action types before running larger tasks.
 
 ### Plan Mode (`Ctrl+P`)
 

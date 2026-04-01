@@ -31,13 +31,22 @@ All commands start with `/`. Type `/` and press `Tab` for autocomplete.
 | `/skills`              | List loaded skills           |
 | `/plugin`              | Manage plugins/marketplaces  |
 | `/subagent`            | Configure subagents          |
-| `/permissions`         | Configure approvals (includes YOLO mode) |
+| `/permissions`         | Configure approval settings  |
 
+## Permissions & Approvals (`/permissions`)
+
+Use `/permissions` to configure which actions require manual confirmation before AdaL proceeds.
+
+Common uses:
+- Keep shell commands gated behind approval
+- Allow auto-apply for file edits in trusted workflows
+- Review and adjust safety behavior before enabling faster execution modes
 
 ## Tips
 
 - Use `/help` for information of all slash commands.
 - Run `/init` to generate AGENTS.md so that AdaL can understand your codebase better.
 - Use `/compact` after a milestone is achieved to save context and stay focused, or switch to a larger-context model via `/model` when needed.
+- Use `/permissions` before long tasks to match approval strictness to your risk tolerance.
 
-**Related:** [MCP](./mcp-support-proposed.md) · [BYOAK](./bring-your-own-api-key.md)
+**Related:** [Keyboard Shortcuts](./keyboard-shortcuts.md) · [MCP](./mcp-support-proposed.md) · [BYOAK](./bring-your-own-api-key.md)
