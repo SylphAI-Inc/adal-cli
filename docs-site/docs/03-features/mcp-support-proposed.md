@@ -6,7 +6,7 @@ description: "Connect AdaL to Linear, GitHub, Notion, Slack, PostgreSQL, Playwri
 
 # Connect AdaL to Tools via MCP (Model Context Protocol)
 
-Connect AdaL to Linear, GitHub, Notion, databases, and more using [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) — the open standard for connecting AI agents to external tools and data sources.
+Connect AdaL to Linear, GitHub, Notion, Canva, databases, and more using [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) — the open standard for connecting AI agents to external tools and data sources.
 
 ## Quick Start (2 minutes)
 
@@ -14,29 +14,35 @@ Connect AdaL to Linear, GitHub, Notion, databases, and more using [MCP (Model Co
 # 1. Start AdaL
 adal
 
-# 2. Add a server (using shortcut)
+# 2. Add a server (shortcut)
 /mcp add linear
-
-# 3. Authenticate (browser opens)
-/mcp → select server → Authenticate
+# Browser auth opens automatically when required
 ```
 
-Done! Ask AdaL: *"Create a Linear issue for the login bug"*
+For OAuth-capable servers, auth opens automatically during add. Example:
 
+```bash
+/mcp add canva --transport http --url https://mcp.canva.com/mcp
+✦ Adding custom server: canva
+⎿ Server added: canva
+  (opening browser for authentication...)
+```
+
+Done! Ask AdaL: *"Create a Linear issue for the login bug"*.
 
 ## Two Ways to Add Servers
 
 | Method | Syntax | When to Use |
-|--------|--------|-------------|
+| --- | --- | --- |
 | **Shortcut** | `/mcp add <name>` | Pre-configured servers managed by AdaL CLI team |
-| **Custom** | `/mcp add <name> --command ...` | Any MCP server (npm package, Python, remote) |
+| **Custom** | `/mcp add <name> ...` | Any MCP server (npm package, Python, remote HTTP/SSE) |
 
 ### Add Shortcut Servers
 
 Pre-configured by the AdaL CLI team. Just use the name - no flags needed.
 
 | Shortcut | Auth Type | Command |
-|----------|-----------|---------|
+| --- | --- | --- |
 | `linear` | OAuth | `/mcp add linear` |
 | `notion` | OAuth | `/mcp add notion` |
 | `sentry` | OAuth | `/mcp add sentry` |
@@ -52,90 +58,131 @@ Pre-configured by the AdaL CLI team. Just use the name - no flags needed.
 #### Setting Up Shortcuts
 
 **OAuth Servers** (linear, notion, sentry):
+
 ```bash
 /mcp add linear
-/mcp                    # Open dialog
+# In many cases, browser auth may open automatically after add
+# If not:
+/mcp
 # → Select server → Authenticate
 # Browser opens → Approve → Done!
 ```
 
 **API Key Servers** (github, gitlab, slack):
+
 ```bash
 # Set token BEFORE starting AdaL
-export GITHUB_TOKEN="ghp_xxxx" # macOS / Linux 
+export GITHUB_TOKEN="ghp_xxxx"      # macOS / Linux
 # OR
-$env:GITHUB_TOKEN="ghp_xxxx" # Windows
+$env:GITHUB_TOKEN="ghp_xxxx"        # Windows PowerShell
 
 adal
 /mcp add github
 ```
 
 **Database** (postgres):
+
 ```bash
 /mcp add postgres postgresql://user:pass@localhost:5432/mydb
 ```
 
 ### Add Custom Servers
 
-For any MCP package not in the shortcut list. Use `--command` and `--args` flags.
+For any MCP package not in the shortcut list.
 
-#### NPM Packages
+#### Option 1: Add a remote HTTP server (recommended)
 
 ```bash
-/mcp add airtable --command npx --args "-y,airtable-mcp-server" --env "AIRTABLE_API_KEY=xxx"
+# Basic syntax
+/mcp add <name> --transport http --url <https://...>
+
+# Real example
+/mcp add canva --transport http --url https://mcp.canva.com/mcp
+
+# Example with header
+/mcp add secure-api --transport http --url https://api.example.com/mcp --header "Authorization:Bearer ${API_TOKEN}"
 ```
 
-#### Python Packages
+#### Option 2: Add a remote SSE server (legacy/deprecated where HTTP exists)
 
 ```bash
+# Basic syntax
+/mcp add <name> --transport sse --url <https://...>
+
+# Example
+/mcp add asana --transport sse --url https://api.example.com/sse
+```
+
+#### Option 3: Add a local stdio server (npm/python/local scripts)
+
+```bash
+# NPM package
+/mcp add airtable --command npx --args "-y,airtable-mcp-server" --env "AIRTABLE_API_KEY=xxx"
+
+# Python package
 /mcp add py-tool --command uvx --args "python-mcp-server"
 ```
 
-#### Remote Servers (SSE/HTTP)
+#### Important: option ordering
 
-```bash
-/mcp add my-api --transport sse --url https://api.example.com/sse
-```
+Place MCP flags before values they configure, and keep command payload values quoted when needed:
+
+- `--transport` + `--url` for remote servers
+- `--command` + `--args` for stdio servers
+- use `--env` / `--header` for credentials and auth headers
 
 #### Flags Reference
 
 | Flag | Purpose | Example |
-|------|---------|---------|
-| `--command` | Executable | `--command npx` |
-| `--args` | Arguments | `--args "-y,pkg@latest"` |
-| `--transport` | sse/http | `--transport sse` |
-| `--url` | Server URL | `--url https://...` |
-| `--header` | Auth header | `--header "Authorization:Bearer xxx"` |
-| `--env` | Env vars | `--env "KEY=value"` |
+| --- | --- | --- |
+| `--command` | Executable for stdio server | `--command npx` |
+| `--args` | Arguments passed to command | `--args "-y,pkg@latest"` |
+| `--transport` | Remote transport (`http` or `sse`) | `--transport http` |
+| `--url` | Remote server URL | `--url https://...` |
+| `--header` | HTTP auth/custom header | `--header "Authorization:Bearer ${TOKEN}"` |
+| `--env` | Environment variables | `--env "KEY=value"` |
 
 ## Managing Servers
 
 ```bash
-/mcp                    # Open server list
+/mcp
+# Open server list
 ```
 
 **Actions** (select server → Enter):
-- **Enable/Disable** - Saves tokens by loading only servers you need. Takes effect instantly mid-session.
-- **Test Connection** - Verify server is working
-- **Remove** - Delete server configuration
 
+- **Enable/Disable** - Load only servers you need.
+- **Authenticate** - Start/continue auth flow.
+- **Test Connection** - Verify server is working.
+- **Remove** - Delete server configuration.
 
+### Server Card Status (Source of Truth)
+
+After add/auth, use server card status to confirm readiness:
+
+- **Connected** - Ready to use
+- **Needs Auth** - Authenticate required
+- **Error** - Connection/config/credential issue
+- **Disabled** - Not currently active
 
 ## Authenticate Servers
 
-### OAuth Servers (linear, notion, sentry)
+### OAuth Servers (linear, notion, sentry, and compatible remote OAuth servers)
 
-**How it works**:
-1. Add server → Config saved, not connected yet
-2. Authenticate → Browser opens, you approve
-3. Tokens cached locally → Server connects immediately
+**How it works now**:
+
+1. Add server
+2. Config is saved
+3. AdaL may immediately open browser auth during add
+4. If browser does not auto-open, authenticate from `/mcp` dialog
+5. After approval, server becomes usable (tools discovered/available)
 
 ```bash
-/mcp add linear         # Add server
-/mcp                    # Open dialog
+/mcp add linear
+# may auto-open browser
+# fallback:
+/mcp
 # → Select server → Authenticate
-# Browser opens → Approve → Done!
-# ✓ "15 tools available"
 ```
 
 **Token storage**: `~/.adal/mcp-auth/`. Delete folder to re-authenticate.
@@ -143,8 +190,9 @@ For any MCP package not in the shortcut list. Use `--command` and `--args` flags
 ### API Key Servers (github, gitlab, slack)
 
 **How it works**:
-1. AdaL reads env vars (`GITHUB_TOKEN`, etc.) **at startup**
-2. If you add token after AdaL starts → **restart required**
+
+1. AdaL reads env vars (`GITHUB_TOKEN`, etc.) at startup
+2. If token is added after AdaL starts, restart AdaL and re-open session flow
 
 ```bash
 # Set token (AdaL must be closed)
@@ -156,33 +204,39 @@ echo $GITHUB_TOKEN
 # Start and add
 adal
 /mcp add github
-# ✓ "26 tools available"
 ```
 
 | Server | Environment Variable | Get Token |
-|--------|---------------------|-----------|
+| --- | --- | --- |
 | github | `GITHUB_TOKEN` | [github.com/settings/tokens](https://github.com/settings/tokens) |
 | gitlab | `GITLAB_TOKEN` | [gitlab.com/-/profile/personal_access_tokens](https://gitlab.com/-/profile/personal_access_tokens) |
 | slack | `SLACK_BOT_TOKEN` | [api.slack.com/apps](https://api.slack.com/apps) |
 | brave-search | `BRAVE_API_KEY` | [brave.com/search/api](https://brave.com/search/api) |
 
-:::tip Make Token Permanent
+Make token permanent:
+
 ```bash
 echo 'export GITHUB_TOKEN="xxx"' >> ~/.zshrc
 source ~/.zshrc
 ```
-:::
 
 ## Examples
 
 **Linear**:
+
 > "Create a high-priority issue titled 'Fix auth timeout' in Backend"
 
 **GitHub**:
+
 > "Show my open pull requests"
 
 **Postgres**:
+
 > "Count users by status in the users table"
+
+**Canva**:
+
+> "Create a social post design draft for product launch"
 
 ## Why MCP with AdaL?
 
@@ -190,7 +244,7 @@ MCP (Model Context Protocol) is the emerging open standard for connecting AI age
 
 - **Use the same MCP servers** you'd use with Claude Desktop, Cursor, or other MCP-compatible clients
 - **Manage servers from the CLI** — no config files to edit manually
-- **OAuth built-in** — one-click auth for Linear, Notion, Sentry
-- **Enable/disable on the fly** — save tokens by only loading what you need
+- **OAuth built-in** — one-step add flow with automatic auth where supported
+- **Enable/disable on the fly** — load only what you need
 
 **Related:** [Skills & Plugins](./plugins-and-skills.md) · [Slash Commands](./slash-commands.md) · [Keyboard Shortcuts](./keyboard-shortcuts.md)
