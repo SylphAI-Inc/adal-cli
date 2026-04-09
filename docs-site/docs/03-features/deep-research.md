@@ -66,6 +66,13 @@ Compare RAG vs fine-tuning for a customer-support assistant. Focus on implementa
 Use my current project context and public sources to propose 3 architecture improvements for reliability and developer velocity. For each, include expected impact, risk, and rollout steps.
 ```
 
+### 4) Real-World “Day-One” Prompt (Raw)
+```text
+help me understand the code base and which model would work best for UI UX improvements
+```
+
+> This kind of prompt is intentionally messy—and that’s okay. Deep Research can still produce useful output from rough input. You can always refine scope and format after the first pass.
+
 ## Sample Output Shape (What “Good” Looks Like)
 
 A strong Deep Research response usually includes:
