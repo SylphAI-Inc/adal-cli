@@ -47,6 +47,44 @@ For substantial queries, AdaL executes a multi-step workflow:
 2. **Investigation**: Iterates through multiple rounds of searching, reading full articles, and cross-referencing sources.
 3. **Structured Report**: Writes a final report (`[topic]_report.md`) section by section. Every factual claim is cited, generating a traceable **References** section at the bottom.
 
+## Starter Prompts (Copy-Paste)
+
+If you’re new to Deep Research, start with one of these prompts and then refine based on the first output.
+
+### 1) Quick Landscape Scan
+```text
+Research the current landscape of AI coding agents in 2026. Cover major tools, key differences, and recent trends. End with a concise comparison table.
+```
+
+### 2) Engineering Decision Support
+```text
+Compare RAG vs fine-tuning for a customer-support assistant. Focus on implementation complexity, cost, latency, maintenance, and quality tradeoffs. Recommend when to use each.
+```
+
+### 3) Codebase + Web Context
+```text
+Use my current project context and public sources to propose 3 architecture improvements for reliability and developer velocity. For each, include expected impact, risk, and rollout steps.
+```
+
+### 4) Real-World “Day-One” Prompt (Raw)
+```text
+help me understand the code base and which model would work best for UI UX improvements
+```
+
+> This kind of prompt is intentionally messy—and that’s okay. Deep Research can still produce useful output from rough input. You can always refine scope and format after the first pass.
+
+## Sample Output Shape (What “Good” Looks Like)
+
+A strong Deep Research response usually includes:
+
+- **Executive Summary** (short answer first)
+- **Method / Scope** (how information was gathered)
+- **Findings by Theme** (clear sections)
+- **Tradeoffs and Recommendations**
+- **References** (linked sources for key claims)
+
+> Tip: Ask for a format directly, e.g. “Return this as: Executive Summary, Findings, Recommendation Table, References.”
+
 ## Tips for Better Results
 
 - **Write Specific Prompts**: "Compare RAG vs fine-tuning for medical Q&A, focusing on accuracy and cost" is better than "Tell me about RAG".
