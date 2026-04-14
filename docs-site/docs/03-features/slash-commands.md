@@ -30,6 +30,7 @@ All commands start with `/`. Type `/` and press `Tab` for autocomplete.
 | `/byoak`               | Bring your own API keys      |
 | `/skills`              | List loaded skills           |
 | `/plugin`              | Manage plugins/marketplaces  |
+| `/cron`                | Schedule recurring prompts   |
 | `/subagent`            | Configure subagents          |
 | `/permissions`         | Configure approval settings  |
 
@@ -48,5 +49,6 @@ Common uses:
 - Run `/init` to generate AGENTS.md so that AdaL can understand your codebase better.
 - Use `/compact` after a milestone is achieved to save context and stay focused, or switch to a larger-context model via `/model` when needed.
 - Use `/permissions` before long tasks to match approval strictness to your risk tolerance.
+- Use `/cron` to automate recurring tasks — training monitoring, data pipelines, literature reviews, and more.
 
-**Related:** [Keyboard Shortcuts](./keyboard-shortcuts.md) · [MCP](./mcp-support-proposed.md) · [BYOAK](./bring-your-own-api-key.md)
+**Related:** [Cron: Scheduled Prompts](./cron-scheduled-prompts.md) · [Keyboard Shortcuts](./keyboard-shortcuts.md) · [MCP](./mcp-support-proposed.md) · [BYOAK](./bring-your-own-api-key.md)
