@@ -14,17 +14,39 @@ AdaL will automatically detect your environment and use the appropriate tool.
 
 Install `wl-clipboard`:
 
-- **Ubuntu / Debian:** `sudo apt install -y wl-clipboard`
-- **Fedora:** `sudo dnf install -y wl-clipboard`
-- **Arch Linux:** `sudo pacman -S wl-clipboard`
+**Ubuntu / Debian:**
+```bash
+sudo apt install -y wl-clipboard
+```
+
+**Fedora:**
+```bash
+sudo dnf install -y wl-clipboard
+```
+
+**Arch Linux:**
+```bash
+sudo pacman -S wl-clipboard
+```
 
 ### For X11 Systems
 
 Install `xclip` (or `xsel`):
 
-- **Ubuntu / Debian:** `sudo apt install -y xclip`
-- **Fedora:** `sudo dnf install -y xclip`
-- **Arch Linux:** `sudo pacman -S xclip`
+**Ubuntu / Debian:**
+```bash
+sudo apt install -y xclip
+```
+
+**Fedora:**
+```bash
+sudo dnf install -y xclip
+```
+
+**Arch Linux:**
+```bash
+sudo pacman -S xclip
+```
 
 ## Verify
 
