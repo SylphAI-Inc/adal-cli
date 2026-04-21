@@ -8,6 +8,23 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [1.0.4] - 2026-04-20
+
+- Added support for Claude Opus 4.7 models
+- Minor UX polish and bug fixes
+
+## [1.0.3] - 2026-04-16
+
+- Added Cron Agent support and interactive `/cron` management in the CLI
+- Fixed ChatGPT subscription streaming issues
+- Fixed Anthropic model image input handling
+- Improved error message handling
+
+## [1.0.2] - 2026-04-03
+
+- Improved error messages display
+- Improved image generation requests stability
+
 ## [1.0.1] - 2026-03-31
 
 - Optimized the running memory of the AdaL session process
