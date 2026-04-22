@@ -107,8 +107,30 @@ Supported models include `GPT-OSS 20B` and `Qwen3-Coder 30B`. Local models are f
 
 ## Key Features
 
-### Adaptive Thinking
-All models use adaptive thinking that automatically scales reasoning depth based on task complexity. There's no toggle—thinking is always on and adjusts itself. Perfect for debugging, architecture decisions, and complex refactoring.
+### Adaptive Thinking & Effort Control
+
+All models use adaptive thinking that automatically scales reasoning depth based on task complexity. Thinking is always on by default and adjusts itself — perfect for debugging, architecture decisions, and complex refactoring.
+
+You can also manually tune the thinking effort level with `/model config`:
+
+```bash
+/model config
+```
+
+This opens an interactive dialog right in your terminal. Use **arrow keys** (↑↓) to browse the available effort levels for your current model, then press **Enter** to confirm. The dialog shows a description for each level so you know what you're picking:
+
+| Level | Behavior |
+|-------|----------|
+| **max** | Always thinks with no constraints on depth |
+| **high** | Always thinks deeply (default) |
+| **medium** | Moderate thinking — may skip for simple queries |
+| **low** | Minimal thinking — fastest, lowest cost |
+
+The available levels depend on the model — not all models support every level. The dialog only shows what's valid for your current selection.
+
+**Shortcut:** You can also skip the dialog and set it inline: `/model config effort=high`.
+
+Your effort setting persists per project. Lower effort = faster responses and lower token cost for simple tasks.
 
 ### Prompt Caching
 Reusing context (files, conversation history) costs **50-90% less** with cached inputs. Caching is automatic — AdaL handles it behind the scenes.
