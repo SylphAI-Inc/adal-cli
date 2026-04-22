@@ -117,7 +117,7 @@ You can also manually tune the thinking effort level with `/model config`:
 /model config
 ```
 
-This opens an interactive dialog where you can pick from the available effort levels for your current model:
+This opens an interactive dialog right in your terminal. Use **arrow keys** (↑↓) to browse the available effort levels for your current model, then press **Enter** to confirm. The dialog shows a description for each level so you know what you're picking:
 
 | Level | Behavior |
 |-------|----------|
@@ -126,7 +126,9 @@ This opens an interactive dialog where you can pick from the available effort le
 | **medium** | Moderate thinking — may skip for simple queries |
 | **low** | Minimal thinking — fastest, lowest cost |
 
-You can also set it inline: `/model config effort=high`.
+The available levels depend on the model — not all models support every level. The dialog only shows what's valid for your current selection.
+
+**Shortcut:** You can also skip the dialog and set it inline: `/model config effort=high`.
 
 Your effort setting persists per project. Lower effort = faster responses and lower token cost for simple tasks.
 
