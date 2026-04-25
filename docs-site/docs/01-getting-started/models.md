@@ -23,12 +23,15 @@ Use `/model` to browse four sections:
 
 Your selection persists across future AdaL sessions in this project.
 
+AdaL syncs the `/model` catalog from the live proxy, so model availability, promotion badges, and pricing metadata can update without requiring a new CLI release.
+
 ## Model Promotions
 
 Active limited-time discounts. Pricing adjustments are applied automatically — no promo code needed.
 
 | Model | Discount | Window | Slug |
 |-------|----------|--------|------|
+| **GPT-5.5** | **50% off** (launch week) | 2026-04-25 → 2026-05-02 | `gpt-5.5` |
 | **Claude Opus 4.7** | **50% off** (launch week) | 2026-04-19 → 2026-04-27 | `claude-opus-4-7` |
 | **DeepSeek V4 Pro** | **50% off** (launch week) | 2026-04-25 → 2026-05-02 | `deepseek-v4-pro` |
 | **DeepSeek V4 Flash** | **50% off** (launch week) | 2026-04-25 → 2026-05-02 | `deepseek-v4-flash` |
@@ -43,6 +46,7 @@ These are our top picks, balancing capability, speed, and cost:
 | Model | Provider | Context | Best For |
 |-------|----------|---------|----------|
 | **Claude Opus 4.7** 🆕 | Anthropic | 1M | Most capable: complex reasoning, agentic coding. **50% off launch week (ends Apr 27)** |
+| **GPT-5.5** 🆕 | OpenAI | 922K | SOTA reasoning for multi-step agentic tasks. **50% off launch week (ends May 2)** |
 | **GPT-5.3 Codex** | OpenAI | 272K | Coding-optimized for long-horizon tasks (default, price baseline) |
 | **Claude Sonnet 4.6** | Anthropic | 200K | Daily coding (slightly more expensive) |
 | **Claude Opus 4.6** | Anthropic | 200K | Complex reasoning, production code (2x more expensive) |
@@ -66,8 +70,9 @@ These are our top picks, balancing capability, speed, and cost:
 - **Claude Opus 4.5** — Slug: `claude-opus-4-5-20251101`
 - **Claude Haiku 4.5** — fast, cheap. Slug: `claude-haiku-4-5-20251001`
 
-### OpenAI (8 models)
+### OpenAI (9 models)
 
+- 🆕 **GPT-5.5** — 922K context, high-output reasoning model. **50% off launch week through May 2.** Slug: `gpt-5.5`
 - 🆕 **GPT-5.4** — Slug: `gpt-5.4`
 - ⭐ **GPT-5.3 Codex** — coding-optimized, default baseline. Slug: `gpt-5.3-codex`
 - **GPT-5.2** — Slug: `gpt-5.2`

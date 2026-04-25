@@ -8,6 +8,14 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [1.0.7] - 2026-04-25
+
+- Added GPT-5.5 model support
+- Improved model catalog syncing for CLI, Web, and IDE launch flows
+- Improved model picker metadata display, including promotion badges and price tiers
+- Reduced Sentry noise in CI and added crash diagnostics documentation
+- Fixed reliability issues in model catalog and tool handling paths
+
 ## [1.0.6] - 2026-04-24
 
 - Fixed known issues in new model clients (DeepSeek & Kimi)
