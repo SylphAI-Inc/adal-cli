@@ -42,6 +42,7 @@ These are our top picks, balancing capability, speed, and cost:
 
 | Model | Provider | Context | Best For |
 |-------|----------|---------|----------|
+| **Claude Opus 4.7** 🆕 | Anthropic | 1M | Most capable: complex reasoning, agentic coding. **50% off launch week (ends Apr 27)** |
 | **GPT-5.3 Codex** | OpenAI | 272K | Coding-optimized for long-horizon tasks (default, price baseline) |
 | **Claude Sonnet 4.6** | Anthropic | 200K | Daily coding (slightly more expensive) |
 | **Claude Opus 4.6** | Anthropic | 200K | Complex reasoning, production code (2x more expensive) |
