@@ -8,6 +8,17 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [1.0.6] - 2026-04-24
+
+- Fixed known issues in new model clients (DeepSeek & Kimi)
+
+## [1.0.5] - 2026-04-24
+
+- Added GPT Image 2 support for image generation
+- Added DeepSeek V4 Flash & Pro models
+- Added Kimi K2.6 model
+- Minor UX polish and bug fixes
+
 ## [1.0.4] - 2026-04-20
 
 - Added support for Claude Opus 4.7 models
