@@ -6,7 +6,7 @@ description: "AdaL supports 20+ AI models — Claude Sonnet/Opus, GPT-5, Gemini 
 
 # Models & Billing
 
-AdaL gives you access to the best AI models from leading providers — all in one CLI. Switch models instantly with `/model` to match your task needs and budget.
+AdaL gives you access to the best AI models from leading providers. Switch models instantly with `/model` to match your task needs and budget.
 
 ## Switching Models
 
@@ -22,6 +22,19 @@ Use `/model` to browse four sections:
 - **Third Party Subscriptions**: OAuth-based third-party model access, such as ChatGPT Subscription
 
 Your selection persists across future AdaL sessions in this project.
+
+## Model Promotions
+
+Active limited-time discounts. Pricing adjustments are applied automatically — no promo code needed.
+
+| Model | Discount | Window | Slug |
+|-------|----------|--------|------|
+| **Claude Opus 4.7** | **50% off** (launch week) | 2026-04-19 → 2026-04-27 | `claude-opus-4-7` |
+| **DeepSeek V4 Pro** | **50% off** (launch week) | 2026-04-25 → 2026-05-02 | `deepseek-v4-pro` |
+| **DeepSeek V4 Flash** | **50% off** (launch week) | 2026-04-25 → 2026-05-02 | `deepseek-v4-flash` |
+| **Kimi K2.6** | **50% off** (launch week) | 2026-04-25 → 2026-05-02 | `kimi-k2.6` |
+
+> Promotions are sourced from the model registry and may update without notice. Check back here for the latest.
 
 ## Recommended Models
 
@@ -39,49 +52,71 @@ These are our top picks, balancing capability, speed, and cost:
 
 ## All Models by Provider
 
+> Legend: ⭐ recommended · 🆕 new
+
+### Anthropic (8 models)
+
+- ⭐ 🆕 **Claude Opus 4.7** — latest flagship, 1M context, adaptive thinking. **50% off launch week through Apr 27.** Slug: `claude-opus-4-7`
+- ⭐ **Claude Sonnet 4.6** — daily coding workhorse, 200K context. Slug: `claude-sonnet-4-6`
+- **Claude Sonnet 4.6 (1M)** — 1M context variant. Slug: `claude-sonnet-4-6-1m`
+- ⭐ **Claude Opus 4.6** — complex reasoning, production code. Slug: `claude-opus-4-6`
+- 🆕 **Claude Opus 4.6 (1M)** — 1M context variant. Slug: `claude-opus-4-6-1m`
+- **Claude Sonnet 4.5** — Slug: `claude-sonnet-4-5-20250929`
+- **Claude Opus 4.5** — Slug: `claude-opus-4-5-20251101`
+- **Claude Haiku 4.5** — fast, cheap. Slug: `claude-haiku-4-5-20251001`
+
 ### OpenAI (8 models)
 
-- **GPT-5.4**
-- **GPT-5.3 Codex**
-- **GPT-5.2**
-- **GPT-5.2 Codex**
-- **GPT-5 Mini**
-- **GPT-5.1 Codex**
-- **GPT-5.1 Codex Max**
-- **GPT-5 Codex**
-
-### Anthropic (7 models)
-
-- **Claude Sonnet 4.6**
-- **Claude Sonnet 4.6 (1M)**
-- **Claude Opus 4.6**
-- **Claude Opus 4.6 (1M)**
-- **Claude Sonnet 4.5**
-- **Claude Opus 4.5**
-- **Claude Haiku 4.5**
+- 🆕 **GPT-5.4** — Slug: `gpt-5.4`
+- ⭐ **GPT-5.3 Codex** — coding-optimized, default baseline. Slug: `gpt-5.3-codex`
+- **GPT-5.2** — Slug: `gpt-5.2`
+- **GPT-5.2 Codex** — Slug: `gpt-5.2-codex`
+- **GPT-5.1 Codex** — Slug: `gpt-5.1-codex`
+- **GPT-5.1 Codex Max** — Slug: `gpt-5.1-codex-max`
+- **GPT-5 Codex** — Slug: `gpt-5-codex`
+- **GPT-5 Mini** — Slug: `gpt-5-mini`
 
 ### Google (4 models)
 
-- **Gemini 3.1 Pro**
-- **Gemini 3 Pro**
-- **Gemini 3 Flash**
-- **Gemini 2.5 Pro**
+- ⭐ **Gemini 3.1 Pro** — multi-modal reasoning, 1M context. Slug: `gemini-3.1-pro-preview`
+- **Gemini 3 Pro** — Slug: `gemini-3-pro-preview`
+- ⭐ **Gemini 3 Flash** — ultra-fast, 1M context. Slug: `gemini-3-flash-preview`
+- **Gemini 2.5 Pro** — Slug: `gemini-2.5-pro`
 
-### Zai (6 models)
+### Z.ai GLM (6 models)
 
-- **GLM-5-Turbo**
-- **GLM-5**
-- **GLM-4.7**
-- **GLM-4.7 FlashX**
-- **GLM-4.7 Flash**
-- **GLM-4.5 Flash**
+- ⭐ **GLM-5** — general coding & reasoning at lower cost. Slug: `glm-5`
+- 🆕 **GLM-5-Turbo** — Slug: `glm-5-turbo`
+- **GLM-4.7** — Slug: `glm-4.7`
+- **GLM-4.7 FlashX** — fast budget coding. Slug: `glm-4.7-flashx`
+- **GLM-4.7 Flash** — Slug: `glm-4.7-flash`
+- **GLM-4.5 Flash** — Slug: `glm-4.5-flash`
 
 ### MiniMax (4 models)
 
-- **MiniMax M2.7**
-- **MiniMax M2.7 Highspeed**
-- **MiniMax M2.5**
-- **MiniMax M2.5 Highspeed**
+- 🆕 **MiniMax M2.7** — Slug: `minimax-m2.7`
+- 🆕 **MiniMax M2.7 Highspeed** — Slug: `minimax-m2.7-highspeed`
+- **MiniMax M2.5** — Slug: `minimax-m2.5`
+- **MiniMax M2.5 Highspeed** — Slug: `minimax-m2.5-highspeed`
+
+### DeepSeek (2 models)
+
+- 🆕 **DeepSeek V4 Pro** — 936K context, 64K output, adaptive thinking. Strong reasoning at a fraction of the cost. **50% off launch week through May 2.** Slug: `deepseek-v4-pro`
+- 🆕 **DeepSeek V4 Flash** — 984K context, 16K output. Fast & budget-friendly thinking for high-volume coding loops. **50% off launch week through May 2.** Slug: `deepseek-v4-flash`
+
+### Moonshot (1 model)
+
+- 🆕 **Kimi K2.6** — 224K context, 32K output, thinking enabled. Strong long-context reasoning. **50% off launch week through May 2.** Slug: `kimi-k2.6`
+
+## Image Models
+
+AdaL also supports image generation and editing. Ask AdaL to generate or edit an image and it will route to the appropriate model automatically.
+
+- ⭐ **GPT Image 2** (OpenAI) — high-fidelity photorealism and excellent in-image text rendering. Up to 4K, all common aspect ratios. Slug: `gpt-image-2`
+- ⭐ **Nano Banana 2** (Google) — default general-purpose image generation & editing. Slug: `nano-banana-2`
+- ⭐ **Nano Banana Pro** (Google) — professional assets, heavy text rendering. Slug: `nano-banana-pro`
+- **Nano Banana** (Google) — stable fallback, speed-optimized. Slug: `nano-banana`
+- **Imagen 4** (Google) — Slug: `imagen-4`
 
 ## Third Party Subscriptions
 
