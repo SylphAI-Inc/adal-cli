@@ -11,6 +11,14 @@ import TabItem from '@theme/TabItem';
 
 Get AdaL running in 2 minutes.
 
+## Prerequisites
+
+Before you install, make sure you have:
+
+- A supported terminal (iTerm2, VS Code terminal, Windows Terminal, or Linux terminal)
+- **Node.js 20+** if you choose the npm install path
+- A desktop browser available for first-run authentication
+
 ## Step 1: Install
 
 Open any terminal — we recommend iTerm2, cmux, and VS Code terminal. macOS native Terminal requires macOS 26+ for full theme support. For more details, see [Terminal Setup](#terminal-setup).
@@ -44,7 +52,14 @@ Go to your working directory and run:
 adal
 ```
 
-First run opens browser for authentication, then you're ready.
+First run opens a browser for authentication. After login completes, return to your terminal and start chatting.
+
+### What success looks like
+
+A successful first run means:
+- The browser authentication flow completes
+- You return to terminal and can submit prompts
+- AdaL responds without authentication errors
 
 ## Step 3: Try It
 
@@ -56,6 +71,16 @@ First run opens browser for authentication, then you're ready.
 > /init
 ```
 
+## Common Issues
+
+- **`adal: command not found`**
+  - Restart terminal, then run `which adal` to verify PATH.
+- **Browser didn't open for auth**
+  - Copy/paste the auth URL manually into your browser and complete login.
+- **npm install fails due to Node version**
+  - Check `node -v` and upgrade to Node.js 20+.
+- **Colors look incorrect**
+  - See [Terminal Setup](#terminal-setup) and enable truecolor.
 
 ## Essential Commands
 
