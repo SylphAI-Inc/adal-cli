@@ -8,6 +8,11 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [1.0.9] - 2026-05-01
+
+- Improved the UX of image gen with GPT and Gemini models
+- Fixed the windows crash bugs reported and improved product reliability
+
 ## [1.0.8] - 2026-04-25
 
 - Fixed image generation error and improved product reliability
