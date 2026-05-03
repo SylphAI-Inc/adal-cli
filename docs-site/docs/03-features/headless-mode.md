@@ -395,8 +395,4 @@ Check that your shell isn't buffering output. For real-time NDJSON, ensure line-
 adal -q "task" -o stream-json | stdbuf -oL jq '.'
 ```
 
-### Headless mode hangs
 
-If the process doesn't exit, check:
-1. **First run**: AdaL may take a few seconds to initialize on first run.
-2. **Network**: Auth requires an internet connection to verify credentials.
