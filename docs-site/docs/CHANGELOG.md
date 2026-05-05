@@ -8,6 +8,14 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [1.1.1] - 2026-05-05
+
+- Improved subagent performance and token efficiency
+- Fixed Anthropic multiple image input inconsistencies
+- Added support for reading SVG files
+- Added a native installer for Windows users
+- Added Browser Use mode; press Tab to toggle among Plan, Deep Research, and Browser Use modes
+
 ## [1.0.9] - 2026-05-01
 
 - Improved the UX of image gen with GPT and Gemini models
