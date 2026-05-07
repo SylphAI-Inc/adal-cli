@@ -16,13 +16,30 @@ Get AdaL running in 2 minutes.
 Open any terminal — we recommend iTerm2, cmux, and VS Code terminal. macOS native Terminal requires macOS 26+ for full theme support. For more details, see [Terminal Setup](#terminal-setup).
 
 <Tabs groupId="install-method">
-  <TabItem value="native" label="Native Install (Recommended)" default>
+  <TabItem value="mac-linux" label="macOS / Linux / WSL" default>
 
 ```bash
 curl -fsSL https://adal.sylph.ai/install.sh | bash
 ```
 
-Native install works on macOS, Linux, and WSL. For other platforms (e.g., Windows PowerShell), use the npm install.
+Recommended for macOS, Linux, and Windows users running AdaL inside WSL.
+
+  </TabItem>
+  <TabItem value="windows" label="Windows">
+
+PowerShell:
+
+```powershell
+irm https://adal.sylph.ai/install/windows | iex
+```
+
+Command Prompt:
+
+```batch
+powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://adal.sylph.ai/install/windows | iex"
+```
+
+Run either command to install the native Windows build.
 
   </TabItem>
   <TabItem value="npm" label="npm">
@@ -31,7 +48,7 @@ Native install works on macOS, Linux, and WSL. For other platforms (e.g., Window
 npm install -g @sylphai/adal-cli
 ```
 
-Requires [Node.js 20+](https://nodejs.org/en/download).
+Requires [Node.js 20+](https://nodejs.org/en/download). Use npm if you prefer managing AdaL through Node.js.
 
   </TabItem>
 </Tabs>
