@@ -8,6 +8,13 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [1.1.3] - 2026-05-09
+
+- Unified tool expand/collapse toggle for cleaner message display
+- Faster first-query response times
+- Improved token tracking accuracy for all Chat Completions providers
+- Subagents run more reliably across providers
+
 ## [1.1.1] - 2026-05-05
 
 - Improved subagent performance and token efficiency
@@ -28,17 +35,17 @@ All notable changes to AdaL CLI will be documented in this file.
 ## [1.0.7] - 2026-04-25
 
 - Added GPT-5.5 model support
-- First-week 50%-off promotion for new models including GPT, DeepSeek, Kimi, and Claude
+- First week 50%-off promotion for new models include GPT, DeepSeek, KIMI and Claude
 
 ## [1.0.6] - 2026-04-24
 
-- Fixed known issues in new model clients (DeepSeek & Kimi)
+- Fixed known issues in new model clients(DeepSeek & KIMI)
 
 ## [1.0.5] - 2026-04-24
 
 - Added GPT Image 2 support for image generation
-- Added DeepSeek V4 Flash & Pro models
-- Added Kimi K2.6 model
+- Added DeepSeek V4 Flash&Pro models
+- Added KIMI 2.6 model
 - Minor UX polish and bug fixes
 
 ## [1.0.4] - 2026-04-20
@@ -65,6 +72,7 @@ All notable changes to AdaL CLI will be documented in this file.
 - Added worktree info in exit UX if applicable
 
 ## [1.0.0] - 2026-03-27
+
 - Introduced Deep Research, a dedicated mode for investigating complex tasks and delivering structured reports (Tab to toggle)
 - Added Linux ARM64 support
 - Fixed Linux lagging issue
@@ -333,4 +341,3 @@ All notable changes to AdaL CLI will be documented in this file.
 ## [0.2.3] - 2025-12-04
 - Fixed known streaming bugs
 - Improved user experience
-
