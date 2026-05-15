@@ -8,6 +8,14 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [1.1.4] - 2026-05-15
+
+- (Preview) `/ide` command now available - open your session in the browser with one keystroke
+- (Preview) self-review agent feature now available in `/ide` - open your PR and the agent auto-clusters and explains huge reviews for you
+- More reliable auto-updates on Windows
+- Improved instruction following and tool accuracy across all models
+- Improved cross-platform reliability on Windows with non-UTF-8 locales
+
 ## [1.1.3] - 2026-05-09
 
 - Unified tool expand/collapse toggle for cleaner message display
