@@ -1,36 +1,47 @@
 ---
 sidebar_position: 5
-title: AdaL Web (Preview)
-description: "AdaL Web (Preview) is a browser-based AI coding agent interface. Core capabilities are available today, with full feature parity planned. Launch with adal --web."
+title: AdaL Web (Legacy)
+description: "AdaL Web is the legacy browser interface. Use /ide from AdaL CLI to open Desktop when installed, or Web as a fallback."
 ---
 
-# AdaL Web (Preview)
+# AdaL Web (Legacy)
 
-AdaL Web is a browser-based interface for AdaL, launched from the same CLI package you already use.
+AdaL Web is the legacy browser-based interface for AdaL. New users should move to **AdaL Desktop** for the best visual workspace, project navigation, and review experience.
 
-## Launch
+:::tip Use `/ide`
+From AdaL CLI, use `/ide` to open the visual AdaL workspace. If AdaL Desktop is installed, `/ide` opens the Desktop app. If Desktop is not installed, AdaL opens the Web interface in your browser as a fallback.
+:::
 
-Open any terminal, `cd` to your project directory, and run:
+## Recommended path
 
-```bash
-adal --web
+For the best experience:
+
+1. Install **[AdaL Desktop](./desktop-app.md)**
+2. Open AdaL CLI in your project
+3. Run:
+
+```text
+/ide
 ```
 
-This automatically opens AdaL in your default browser at `http://localhost:xxxx`. The backend starts automatically — no extra setup needed.
+This gives you the Desktop workspace when available, while still keeping Web available as the legacy browser fallback.
 
-## Features
+## When Web opens
 
-AdaL Web shares the same agent engine and backend as AdaL CLI. Core capabilities are available today, with full feature parity planned.
+AdaL Web opens when you use `/ide` and AdaL Desktop is not installed or not available on your machine.
 
-### Available Now
+The Web interface runs in your default browser and keeps the similar AdaL Desktop workflow but not full support.
 
-- Conduct tasks with all tools, such as read, edit, web search, and bash tools
-- Subagent availability
-- Toggles for model selection, plan mode, auto-approve edits
-- Image upload and select project files as context from the sidebar
-- AGENTS.md creation from the sidebar
-- One-click memory compaction from the sidebar
-- Resume previous conversations from the sidebar
-- Diff viewer in the sidebar for reviewing changes
+## Move to Desktop
 
-Both AdaL interfaces (CLI and Web) connect to the same backend — your project context, session history, and more are shared.
+AdaL Web remains available for compatibility, but Desktop is the recommended visual interface going forward.
+
+Desktop gives you a more native experience for:
+
+- Project selection
+- Recent sessions
+- File browsing
+- Visual review of code changes
+- Focused project work outside the terminal
+
+See **[Desktop App (Preview)](./desktop-app.md)** to install and use the new Desktop experience.
