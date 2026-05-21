@@ -79,11 +79,12 @@ These are our top picks, balancing capability, speed, and cost:
 - **GPT-5 Mini** — Slug: `openai-gpt-5-mini`
 - **GPT-5.2** — Slug: `openai-gpt-5.2`
 
-### Google (4 models)
+### Google (5 models)
 
 - ⭐ **Gemini 3.1 Pro** — Multi-modal + design · 1.5x price, 1M context Slug: `google-gemini-3.1-pro-preview`
 - **Gemini 3 Pro** — Slug: `google-gemini-3-pro-preview`
 - ⭐ **Gemini 3 Flash** — Ultra-fast, simple tasks · 0.3x cheapest Slug: `google-gemini-3-flash-preview`
+- **Gemini 3.5 Flash** — Slug: `google-gemini-3.5-flash`
 - **Gemini 2.5 Pro** — Slug: `google-gemini-2.5-pro`
 
 ### Z.ai GLM (6 models)
