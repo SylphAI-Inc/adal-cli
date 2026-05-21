@@ -27,14 +27,14 @@ Your selection persists across future AdaL sessions in this project.
 
 Active limited-time discounts. Pricing adjustments are applied automatically — no promo code needed.
 
-<!-- AUTO-GENERATED:ALL-MODELS:START -->
+<!-- AUTO-GENERATED:PROMOTIONS:START -->
 | Model | Discount | Window | Slug |
 |-------|----------|--------|------|
 | **Claude Opus 4.7** | **50% off** (launch week) | 2026-04-19 → 2026-04-27 | `claude-opus-4-7` |
 | **DeepSeek V4 Pro** | **50% off** (launch week) | 2026-04-25 → 2026-05-02 | `deepseek-v4-pro` |
 | **DeepSeek V4 Flash** | **50% off** (launch week) | 2026-04-25 → 2026-05-02 | `deepseek-v4-flash` |
 | **Kimi K2.6** | **50% off** (launch week) | 2026-04-25 → 2026-05-02 | `kimi-k2.6` |
-<!-- AUTO-GENERATED:ALL-MODELS:END -->
+<!-- AUTO-GENERATED:PROMOTIONS:END -->
 
 > Promotions are sourced from the model registry and may update without notice. Check back here for the latest.
 
