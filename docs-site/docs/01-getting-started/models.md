@@ -35,7 +35,6 @@ Active limited-time discounts. Pricing adjustments are applied automatically —
 > Promotions are sourced from the model registry and may update without notice. Check back here for the latest.
 <!-- AUTO-GENERATED:PROMOTIONS:END -->
 
-> Promotions are sourced from the model registry and may update without notice. Check back here for the latest.
 
 ## Recommended Models
 
