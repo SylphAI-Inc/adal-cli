@@ -36,7 +36,6 @@ Active limited-time discounts. Pricing adjustments are applied automatically —
 | **Kimi K2.6** | **50% off** (launch week) | 2026-04-25 → 2026-05-02 | `kimi-k2.6` |
 <!-- AUTO-GENERATED:PROMOTIONS:END -->
 
-> Promotions are sourced from the model registry and may update without notice. Check back here for the latest.
 
 ## Recommended Models
 
