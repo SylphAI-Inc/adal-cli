@@ -83,8 +83,8 @@ These are our top picks, balancing capability, speed, and cost:
 
 - ⭐ **Gemini 3.1 Pro** — Multi-modal + design · 1.5x price, 1M context Slug: `google-gemini-3.1-pro-preview`
 - **Gemini 3 Pro** — Slug: `google-gemini-3-pro-preview`
-- ⭐ **Gemini 3 Flash** — Ultra-fast, simple tasks · 0.3x cheapest Slug: `google-gemini-3-flash-preview`
-- **Gemini 3.5 Flash** — Slug: `google-gemini-3.5-flash`
+- **Gemini 3 Flash** — Slug: `google-gemini-3-flash-preview`
+- ⭐ 🆕 **Gemini 3.5 Flash** — Multimodal + thinking · 0.75x price, 1M context Slug: `google-gemini-3.5-flash`
 - **Gemini 2.5 Pro** — Slug: `google-gemini-2.5-pro`
 
 ### Z.ai GLM (6 models)
@@ -105,7 +105,7 @@ These are our top picks, balancing capability, speed, and cost:
 
 ### DeepSeek (2 models)
 
-- 🆕 **DeepSeek V4 Flash** — Slug: `deepseek-deepseek-v4-flash`
+- **DeepSeek V4 Flash** — Slug: `deepseek-deepseek-v4-flash`
 - 🆕 **DeepSeek V4 Pro** — Slug: `deepseek-deepseek-v4-pro`
 
 ### Moonshot (1 models)
