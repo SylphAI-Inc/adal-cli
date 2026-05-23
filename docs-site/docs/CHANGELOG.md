@@ -8,6 +8,17 @@ slug: /changelog
 
 All notable changes to AdaL CLI will be documented in this file.
 
+## [1.2.1] - 2026-05-23
+
+- Gemini 3.5 Flash model now available via `/model`
+- CLI: Context breakdown details now visible to all users in `/stats` session statistics
+- Desktop: Marked desktop as preview in header
+- Desktop: Seamless `/ide` handoff — Desktop app stays connected without backend interruption
+- Desktop: Clickable file paths in chat messages — click any inline path to open it in the file viewer
+- Desktop: Improved file viewer with better media previews and smart link navigation
+- Desktop: Smoother Desktop updates — progress shown in-app instead of native modal dialogs
+- Desktop: More reliable sessions after auto-updates (no more stale certificate errors)
+
 ## [1.2.0] - 2026-05-20
 
 - (Preview) [Desktop App](https://docs.sylph.ai/getting-started/desktop-app) now available - download app and open with icon or `/ide` command
