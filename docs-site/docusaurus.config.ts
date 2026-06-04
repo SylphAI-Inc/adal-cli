@@ -64,6 +64,11 @@ const config: Config = {
       },
       items: [
         {
+          to: '/getting-started/quickstart',
+          label: 'Quickstart',
+          position: 'left',
+        },
+        {
           to: '/',
           label: 'Get Started',
           position: 'left',
