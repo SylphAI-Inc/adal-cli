@@ -22,6 +22,14 @@ I am available as a terminal CLI — **AdaL CLI** (`adal`) — launched from you
 
 [> Watch the demo on YouTube](https://www.youtube.com/watch?v=3kLl0V4uDR8)
 
+> **Start free — 7-day trial, no credit card required.**
+
+### Get started in 2 minutes
+
+```bash
+curl -fsSL https://adal.sylph.ai/install.sh | bash
+```
+
 Talk is cheap, [let's get started](/getting-started/quickstart).
 
 
