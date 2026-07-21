@@ -11,9 +11,16 @@ import TabItem from '@theme/TabItem';
 
 Get AdaL running in 2 minutes.
 
+You can use AdaL in the terminal or via the Desktop app. Both give you access not only to the agent, but also to the agentic IDE for tasks that are either more visual or require a diff view. Quick setup in 2 minutes.
+
+<video controls width="100%" style={{borderRadius: '8px', marginBottom: '1.5rem'}}>
+  <source src="/video/install-tutorial.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
 ## Step 1: Install
 
-Open any terminal — we recommend iTerm2, cmux, and VS Code terminal. macOS native Terminal requires macOS 26+ for full theme support. For more details, see [Terminal Setup](#terminal-setup).
+Open any terminal — we recommend iTerm2 terminal. macOS native Terminal requires macOS 26+ for full theme support. For more details, see [Terminal Setup](#terminal-setup).
 
 <Tabs groupId="install-method">
   <TabItem value="native" label="Native Install (Recommended)" default>
