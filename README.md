@@ -9,6 +9,7 @@
   <br /><br />
 
   [![Docs](https://img.shields.io/badge/docs-docs.sylph.ai-blue)](https://docs.sylph.ai)
+  [![Blog](https://img.shields.io/badge/blog-blog.sylph.ai-orange)](https://blog.sylph.ai)
   [![CLI](https://img.shields.io/badge/product-AdaL%20CLI-FF5898)](https://adalagent.ai/product/cli)
   [![Skills](https://img.shields.io/badge/contribute-skills-7057ff)](https://github.com/SylphAI-Inc/skills)
   [![Discord](https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white)](https://discord.com/invite/ezzszrRZvT)
@@ -110,6 +111,18 @@ Everything is published at [docs.sylph.ai](https://docs.sylph.ai/).
 
 **Also:** [Changelog](https://docs.sylph.ai/changelog) · [Troubleshooting](https://docs.sylph.ai/troubleshooting/linux-clipboard)
 
+## Blog
+
+Let's have a journey on agents and models — [blog.sylph.ai](https://blog.sylph.ai/).
+
+| Post | |
+|---|---|
+| [Loop Engineering For Everyone](https://blog.sylph.ai/posts/loop-engineering-for-everyone) | Making loop engineering simple and affordable enough for every engineer |
+| [True Autonomous Coding Agents Require Browser Use](https://blog.sylph.ai/posts/coding-agent-autonomous-browser-use) | Real production bugs live in cookies, hydration, redirects, and clicks |
+| [AdaL Is 100% Aligned with Andrej Karpathy](https://blog.sylph.ai/posts/karpathy-agentic-engineering-adal) | Human understanding is the bottleneck of agentic engineering |
+| [The Ultimate Guide to Agentic Tool Calling](https://blog.sylph.ai/posts/ultimate-guide-agentic-tool-calling) | What really happens between the model and the JSON tool call |
+| [The Last Harness You'll Ever Build](https://blog.sylph.ai/posts/last-harness-youll-ever-build) | The hard part is no longer the model — it is everything around it |
+
 ## 📝 Contributing
 
 Skills are the best way to contribute. A skill is a markdown file that teaches the agent a repeatable workflow — no need to touch the CLI internals.
@@ -178,6 +191,7 @@ New here? Browse [good first issues](https://github.com/SylphAI-Inc/adal-cli/iss
 ## Links
 
 - **Docs:** [docs.sylph.ai](https://docs.sylph.ai)
+- **Blog:** [blog.sylph.ai](https://blog.sylph.ai/)
 - **CLI product page:** [adalagent.ai/product/cli](https://adalagent.ai/product/cli)
 - **Company:** [adalagent.ai/company](https://adalagent.ai/company)
 - **Skills marketplace:** [github.com/SylphAI-Inc/skills](https://github.com/SylphAI-Inc/skills)
