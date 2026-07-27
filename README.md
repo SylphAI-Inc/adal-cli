@@ -11,7 +11,7 @@
   [![Docs](https://img.shields.io/badge/docs-docs.sylph.ai-blue)](https://docs.sylph.ai)
   [![Company](https://img.shields.io/badge/company-adalagent.ai-FF5898)](https://adalagent.ai/company)
   [![Discord](https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white)](https://discord.com/invite/ezzszrRZvT)
-  [![X](https://img.shields.io/badge/follow-%40adalengineer-black?logo=x)](https://x.com/adalengineer)
+  [![X](https://img.shields.io/badge/follow-%40adalagent-black?logo=x)](https://x.com/adalagent)
 
   <br />
 
@@ -28,7 +28,7 @@
 
 This is the **public documentation site** for [AdaL CLI](https://docs.sylph.ai/) — the source behind [docs.sylph.ai](https://docs.sylph.ai/).
 
-AdaL is an AI coding agent that runs in your terminal, created by [SylphAI](https://sylph.ai/) and named after Ada Lovelace, the world's first programmer. It works with Claude, GPT, Gemini, GLM, MiniMax, and local models.
+AdaL is an AI coding agent that runs in your terminal, created by [SylphAI](https://adalagent.ai/) and named after Ada Lovelace, the world's first programmer. It works with Claude, GPT, Gemini, GLM, MiniMax, and local models.
 
 ### Why we build it
 
@@ -144,14 +144,14 @@ We are a small crew of researchers and builders working at the edge of what is u
 - **Docs:** [docs.sylph.ai](https://docs.sylph.ai)
 - **Company:** [adalagent.ai/company](https://adalagent.ai/company)
 - **GitHub:** [github.com/SylphAI-Inc/adal-cli](https://github.com/SylphAI-Inc/adal-cli)
-- **X (Twitter):** [@adalengineer](https://x.com/adalengineer)
+- **X (Twitter):** [@adalagent](https://x.com/adalagent)
 - **Discord:** [Join our community](https://discord.com/invite/ezzszrRZvT)
-- **SylphAI:** [sylph.ai](https://sylph.ai)
+- **SylphAI:** [adalagent.ai](https://adalagent.ai/)
 
 ---
 
 <div align="center">
-  <!-- <strong>Star <a href="https://github.com/SylphAI-Inc/adal-cli">AdaL CLI</a> · Follow <a href="https://x.com/adalengineer">@adalengineer</a></strong>
+  <!-- <strong>Star <a href="https://github.com/SylphAI-Inc/adal-cli">AdaL CLI</a> · Follow <a href="https://x.com/adalagent">@adalagent</a></strong>
   <br /> -->
-  Built with <a href="https://docusaurus.io/">Docusaurus</a> by AdaL & <a href="https://sylph.ai">SylphAI</a>
+  Built with <a href="https://docusaurus.io/">Docusaurus</a> by AdaL & <a href="https://adalagent.ai/">SylphAI</a>
 </div>
