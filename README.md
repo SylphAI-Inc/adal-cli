@@ -25,20 +25,43 @@
 
 ---
 
-## What is AdaL?
+## About
 
 AdaL is an AI coding agent that runs in your terminal, created by [SylphAI](https://adalagent.ai/) and named after Ada Lovelace, the world's first programmer. It works with Claude, GPT, Gemini, GLM, Kimi, DeepSeek, MiniMax, and local models.
 
-```bash
-npm install -g @sylphai/adal-cli
+**This repository is the community home for AdaL CLI** — report issues, share what you build, and contribute skills.
 
-# cd to your working directory and run
+### Install AdaL CLI
+
+Native install is recommended: it manages AdaL's runtime and updates consistently across platforms.
+
+**macOS, Linux, WSL:**
+
+```bash
+curl -fsSL https://adal.sylph.ai/install.sh | bash
+```
+
+**Windows PowerShell:**
+
+```powershell
+irm https://adal.sylph.ai/install/windows | iex
+```
+
+**Windows CMD:**
+
+```bat
+powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://adal.sylph.ai/install/windows | iex"
+```
+
+> If `irm` is not recognized, you are in CMD rather than PowerShell — use the Windows CMD command above, or open PowerShell. Your prompt shows `PS C:\...` in PowerShell and `C:\...` in CMD.
+
+Then go to your working directory and run:
+
+```bash
 adal
 ```
 
-Requires [Node.js 20+](https://nodejs.org/en/download). See the [Quickstart](https://docs.sylph.ai/getting-started/quickstart) to get running.
-
-> **This repository is the community home for AdaL CLI** — issues, feature requests, and skills. Use it to report bugs, share what you build, and contribute skills.
+First run opens the browser for authentication. See the [Quickstart](https://docs.sylph.ai/getting-started/quickstart) for details.
 
 ## 📖 Documentation — [docs.sylph.ai](https://docs.sylph.ai/)
 
