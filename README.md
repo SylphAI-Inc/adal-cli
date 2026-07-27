@@ -53,7 +53,7 @@ irm https://adal.sylph.ai/install/windows | iex
 powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://adal.sylph.ai/install/windows | iex"
 ```
 
-> If `irm` is not recognized, you are in CMD rather than PowerShell — use the Windows CMD command above, or open PowerShell. Your prompt shows `PS C:\...` in PowerShell and `C:\...` in CMD.
+> If `irm` is not recognized, you are in CMD rather than PowerShell — use the Windows CMD command above, or open PowerShell.
 
 Then go to your working directory and run:
 
@@ -63,18 +63,40 @@ adal
 
 First run opens the browser for authentication. See the [Quickstart](https://docs.sylph.ai/getting-started/quickstart) for details.
 
-## 📖 Documentation — [docs.sylph.ai](https://docs.sylph.ai/)
+## The CLI
 
-Everything about installing, configuring, and driving AdaL lives at **[docs.sylph.ai](https://docs.sylph.ai/)**.
+**Start where developers move fastest.** AdaL CLI brings agentic work into the terminal — with model switching, reviewable tool use, session memory, and IDE handoff.
 
-| Start here | |
+- **Terminal-native** — command discovery, tool confirmations, streaming work, and clean recovery paths.
+- **Review-first** — tool calls, file edits, diffs, and plans stay visible, so you understand the work before signing off.
+- **Model freedom** — switch between Claude, Gemini, GLM, Kimi, DeepSeek, MiniMax and more from a fast command palette.
+- **CLI → IDE handoff** — open the same session in AdaL's agentic IDE when a task needs files, terminal, and canvas together.
+
+| Command | What it does |
+|---|---|
+| `/model` | Choose the best model for the job |
+| `/ide` | Open the current session in the agentic IDE |
+| `/resume` | Return to previous work with context intact |
+| `/stats` | Inspect session health, model, and usage |
+
+More on the [CLI product page](https://adalagent.ai/product/cli).
+
+## Documentation
+
+Everything is published at [docs.sylph.ai](https://docs.sylph.ai/).
+
+**Get started**
+
+| Page | What it covers |
 |---|---|
 | [Quickstart](https://docs.sylph.ai/getting-started/quickstart) | Install, authenticate, first run |
 | [Models & Billing](https://docs.sylph.ai/getting-started/models) | Supported models and pricing |
 | [Input Methods](https://docs.sylph.ai/getting-started/input-methods) | Files, images, pasted content |
 | [Workflows & Examples](https://docs.sylph.ai/getting-started/workflows-and-examples) | Real end-to-end usage |
 
-| Go deeper | |
+**Features**
+
+| Page | What it covers |
 |---|---|
 | [Slash Commands](https://docs.sylph.ai/features/slash-commands) · [Keyboard Shortcuts](https://docs.sylph.ai/features/keyboard-shortcuts) | Drive the CLI fast |
 | [Skills & Plugins](https://docs.sylph.ai/features/plugins-and-skills) | Extend the agent |
@@ -88,31 +110,11 @@ Everything about installing, configuring, and driving AdaL lives at **[docs.sylp
 
 **Also:** [Changelog](https://docs.sylph.ai/changelog) · [Troubleshooting](https://docs.sylph.ai/troubleshooting/linux-clipboard)
 
-## ⚡ The CLI — [adalagent.ai/product/cli](https://adalagent.ai/product/cli)
+## 📝 Contributing
 
-**Start where developers move fastest.** AdaL CLI brings agentic work into the terminal — with model switching, reviewable tool use, session memory, and IDE handoff.
+Skills are the best way to contribute. A skill is a markdown file that teaches the agent a repeatable workflow — no need to touch the CLI internals.
 
-- **Terminal-native** — a CLI that feels like a product surface: command discovery, tool confirmations, streaming work, and clean recovery paths.
-- **Review-first** — tool calls, file edits, diffs, plans, and verification steps stay visible, so you understand the work before signing off.
-- **Model freedom** — move between Claude, Gemini, GLM, Kimi, DeepSeek, MiniMax and more through a fast command palette, without provider-specific setup friction.
-- **CLI → IDE handoff** — start in the terminal, then open the same session in AdaL's agentic IDE when the task needs files, terminal, and canvas together.
-
-| Command | What it does |
-|---|---|
-| `/model` | Choose the best model for the job |
-| `/ide` | Open the current session in the agentic IDE |
-| `/resume` | Return to previous work with context intact |
-| `/stats` | Inspect session health, model, and usage |
-
-**The workflow:** describe the task in plain language → AdaL plans, acts, and verifies with tool visibility → switch models or open `/ide` without losing context → review the diff, approve, and ship.
-
-Full details on the [product page](https://adalagent.ai/product/cli).
-
-## 🛠️ Contribute a Skill
-
-**Skills are the best way to contribute to AdaL.** A skill is a markdown file that teaches the agent a repeatable workflow — no need to touch the CLI internals. If you have a process you have refined (a deployment runbook, a review checklist, a framework-specific pattern), it can become a skill other developers install in one command.
-
-Skills live in **[SylphAI-Inc/skills](https://github.com/SylphAI-Inc/skills)** (MIT licensed) and install straight into the CLI:
+Skills live in [SylphAI-Inc/skills](https://github.com/SylphAI-Inc/skills) (MIT) and install straight into the CLI:
 
 ```bash
 /plugin marketplace add SylphAI-Inc/skills
@@ -120,14 +122,12 @@ Skills live in **[SylphAI-Inc/skills](https://github.com/SylphAI-Inc/skills)** (
 /skills   # see what you have
 ```
 
-### How to contribute one
+### Contribute a Skill
 
 1. **Fork** [SylphAI-Inc/skills](https://github.com/SylphAI-Inc/skills)
 2. **Create** your skill at `skills/<your-skill-name>/SKILL.md`
-3. **Register** it in `.claude-plugin/marketplace.json` under the appropriate plugin
+3. **Register** it in `.claude-plugin/marketplace.json`
 4. **Open a pull request**
-
-The `SKILL.md` format:
 
 ```markdown
 ---
@@ -141,36 +141,29 @@ version: 1.0.0
 
 ## When to Use
 
-Describe the trigger conditions — when should the agent reach for this?
+Describe the trigger conditions.
 
 ## Instructions
 
 Step-by-step guidance for the agent.
 ```
 
-New to it? Install the **[create-skill](https://github.com/SylphAI-Inc/skills/blob/main/skills/create-skill/SKILL.md)** skill and let AdaL scaffold one with you. For a large reference example, see **[swe-cli-skills](https://github.com/SylphAI-Inc/swe-cli-skills)** — 20+ expert CLI guides.
+New to it? Install [create-skill](https://github.com/SylphAI-Inc/skills/blob/main/skills/create-skill/SKILL.md) and let AdaL scaffold one with you. For a larger example, see [swe-cli-skills](https://github.com/SylphAI-Inc/swe-cli-skills).
 
-### What makes a good skill
+### Share Your Use Case
 
-- **Encodes judgment, not reference docs** — the gotchas, safety guardrails, error recovery, and anti-patterns a senior engineer would know
-- **Has clear trigger conditions** — so the agent knows *when* to use it
-- **Is specific** — "deploy a Next.js app to Vercel with preview envs" beats "help with deployment"
-
-## 💬 Share Your Use Case
-
-**We want to see what you build with AdaL.** Real workflows teach us more than any feature request — they show us where the agent helps, where it gets in the way, and what to build next. They also help other developers discover what is possible.
+We want to see what you build. Real workflows show us where the agent helps and what to build next — and help other developers discover what is possible.
 
 **[Share your use case →](https://github.com/SylphAI-Inc/adal-cli/issues/new)**
 
-Tell us:
-- **What you were trying to do** — the task, project, or workflow
-- **How you used AdaL** — prompts, skills, models, slash commands
-- **What worked, and what didn't** — the honest version is the useful version
-- **Anything you would want next**
+- What you were trying to do
+- How you used AdaL — prompts, skills, models, commands
+- What worked, and what didn't
+- Anything you would want next
 
-Screenshots, terminal recordings, and links to the resulting PR are all welcome. Prefer to chat? Post it in **[Discord](https://discord.com/invite/ezzszrRZvT)** or tag **[@adalagent](https://x.com/adalagent)** on X.
+Screenshots and terminal recordings welcome. Prefer to chat? Post in [Discord](https://discord.com/invite/ezzszrRZvT) or tag [@adalagent](https://x.com/adalagent) on X.
 
-## 🐛 Report an Issue
+## 🐛 Reporting Issues
 
 **[Open an Issue →](https://github.com/SylphAI-Inc/adal-cli/issues/new)**
 
@@ -180,17 +173,7 @@ Please include:
 - AdaL CLI version (`adal -v`)
 - OS and terminal
 
-Looking for somewhere to start? Browse **[good first issues](https://github.com/SylphAI-Inc/adal-cli/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)**.
-
-## Why we build it
-
-[SylphAI](https://adalagent.ai/company) is building **autonomy that humans can trust** — systems where agents execute, memory preserves context, and humans stay aligned with the work.
-
-- **True autonomy** — agents should not replace human judgment; they should move with it, preserving context, trust, and control.
-- **Human-aligned automation** — the bottleneck is not generating more work, it is helping humans understand, guide, and validate automated work faster.
-- **Developer-first agents** — we start with coding agents because software is where autonomy can be measured, reviewed, and improved every day.
-
-We are a small crew of researchers and builders. If that sounds like your kind of work, email your resume and a note on a project you are proud of to [contact@sylph.ai](mailto:contact@sylph.ai) — more on the [company page](https://adalagent.ai/company).
+New here? Browse [good first issues](https://github.com/SylphAI-Inc/adal-cli/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
 
 ## Links
 
@@ -205,5 +188,5 @@ We are a small crew of researchers and builders. If that sounds like your kind o
 ---
 
 <div align="center">
-  <strong>Built by AdaL & <a href="https://adalagent.ai/">SylphAI</a></strong>
+  Built by AdaL & <a href="https://adalagent.ai/">SylphAI</a>
 </div>
