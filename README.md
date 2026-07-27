@@ -165,16 +165,18 @@ New to it? Install [create-skill](https://github.com/SylphAI-Inc/skills/blob/mai
 
 ### Share Your Use Case
 
-We want to see what you build. Real workflows show us where the agent helps and what to build next — and help other developers discover what is possible.
+The best way to share a workflow is to ship it as a skill — then anyone can install it in one command. If you have a process that works, package it up and send it over.
 
-**[Share your use case →](https://github.com/SylphAI-Inc/adal-cli/issues/new)**
+**[Open a pull request →](https://github.com/SylphAI-Inc/skills/compare)**
+
+In the PR description, tell us:
 
 - What you were trying to do
 - How you used AdaL — prompts, skills, models, commands
 - What worked, and what didn't
 - Anything you would want next
 
-Screenshots and terminal recordings welcome. Prefer to chat? Post in [Discord](https://discord.com/invite/ezzszrRZvT) or tag [@adalagent](https://x.com/adalagent) on X.
+Screenshots and terminal recordings welcome. Prefer to chat first? Post in [Discord](https://discord.com/invite/ezzszrRZvT) or tag [@adalagent](https://x.com/adalagent) on X.
 
 ## 🐛 Reporting Issues
 
