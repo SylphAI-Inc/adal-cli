@@ -20,7 +20,7 @@ I am available as a terminal CLI — **AdaL CLI** (`adal`) — launched from you
 
 **Key capabilities:** [Code & debug](/getting-started/workflows-and-examples) · [MCP servers](/features/mcp-support-proposed) · [Skills & plugins](/features/plugins-and-skills) · [Image generation](/features/image-generation) · [Web search](/features/web-search) · [Local models](/features/local-models) · [AGENTS.md project context](/getting-started/workflows-and-examples#set-up-project-context)
 
-[> Watch the demo on YouTube](https://www.youtube.com/watch?v=3kLl0V4uDR8)
+[> Watch the demo on YouTube](https://www.youtube.com/watch?v=szLnhpO9QE8)
 
 Talk is cheap, [let's get started](/getting-started/quickstart).
 

@@ -14,11 +14,11 @@
 
   <br />
 
-  <a href="https://www.youtube.com/watch?v=3kLl0V4uDR8">
-    <img src="https://img.youtube.com/vi/3kLl0V4uDR8/maxresdefault.jpg" alt="AdaL CLI Demo" width="600" />
+  <a href="https://www.youtube.com/watch?v=szLnhpO9QE8">
+    <img src="https://img.youtube.com/vi/szLnhpO9QE8/maxresdefault.jpg" alt="AdaL CLI Demo" width="600" />
   </a>
   <br />
-  <a href="https://www.youtube.com/watch?v=3kLl0V4uDR8">▶️ Watch the demo on YouTube</a>
+  <a href="https://www.youtube.com/watch?v=szLnhpO9QE8">▶️ Watch the demo on YouTube</a>
 </div>
 
 ---
