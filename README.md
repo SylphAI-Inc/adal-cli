@@ -188,8 +188,6 @@ Please include:
 - AdaL CLI version (`adal -v`)
 - OS and terminal
 
-New here? Browse [good first issues](https://github.com/SylphAI-Inc/adal-cli/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
-
 ## Links
 
 - **Docs:** [docs.sylph.ai](https://docs.sylph.ai)
