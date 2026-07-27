@@ -5,7 +5,7 @@
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="assets/adal-text-logo.png" alt="AdaL Text" width="280" />
   <br /><br />
-  <strong>Your self-evolving agent for engineering and research</strong>
+  <strong>AdaL CLI is a terminal-native platform for orchestrating AI agents, models, and tools into autonomous, end-to-end workflows with persistent memory and human alignment.</strong>
   <br /><br />
 
   [![Docs](https://img.shields.io/badge/docs-docs.sylph.ai-blue)](https://docs.sylph.ai)
