@@ -1,9 +1,9 @@
 # AdaL CLI Documentation
 
 <div align="center">
-  <img src="docs-site/static/adal-face-logo.svg" alt="AdaL Face" width="150" />
+  <img src="docs-site/static/adal-face-logo.png" alt="AdaL Face" width="150" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs-site/static/adal-text-logo.svg" alt="AdaL Text" width="280" />
+  <img src="docs-site/static/adal-text-logo.png" alt="AdaL Text" width="280" />
   <br /><br />
   <strong>Your self-evolving agent for engineering and research</strong>
   <br /><br />

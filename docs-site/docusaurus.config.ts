@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'AdaL',
   tagline: 'Your Agentic Coding Tool in Terminal',
-  favicon: 'adal-face-logo.svg',
+  favicon: 'adal-face-logo-icon.png',
 
   // Set the production url of your site here
   url: 'https://docs.sylph.ai',
@@ -59,8 +59,8 @@ const config: Config = {
       title: '',
       logo: {
         alt: 'AdaL Logo',
-        src: 'adal-face-logo.svg',
-        srcDark: 'adal-face-logo.svg',
+        src: 'adal-face-logo.png',
+        srcDark: 'adal-face-logo.png',
       },
       items: [
         {

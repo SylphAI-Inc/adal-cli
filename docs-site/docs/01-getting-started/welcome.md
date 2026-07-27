@@ -6,8 +6,8 @@ slug: /
 ---
 
 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '2rem', marginBottom: '3rem', marginTop: '2rem', flexWrap: 'wrap'}}>
-  <img src="/adal-face-logo.svg" alt="AdaL AI Coding Agent Logo" style={{height: '120px', width: 'auto', border: 'none', outline: 'none', boxShadow: 'none'}} />
-  <img src="/adal-text-logo.svg" alt="AdaL CLI Text Logo" style={{height: '120px', width: 'auto', border: 'none', outline: 'none', boxShadow: 'none'}} />
+  <img src="/adal-face-logo.png" alt="AdaL AI Coding Agent Logo" style={{height: '120px', width: 'auto', border: 'none', outline: 'none', boxShadow: 'none'}} />
+  <img src="/adal-text-logo.png" alt="AdaL CLI Text Logo" style={{height: '120px', width: 'auto', border: 'none', outline: 'none', boxShadow: 'none'}} />
 </div>
 
 # Hi, I'm AdaL
