@@ -5,8 +5,6 @@
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="assets/adal-text-logo.png" alt="AdaL Text" width="280" />
   <br /><br />
-  <strong>AdaL CLI is a terminal-native platform for orchestrating AI agents, models, and tools into autonomous, end-to-end workflows with persistent memory and human alignment.</strong>
-  <br /><br />
 
   [![Docs](https://img.shields.io/badge/docs-docs.sylph.ai-blue)](https://docs.sylph.ai)
   [![Blog](https://img.shields.io/badge/blog-blog.sylph.ai-orange)](https://blog.sylph.ai)
@@ -29,6 +27,8 @@
 ## About
 
 AdaL is an AI coding agent that runs in your terminal, created by [SylphAI](https://adalagent.ai/) and named after Ada Lovelace, the world's first programmer. It works with Claude, GPT, Gemini, GLM, Kimi, DeepSeek, MiniMax, and local models.
+
+AdaL CLI is a terminal-native platform for orchestrating AI agents, models, and tools into autonomous, end-to-end workflows with persistent memory and human alignment.
 
 **This repository is the community home for AdaL CLI** — report issues, share what you build, and contribute skills.
 
