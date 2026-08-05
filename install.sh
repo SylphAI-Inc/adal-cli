@@ -41,7 +41,7 @@ TRACK_HMAC_SECRET="${ADAL_TRACK_HMAC_SECRET:-adal-cli-install-track-v1}"
 #   - Public key:  this value (RWT...).
 # ADAL_SIGNING_PUBLIC_KEY override exists so the test suite can verify against
 # a throwaway keypair.
-SIGNING_PUBLIC_KEY="${ADAL_SIGNING_PUBLIC_KEY:-RWTpQA9INHbbcb1MHIInAuhmJRnFaOn4Bf+Ye8oftDSkWK/SrYakIH3m}"
+SIGNING_PUBLIC_KEY="${ADAL_SIGNING_PUBLIC_KEY:-RWSZUbVM/EZtFEz8cAk+0zEnPI2cCSQFuSuK4xp0KUlP+Wdf71tvUl7C}"
 
 # Colors
 RED='\033[0;31m'

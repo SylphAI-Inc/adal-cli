@@ -52,7 +52,7 @@ done
 command -v minisign >/dev/null 2>&1 || { echo "minisign is required (brew install minisign / apt install minisign)" >&2; exit 1; }
 
 # Public key must match the one embedded in install.sh
-SIGNING_PUBLIC_KEY="RWTpQA9INHbbcb1MHIInAuhmJRnFaOn4Bf+Ye8oftDSkWK/SrYakIH3m"
+SIGNING_PUBLIC_KEY="RWSZUbVM/EZtFEz8cAk+0zEnPI2cCSQFuSuK4xp0KUlP+Wdf71tvUl7C"
 
 # Expand globs
 targets=()
