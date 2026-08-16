@@ -32,6 +32,12 @@ AdaL CLI is a terminal-native platform for orchestrating AI agents, models, and 
 
 **This repository is the community home for AdaL CLI** — report issues, share what you build, and contribute skills.
 
+### Hackathon presentation
+
+Open the [`@skills:` system card](https://sylphai-inc.github.io/adal-cli/hackathon/) for a presentation-ready overview of reusable agent knowledge, skill delivery, and the two main workflows.
+
+Presenter notes and local preview instructions are in [`hackathon/README.md`](hackathon/README.md).
+
 ### Install AdaL CLI
 
 Native install is recommended: it manages AdaL's runtime and updates consistently across platforms.
