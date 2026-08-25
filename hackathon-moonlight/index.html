@@ -162,6 +162,39 @@
       overflow: hidden;
     }
 
+    .before-after {
+      margin: 26px 60px 0;
+      padding: 18px 26px 24px;
+      border: 1.5px solid var(--line);
+      border-radius: 5px;
+      background: rgba(240, 239, 233, 0.6);
+    }
+
+    .before-after .before-after-head {
+      margin-bottom: 14px;
+    }
+
+    .before-after .before-after-title {
+      font-family: "Inter", sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+    }
+
+    .before-after .before-after-frame {
+      border: 1.6px solid var(--ink);
+      border-radius: 4px;
+      overflow: hidden;
+      background: #0e0e0d;
+    }
+
+    .before-after video {
+      display: block;
+      width: 100%;
+      max-height: 640px;
+      background: #0e0e0d;
+    }
+
     .anatomy-head {
       height: 58px;
       display: flex;
@@ -388,26 +421,36 @@
 
     .footer-links {
       margin: 0 60px 50px;
-      padding-top: 22px;
+      padding-top: 26px;
       border-top: 1.5px solid var(--hairline);
       display: flex;
-      align-items: center;
-      gap: 34px;
+      align-items: flex-start;
+      gap: 46px;
       flex-wrap: wrap;
     }
 
     .footer-links a {
       display: flex;
-      align-items: baseline;
-      gap: 8px;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
       color: var(--ink);
       text-decoration: none;
-      font-size: 17px;
-      font-weight: 500;
     }
 
-    .footer-links a:hover {
-      text-decoration: underline;
+    .footer-links .link-qr {
+      width: 96px;
+      height: 96px;
+      padding: 6px;
+      border: 1.3px solid var(--ink);
+      border-radius: 4px;
+      background: #fff;
+    }
+
+    .footer-links .link-qr img {
+      display: block;
+      width: 100%;
+      height: 100%;
     }
 
     .footer-links .link-label {
@@ -608,9 +651,9 @@
     <section class="hero">
       <div class="hero-copy">
         <h1>Your agent never<br>starts from zero.</h1>
-        <div class="hero-cover">
+        <a class="hero-cover" href="https://atskills.one/" target="_blank" rel="noopener">
           <img src="assets/atskills-cover.png" alt="atskills.one cover">
-        </div>
+        </a>
         <p class="dek">Give your agent direct access to reusable knowledge.</p>
       </div>
 
@@ -742,6 +785,18 @@
       </div>
     </section>
 
+    <div class="before-after">
+      <div class="before-after-head">
+        <span class="before-after-title">Before & after: @skills in action</span>
+      </div>
+      <div class="before-after-frame">
+        <video controls preload="metadata" playsinline>
+          <source src="assets/before-after-moonlight.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
     <section class="works">
       <div class="works-grid">
         <article class="work">
@@ -830,10 +885,22 @@
     </section>
 
     <footer class="footer-links mono">
-      <a href="https://atskills.one" target="_blank" rel="noopener"><span class="link-label">@skills</span>atskills.one</a>
-      <a href="https://adalagent.ai" target="_blank" rel="noopener"><span class="link-label">AdaL</span>adalagent.ai</a>
-      <a href="https://x.com/adalagent" target="_blank" rel="noopener"><span class="link-label">X</span>@adalagent</a>
-      <a href="https://www.linkedin.com/company/81892969/admin/dashboard/" target="_blank" rel="noopener"><span class="link-label">LinkedIn</span>AdaL</a>
+      <a href="https://atskills.one" target="_blank" rel="noopener">
+        <span class="link-qr"><img src="assets/qr-atskills.png" alt="QR code for atskills.one"></span>
+        <span class="link-label">@skills · atskills.one</span>
+      </a>
+      <a href="https://adalagent.ai" target="_blank" rel="noopener">
+        <span class="link-qr"><img src="assets/qr-adalagent.png" alt="QR code for adalagent.ai"></span>
+        <span class="link-label">AdaL · adalagent.ai</span>
+      </a>
+      <a href="https://x.com/adalagent" target="_blank" rel="noopener">
+        <span class="link-qr"><img src="assets/qr-x.png" alt="QR code for X @adalagent"></span>
+        <span class="link-label">X · @adalagent</span>
+      </a>
+      <a href="https://www.linkedin.com/company/81892969/admin/dashboard/" target="_blank" rel="noopener">
+        <span class="link-qr"><img src="assets/qr-linkedin.png" alt="QR code for LinkedIn"></span>
+        <span class="link-label">LinkedIn · AdaL</span>
+      </a>
     </footer>
   </main>
 </body>
