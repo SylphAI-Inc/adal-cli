@@ -88,6 +88,22 @@ First run opens the browser for authentication. See the [Quickstart](https://doc
 
 More on the [CLI product page](https://adalagent.ai/product/cli).
 
+## Security & releases
+
+The installer in this repo is the hardened reference implementation:
+
+- **Ed25519 signature verification** (minisign) of every downloaded artifact,
+  with a transition mode while signatures are being rolled out
+- **Manifest schema validation** — malformed manifests are refused, never
+  silently trusted
+- Strict semver + tarball-filename validation, checksum + size verification,
+  temp-dir cleanup on failure
+- **Install tracking is opt-in** (`--track` / `ADAL_TRACK=1`) and signed
+
+See [SECURITY.md](SECURITY.md) for the threat model and [RELEASE.md](RELEASE.md)
+for the release/signing runbook. The test suite in [`tests/`](tests/) runs in
+CI via `.github/workflows/ci.yml`.
+
 ## Documentation
 
 Everything is published at [docs.sylph.ai](https://docs.sylph.ai/).

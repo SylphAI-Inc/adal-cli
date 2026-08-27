@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    paths: ['install.sh', 'scripts/**', 'tests/**']
+  pull_request:
+    paths: ['install.sh', 'scripts/**', 'tests/**']
+  workflow_dispatch:
+
+jobs:
+  shellcheck:
+    name: Shellcheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install shellcheck
+        run: sudo apt-get update && sudo apt-get install -y shellcheck
+      - name: Lint
+        run: |
+          shellcheck --shell=bash --severity=style install.sh
+          shellcheck scripts/sign-release.sh
+          shellcheck tests/*.sh
+
+  tests:
+    name: Installer tests (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install minisign
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y minisign
+      - name: Install minisign
+        if: runner.os == 'macOS'
+        run: brew install minisign
+      - name: Syntax check
+        run: bash -n install.sh && bash -n scripts/sign-release.sh
+      - name: Run test suite
+        run: bash tests/run.sh
