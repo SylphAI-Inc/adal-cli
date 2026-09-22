@@ -26,9 +26,9 @@
 
 ## About
 
-AdaL is an AI coding agent that runs in your terminal, created by [SylphAI](https://adalagent.ai/) and named after Ada Lovelace, the world's first programmer. It works with Claude, GPT, Gemini, GLM, Kimi, DeepSeek, MiniMax, and local models.
+AdaL is your automation-first agent harness — every coding agent can build, but only AdaL does GTM directly from your codebase. It runs in your terminal, was created by [SylphAI](https://adalagent.ai/) and named after Ada Lovelace, the world's first programmer, and works with Claude, GPT, Gemini, GLM, Kimi, DeepSeek, MiniMax, and local models.
 
-AdaL CLI is a terminal-native platform for orchestrating AI agents, models, and tools into autonomous, end-to-end workflows with persistent memory and human alignment.
+AdaL CLI is a terminal-native harness that orchestrates AI agents, models, and tools into autonomous, end-to-end workflows — it carries each issue from direction to tested PR, so more gets done with less of your time.
 
 **This repository is the community home for AdaL CLI** — report issues, share what you build, and contribute skills.
 
